@@ -1,30 +1,21 @@
 import ctypes
-from ctypes.wintypes import (
-    INT,
+from .windows_api import (
     ULONG,
     WCHAR,
     BOOLEAN,
     LARGE_INTEGER,
-    HANDLE,
     LONG,
+    BYTE,
+    CCHAR,
+    PWSTR,
+    POINTER,
+    HANDLE,
     USHORT,
-    DWORD,
     WORD,
-    CHAR,
-    BYTE
+    ENUM,
+    ACCESS_MASK,
+    ULONGLONG
 )
-
-POINTER = ctypes.POINTER
-CCHAR = CHAR
-
-PWSTR = POINTER(WCHAR)
-
-ULONGLONG = ctypes.c_ulonglong
-ACCESS_MASK = DWORD
-
-
-class ENUM(INT):
-    pass
 
 
 class _FILE_ID_128(ctypes.Structure):

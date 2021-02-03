@@ -24,26 +24,44 @@
 # include <windows.h>
 # undef WIN32_NO_STATUS
 # include <ntstatus.h>
-from ctypes.wintypes import (
-    LPCWSTR,
-    LPVOID,
-    LPDWORD,
-    BOOL,
-    FILETIME,
-    PULONG,
-    LPWSTR,
-    LPCVOID,
-    WCHAR as _WCHAR
+import ctypes
+
+from .public_h import (
+    PDOKAN_IO_SECURITY_CONTEXT,
+    DOKAN_MAJOR_API_VERSION,
+    PDOKAN_CONTROL
 )
+from .windows_api import (
+    UCHAR,
+    FILETIME,
+    LONGLONG,
+    PULONGLONG,
+    USHORT,
+    ULONG,
+    ACCESS_MASK,
+    NTSTATUS,
+    POINTER,
+    LPCWSTR,
+    INT,
+    PWIN32_FIND_DATAW,
+    VOID,
+    LPCVOID,
+    DWORD,
+    LPDWORD,
+    PSECURITY_DESCRIPTOR,
+    PSECURITY_INFORMATION,
+    LPWSTR,
+    LPVOID,
+    ULONG64,
+    BOOL,
+    WCHAR,
+    CHAR,
+    PULONG,
+    HANDLE,
+    LPBY_HANDLE_FILE_INFORMATION,
+    PWIN32_FIND_STREAM_DATA,
 
-from .fileinfo_h import *
-from .public_h import *
-
-WCHAR = _WCHAR
-ULONGLONG = ctypes.c_ulonglong
-PULONGLONG = ctypes.POINTER(ULONGLONG)
-LONGLONG = ctypes.c_longlong
-PSECURITY_INFORMATION = ctypes.POINTER(SECURITY_INFORMATION)
+)
 
 
 # ifdef _EXPORTING
@@ -56,7 +74,7 @@ PSECURITY_INFORMATION = ctypes.POINTER(SECURITY_INFORMATION)
 
 # Change calling convention to standard call */
 # define DOKAN_CALLBACK __stdcall
-DOKAN_CALLBACK = ctypes.WINFUNCTYPE
+DOKAN_CALLBACK = ctypes.CFUNCTYPE
 # ifdef __cplusplus
 # extern "C" {
 # endif
@@ -68,6 +86,7 @@ DOKAN_CALLBACK = ctypes.WINFUNCTYPE
 # \brief Dokan Library const and methods
 #
 # @{ */
+
 
 # The current Dokan version (140 means ver 1.4.0). \ref DOKAN_OPTIONS.Version */
 # define DOKAN_VERSION 141
@@ -180,7 +199,7 @@ class _DOKAN_OPTIONS(ctypes.Structure):
 
 
 DOKAN_OPTIONS = _DOKAN_OPTIONS
-PDOKAN_OPTIONS = ctypes.POINTER(_DOKAN_OPTIONS)
+PDOKAN_OPTIONS = POINTER(_DOKAN_OPTIONS)
 
 
 #
@@ -226,36 +245,7 @@ class _DOKAN_FILE_INFO(ctypes.Structure):
 
 dokan1 = ctypes.cdll.LoadLibrary('dokan1.dll')
 DOKAN_FILE_INFO = _DOKAN_FILE_INFO
-PDOKAN_FILE_INFO = ctypes.POINTER(_DOKAN_FILE_INFO)
-
-
-class _WIN32_FIND_DATAW(ctypes.Structure):
-    _fields_ = [
-        ('dwFileAttributes', DWORD),
-        ('ftCreationTime', FILETIME),
-        ('ftLastAccessTime', FILETIME),
-        ('ftLastWriteTime', FILETIME),
-        ('nFileSizeHigh', DWORD),
-        ('nFileSizeLow', DWORD),
-        ('dwReserved0', DWORD),
-        ('dwReserved1', DWORD),
-        ('cFileName', WCHAR * MAX_PATH),
-        ('cAlternateFileName', WCHAR * 14),
-    ]
-
-
-WIN32_FIND_DATAW = _WIN32_FIND_DATAW
-PWIN32_FIND_DATAW = POINTER(_WIN32_FIND_DATAW)
-
-class _WIN32_FIND_STREAM_DATA(ctypes.Structure):
-    _fields_ = [
-        ('StreamSize', LARGE_INTEGER),
-        ('cStreamName', WCHAR * (MAX_PATH + 36))
-    ]
-
-
-WIN32_FIND_STREAM_DATA = _WIN32_FIND_STREAM_DATA
-PWIN32_FIND_STREAM_DATA = ctypes.POINTER(_WIN32_FIND_STREAM_DATA)
+PDOKAN_FILE_INFO = POINTER(_DOKAN_FILE_INFO)
 
 
 # \brief FillFindData Used to add an entry in FindFiles operation
@@ -264,27 +254,6 @@ PFillFindData = ctypes.WINFUNCTYPE(INT, PWIN32_FIND_DATAW, PDOKAN_FILE_INFO)
 # \brief FillFindStreamData Used to add an entry in FindStreams
 # \return 1 if buffer is full, otherwise 0 (currently it never returns 1)
 PFillFindStreamData = ctypes.WINFUNCTYPE(INT, PWIN32_FIND_STREAM_DATA, PDOKAN_FILE_INFO)
-
-
-class _BY_HANDLE_FILE_INFORMATION(ctypes.Structure):
-    _fields_ = [
-        ('dwFileAttributes', DWORD),
-        ('ftCreationTime', FILETIME),
-        ('ftLastAccessTime', FILETIME),
-        ('ftLastWriteTime', FILETIME),
-        ('dwVolumeSerialNumber', DWORD),
-        ('nFileSizeHigh', DWORD),
-        ('nFileSizeLow', DWORD),
-        ('nNumberOfLinks', DWORD),
-        ('nFileIndexHigh', DWORD),
-        ('nFileIndexLow', DWORD)
-    ]
-
-
-BY_HANDLE_FILE_INFORMATION = _BY_HANDLE_FILE_INFORMATION
-PBY_HANDLE_FILE_INFORMATION = ctypes.POINTER(_BY_HANDLE_FILE_INFORMATION)
-LPBY_HANDLE_FILE_INFORMATION = ctypes.POINTER(_BY_HANDLE_FILE_INFORMATION)
-
 
 # clang-format off
 
@@ -301,7 +270,209 @@ LPBY_HANDLE_FILE_INFORMATION = ctypes.POINTER(_BY_HANDLE_FILE_INFORMATION)
 # if supporting one of them is not desired. Be aware that returning such values to important
 # callbacks* such as DOKAN_OPERATIONS.ZwCreateFile / DOKAN_OPERATIONS.ReadFile / ...
 # would make the filesystem not work or become unstable.
+
+ZW_CREATE_FILE = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    PDOKAN_IO_SECURITY_CONTEXT,
+    ACCESS_MASK,
+    ULONG,
+    ULONG,
+    ULONG,
+    ULONG,
+    PDOKAN_FILE_INFO
+)
+
+CLEANUP = DOKAN_CALLBACK(
+    VOID,
+    LPCWSTR,
+    PDOKAN_FILE_INFO
+)
+
+CLOSE_FILE = DOKAN_CALLBACK(
+    VOID,
+    LPCWSTR,
+    PDOKAN_FILE_INFO
+)
+
+READ_FILE = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    LPVOID,
+    DWORD,
+    LPDWORD,
+    LONGLONG,
+    PDOKAN_FILE_INFO
+)
+
+WRITE_FILE = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    LPCVOID,
+    DWORD,
+    LPDWORD,
+    LONGLONG,
+    PDOKAN_FILE_INFO
+)
+
+FLUSH_FILE_BUFFERS = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    PDOKAN_FILE_INFO
+)
+
+GET_FILE_INFORMATION = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    LPBY_HANDLE_FILE_INFORMATION,
+    PDOKAN_FILE_INFO
+)
+
+FIND_FILES = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    PFillFindData,
+    PDOKAN_FILE_INFO
+)
+
+FIND_FILES_WITH_PATTERN = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    LPCWSTR,
+    PFillFindData,
+    PDOKAN_FILE_INFO
+)
+
+SET_FILE_ATTRIBUTES = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    DWORD,
+    PDOKAN_FILE_INFO
+)
+
+SET_FILE_TIME = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    POINTER(FILETIME),
+    POINTER(FILETIME),
+    POINTER(FILETIME),
+    PDOKAN_FILE_INFO
+)
+
+DELETE_FILE = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    PDOKAN_FILE_INFO
+)
+
+DELETE_DIRECTORY = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    PDOKAN_FILE_INFO
+)
+
+MOVE_FILE = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    LPCWSTR,
+    BOOL,
+    PDOKAN_FILE_INFO
+)
+
+SET_END_OF_FILE = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    LONGLONG,
+    PDOKAN_FILE_INFO
+)
+
+SET_ALLOCATION_SIZE = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    LONGLONG,
+    PDOKAN_FILE_INFO
+)
+
+LOCK_FILE = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    LONGLONG,
+    LONGLONG,
+    PDOKAN_FILE_INFO
+)
+
+UNLOCK_FILE = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    LONGLONG,
+    LONGLONG,
+    PDOKAN_FILE_INFO
+)
+
+GET_DISK_FREE_SPACE = DOKAN_CALLBACK(
+    NTSTATUS,
+    PULONGLONG,
+    PULONGLONG,
+    PULONGLONG,
+    PDOKAN_FILE_INFO
+)
+
+GET_VOLUME_INFORMATION = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPWSTR,
+    DWORD,
+    LPDWORD,
+    LPDWORD,
+    LPDWORD,
+    LPWSTR,
+    DWORD,
+    PDOKAN_FILE_INFO
+)
+
+MOUNTED = DOKAN_CALLBACK(
+    NTSTATUS,
+    PDOKAN_FILE_INFO
+)
+
+UNMOUNTED = DOKAN_CALLBACK(
+    NTSTATUS,
+    PDOKAN_FILE_INFO
+)
+
+GET_FILE_SECURITY = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    PSECURITY_INFORMATION,
+    PSECURITY_DESCRIPTOR,
+    ULONG,
+    PULONG,
+    PDOKAN_FILE_INFO
+)
+
+SET_FILE_SECURITY = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    PSECURITY_INFORMATION,
+    PSECURITY_DESCRIPTOR,
+    ULONG,
+    PDOKAN_FILE_INFO
+)
+
+FIND_STREAMS = DOKAN_CALLBACK(
+    NTSTATUS,
+    LPCWSTR,
+    PFillFindStreamData,
+    PDOKAN_FILE_INFO
+)
+
+
 class _DOKAN_OPERATIONS(ctypes.Structure):
+    def zw_create_file(self, value):
+        size = ctypes.sizeof(value)
+        ctypes.memmove(self.ZwCreateFile, value, size)
+
+    zw_create_file = property(fset=zw_create_file)
+
     _fields_ = [
 
         # \brief CreateFile Dokan API callback
@@ -346,17 +517,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # ULONG CreateDisposition,
         # ULONG CreateOptions,
         # PDOKAN_FILE_INFO DokanFileInfo);
-        ('ZwCreateFile', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            PDOKAN_IO_SECURITY_CONTEXT,
-            ACCESS_MASK,
-            ULONG,
-            ULONG,
-            ULONG,
-            ULONG,
-            PDOKAN_FILE_INFO
-        )),
+        ('ZwCreateFile', ZW_CREATE_FILE),
 
         # \brief Cleanup Dokan API callback
         #
@@ -371,11 +532,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # \see DeleteDirectory
         # LPCWSTR FileName,
         # PDOKAN_FILE_INFO DokanFileInfo
-        ('Cleanup', DOKAN_CALLBACK(
-            VOID,
-            LPCWSTR,
-            PDOKAN_FILE_INFO
-        )),
+        ('Cleanup', CLEANUP),
 
         # \brief CloseFile Dokan API callback
         #
@@ -388,11 +545,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # \param DokanFileInfo Information about the file or directory.
         # LPCWSTR FileName,
         # PDOKAN_FILE_INFO DokanFileInfo
-        ('CloseFile', DOKAN_CALLBACK(
-            VOID,
-            LPCWSTR,
-            PDOKAN_FILE_INFO
-        )),
+        ('CloseFile', CLOSE_FILE),
 
         # \brief ReadFile Dokan API callback
         #
@@ -414,15 +567,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     LPDWORD ReadLength,
         #     LONGLONG Offset,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('ReadFile', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            LPVOID,
-            DWORD,
-            LPDWORD,
-            LONGLONG,
-            PDOKAN_FILE_INFO
-        )),
+        ('ReadFile', READ_FILE),
 
         # /**
         # * \brief WriteFile Dokan API callback
@@ -445,15 +590,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     LPDWORD NumberOfBytesWritten,
         #     LONGLONG Offset,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('WriteFile', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            LPCVOID,
-            DWORD,
-            LPDWORD,
-            LONGLONG,
-            PDOKAN_FILE_INFO
-         )),
+        ('WriteFile', WRITE_FILE),
 
         # /**
         # * \brief FlushFileBuffers Dokan API callback
@@ -466,11 +603,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # */
         # LPCWSTR FileName,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('FlushFileBuffers', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            PDOKAN_FILE_INFO
-        )),
+        ('FlushFileBuffers', FLUSH_FILE_BUFFERS),
 
         # /**
         # * \brief GetFileInformation Dokan API callback
@@ -485,12 +618,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # LPCWSTR FileName,
         #     LPBY_HANDLE_FILE_INFORMATION Buffer,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('GetFileInformation', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            LPBY_HANDLE_FILE_INFORMATION,
-            PDOKAN_FILE_INFO
-        )),
+        ('GetFileInformation', GET_FILE_INFORMATION),
 
         # /**
         # * \brief FindFiles Dokan API callback
@@ -508,12 +636,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # LPCWSTR FileName,
         #     PFillFindData FillFindData,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('FindFiles', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            PFillFindData,
-            PDOKAN_FILE_INFO
-        )),
+        ('FindFiles', FIND_FILES),
 
         # /**
         # * \brief FindFilesWithPattern Dokan API callback
@@ -533,13 +656,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     LPCWSTR SearchPattern,
         #     PFillFindData FillFindData,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('FindFilesWithPattern', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            LPCWSTR,
-            PFillFindData,
-            PDOKAN_FILE_INFO
-        )),
+        ('FindFilesWithPattern', FIND_FILES_WITH_PATTERN),
 
         # /**
         # * \brief SetFileAttributes Dokan API callback
@@ -554,12 +671,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # LPCWSTR FileName,
         #     DWORD FileAttributes,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('SetFileAttributes', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            DWORD,
-            PDOKAN_FILE_INFO
-        )),
+        ('SetFileAttributes', SET_FILE_ATTRIBUTES),
 
         # /**
         # * \brief SetFileTime Dokan API callback
@@ -578,14 +690,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     CONST FILETIME *LastAccessTime,
         #     CONST FILETIME *LastWriteTime,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('SetFileTime', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            ctypes.POINTER(FILETIME),
-            ctypes.POINTER(FILETIME),
-            ctypes.POINTER(FILETIME),
-            PDOKAN_FILE_INFO
-        )),
+        ('SetFileTime', SET_FILE_TIME),
 
         # /**
         # * \brief DeleteFile Dokan API callback
@@ -613,11 +718,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # */
         # LPCWSTR FileName,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('DeleteFile', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            PDOKAN_FILE_INFO
-        )),
+        ('DeleteFile', DELETE_FILE),
 
         # /**
         # * \brief DeleteDirectory Dokan API callback
@@ -646,11 +747,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # */
         # LPCWSTR FileName,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('DeleteDirectory', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            PDOKAN_FILE_INFO
-        )),
+        ('DeleteDirectory', DELETE_DIRECTORY),
 
         # /**
         # * \brief MoveFile Dokan API callback
@@ -667,13 +764,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     LPCWSTR NewFileName,
         #     BOOL ReplaceIfExisting,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('MoveFile', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            LPCWSTR,
-            BOOL,
-            PDOKAN_FILE_INFO
-        )),
+        ('MoveFile', MOVE_FILE),
 
         # /**
         # * \brief SetEndOfFile Dokan API callback
@@ -688,12 +779,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # LPCWSTR FileName,
         #     LONGLONG ByteOffset,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('SetEndOfFile', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            LONGLONG,
-            PDOKAN_FILE_INFO
-         )),
+        ('SetEndOfFile', SET_END_OF_FILE),
 
         # /**
         # * \brief SetAllocationSize Dokan API callback
@@ -708,12 +794,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # LPCWSTR FileName,
         #     LONGLONG AllocSize,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('SetAllocationSize', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            LONGLONG,
-            PDOKAN_FILE_INFO
-         )),
+        ('SetAllocationSize', SET_ALLOCATION_SIZE),
 
         # /**
         # * \brief LockFile Dokan API callback
@@ -732,13 +813,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     LONGLONG ByteOffset,
         #     LONGLONG Length,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('LockFile', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            LONGLONG,
-            LONGLONG,
-            PDOKAN_FILE_INFO
-         )),
+        ('LockFile', LOCK_FILE),
 
         # /**
         # * \brief UnlockFile Dokan API callback
@@ -757,13 +832,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     LONGLONG ByteOffset,
         #     LONGLONG Length,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('UnlockFile', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            LONGLONG,
-            LONGLONG,
-            PDOKAN_FILE_INFO
-         )),
+        ('UnlockFile', UNLOCK_FILE),
 
         # /**
         # * \brief GetDiskFreeSpace Dokan API callback
@@ -790,13 +859,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     PULONGLONG TotalNumberOfBytes,
         #     PULONGLONG TotalNumberOfFreeBytes,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('GetDiskFreeSpace', DOKAN_CALLBACK(
-            NTSTATUS,
-            PULONGLONG,
-            PULONGLONG,
-            PULONGLONG,
-            PDOKAN_FILE_INFO
-         )),
+        ('GetDiskFreeSpace', GET_DISK_FREE_SPACE),
 
         # /**
         # * \brief GetVolumeInformation Dokan API callback
@@ -842,17 +905,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     LPWSTR FileSystemNameBuffer,
         #     DWORD FileSystemNameSize,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('GetVolumeInformation', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPWSTR,
-            DWORD,
-            LPDWORD,
-            LPDWORD,
-            LPDWORD,
-            LPWSTR,
-            DWORD,
-            PDOKAN_FILE_INFO
-         )),
+        ('GetVolumeInformation', GET_VOLUME_INFORMATION),
 
         # /**
         # * \brief Mounted Dokan API callback
@@ -864,10 +917,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # * \see Unmounted
         # */
         # PDOKAN_FILE_INFO DokanFileInfo
-        ('Mounted', DOKAN_CALLBACK(
-            NTSTATUS,
-            PDOKAN_FILE_INFO
-         )),
+        ('Mounted', MOUNTED),
 
         # /**
         # * \brief Unmounted Dokan API callback
@@ -879,10 +929,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # * \see Mounted
         # */
         # PDOKAN_FILE_INFO DokanFileInfo
-        ('Unmounted', DOKAN_CALLBACK(
-            NTSTATUS,
-            PDOKAN_FILE_INFO
-         )),
+        ('Unmounted', UNMOUNTED),
 
         # /**
         # * \brief GetFileSecurity Dokan API callback
@@ -914,15 +961,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     ULONG BufferLength,
         #     PULONG LengthNeeded,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('GetFileSecurity', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            PSECURITY_INFORMATION,
-            PSECURITY_DESCRIPTOR,
-            ULONG,
-            PULONG,
-            PDOKAN_FILE_INFO
-         )),
+        ('GetFileSecurity', GET_FILE_SECURITY),
 
         # /**
         # * \brief SetFileSecurity Dokan API callback
@@ -946,14 +985,7 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         #     PSECURITY_DESCRIPTOR SecurityDescriptor,
         #     ULONG BufferLength,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('SetFileSecurity', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            PSECURITY_INFORMATION,
-            PSECURITY_DESCRIPTOR,
-            ULONG,
-            PDOKAN_FILE_INFO
-         )),
+        ('SetFileSecurity', SET_FILE_SECURITY),
 
         # /**
         # * \brief FindStreams Dokan API callback
@@ -971,17 +1003,12 @@ class _DOKAN_OPERATIONS(ctypes.Structure):
         # LPCWSTR FileName,
         #     PFillFindStreamData FillFindStreamData,
         #     PDOKAN_FILE_INFO DokanFileInfo
-        ('FindStreams', DOKAN_CALLBACK(
-            NTSTATUS,
-            LPCWSTR,
-            PFillFindStreamData,
-            PDOKAN_FILE_INFO
-         ))
+        ('FindStreams', FIND_STREAMS)
     ]
 
 
 DOKAN_OPERATIONS = _DOKAN_OPERATIONS
-PDOKAN_OPERATIONS = ctypes.POINTER(_DOKAN_OPERATIONS)
+PDOKAN_OPERATIONS = POINTER(_DOKAN_OPERATIONS)
 
 # // clang-format on
 #
@@ -1185,9 +1212,8 @@ _DokanOpenRequestorToken.restype = HANDLE
 
 
 def DokanOpenRequestorToken(DokanFileInfo):
-    DokanFileInfo = DOKAN_FILE_INFO(DokanFileInfo)
     return _DokanOpenRequestorToken(
-        ctypes.byref(DokanFileInfo)
+        DokanFileInfo
     )
 
 
@@ -1228,6 +1254,7 @@ def DokanGetMountPointList(uncOnly):
         res += [[control[i]]]
 
     DokanReleaseMountPointList(control_array)
+
 
 #
 # /**
@@ -1344,6 +1371,7 @@ def DokanNotifyCreate(FilePath,  IsDirectory):
         FilePath,
         IsDirectory
     )
+
 
 #
 # /**

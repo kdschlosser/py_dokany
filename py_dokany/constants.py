@@ -1,5 +1,210 @@
 
-from .dokan_h import ENUM
+from .windows_api import (
+    SecurityAnonymous,
+    SecurityIdentification,
+    SecurityImpersonation,
+    SecurityDelegation
+)
+
+FILE_BEGIN = 0x00000000
+FILE_END = 0x00000002
+FILE_ATTRIBUTE_DEVICE = 0x00000040
+FILE_ATTRIBUTE_VIRTUAL = 0x00010000
+
+SE_PRIVILEGE_ENABLED = 0x00000002
+TOKEN_ADJUST_PRIVILEGES = 0x00000020
+TOKEN_IMPERSONATE = 0x00000004
+TOKEN_QUERY = 0x00000008
+
+INVALID_FILE_ATTRIBUTES = -1
+INVALID_HANDLE_VALUE = -1
+INVALID_FILE_SIZE = -1
+
+ERROR_INSUFFICIENT_BUFFER = 0x0000007A
+ERROR_SUCCESS = 0
+ERROR_NO_MORE_FILES = 0x00000012
+ERROR_HANDLE_EOF = 0x80070026
+
+ACCESS_SYSTEM_SECURITY = 0x01000000
+
+OWNER_SECURITY_INFORMATION = 0x00000001
+GROUP_SECURITY_INFORMATION = 0x00000002
+DACL_SECURITY_INFORMATION = 0x00000004
+SACL_SECURITY_INFORMATION = 0x00000008
+LABEL_SECURITY_INFORMATION = 0x00000010
+ATTRIBUTE_SECURITY_INFORMATION = 0x00000020
+SCOPE_SECURITY_INFORMATION = 0x00000040
+PROCESS_TRUST_LABEL_SECURITY_INFORMATION = 0x00000080
+ACCESS_FILTER_SECURITY_INFORMATION = 0x00000100
+BACKUP_SECURITY_INFORMATION = 0x00010000
+PROTECTED_DACL_SECURITY_INFORMATION = 0x80000000
+PROTECTED_SACL_SECURITY_INFORMATION = 0x40000000
+UNPROTECTED_DACL_SECURITY_INFORMATION = 0x20000000
+UNPROTECTED_SACL_SECURITY_INFORMATION = 0x10000000
+
+
+STATUS_INVALID_HANDLE = 0xC0000008
+
+STATUS_BUFFER_OVERFLOW = 0x80000005
+
+#: A process has requested access to an object but has not been granted those access rights.
+STATUS_ACCESS_DENIED = 0xC0000022
+
+#: The file was locked and at least one user of the file can write.
+STATUS_FILE_LOCKED_WITH_WRITERS = 0x12B
+
+#: No more files were found which match the file specification.
+STATUS_NO_MORE_FILES = 0x80000006
+
+#: No more extended attributes (EAs) were found for the file.
+STATUS_NO_MORE_EAS = 0x80000012
+
+#: An invalid extended attribute (EA) flag was set.
+STATUS_INVALID_EA_FLAG = 0x80000015
+
+#: The file does not exist.
+STATUS_NO_SUCH_FILE = 0xC000000F
+
+#: The end-of-file marker has been reached. There is no valid data in the file beyond this marker.
+STATUS_END_OF_FILE = 0xC0000011
+
+#: The file system structure on the disk is corrupt and unusable.
+#: Please run the Chkdsk utility on the volume.
+STATUS_DISK_CORRUPT_ERROR = 0xC0000032
+
+#: Object Name invalid.
+STATUS_OBJECT_NAME_INVALID = 0xC0000033
+
+#: Object Name not found.
+STATUS_OBJECT_NAME_NOT_FOUND = 0xC0000034
+
+#: Object Name already exists.
+STATUS_OBJECT_NAME_COLLISION = 0xC0000035
+
+#: Object Path Component was not a directory object.
+STATUS_OBJECT_PATH_INVALID = 0xC0000039
+
+#: The path does not exist.
+STATUS_OBJECT_PATH_NOT_FOUND = 0xC000003A
+
+#: Object Path Component was not a directory object.
+STATUS_OBJECT_PATH_SYNTAX_BAD = 0xC000003B
+
+#: An error in reading or writing data occurred.
+STATUS_DATA_ERROR = 0xC000003E
+
+#: A file cannot be opened because the share access flags are incompatible.
+STATUS_SHARING_VIOLATION = 0xC0000043
+
+#: An operation involving EAs failed because the file system does not support EAs.
+STATUS_EAS_NOT_SUPPORTED = 0xC000004F
+
+#: The file for which EAs were requested has no EAs.
+STATUS_NO_EAS_ON_FILE = 0xC0000052
+
+#: The EA is corrupt and non - readable.
+STATUS_EA_CORRUPT_ERROR = 0xC0000053
+
+#: A requested read/write cannot be granted due to a conflicting file lock.
+STATUS_FILE_LOCK_CONFLICT = 0xC0000054
+
+#: A requested file lock cannot be granted due to other existing locks.
+STATUS_LOCK_NOT_GRANTED = 0xC0000055
+
+#: A non close operation has been requested of a file object with a delete pending.
+STATUS_DELETE_PENDING = 0xC0000056
+
+#: An operation failed because the disk was full.
+STATUS_DISK_FULL = 0xC000007F
+
+#: The volume for a file has been externally altered such that the opened file is no longer valid.
+STATUS_FILE_INVALID = 0xC0000098
+
+#: The disk cannot be written to because it is write protected.
+#: Please remove the write protection from the volume in the drive .
+STATUS_MEDIA_WRITE_PROTECTED = 0xC00000A2
+
+#: The drive is not ready for use; its door may be open.
+#: Please check drive and make sure that a disk is inserted and that the drive door is closed.
+STATUS_DEVICE_NOT_READY = 0xC00000A3
+
+#: The file that was specified as a target is a directory and the caller
+#: specified that it could be anything but a directory.
+STATUS_FILE_IS_A_DIRECTORY = 0xC00000BA
+
+#: The request is not supported.
+STATUS_NOT_SUPPORTED = 0xC00000BB
+
+#: The file specified has been renamed and thus cannot be modified.
+STATUS_FILE_RENAMED = 0xC00000D5
+
+#: The file or directory is corrupt and unreadable. Please run the Chkdsk utility.
+STATUS_FILE_CORRUPT_ERROR = 0xC0000102
+
+#: Indicates that the directory trying to be deleted is not empty.
+STATUS_DIRECTORY_NOT_EMPTY = 0xC0000101
+
+#: A requested opened file is not a directory.
+STATUS_NOT_A_DIRECTORY = 0xC0000103
+
+#: An attempt has been made to remove a file or directory that cannot be deleted.
+STATUS_CANNOT_DELETE = 0xC0000121
+
+#: The directory or file cannot be created.
+STATUS_CANNOT_MAKE = 0xC00002EA
+
+#: The requested operation could not be completed due to a file system limitation
+STATUS_FILE_SYSTEM_LIMITATION = 0xC0000427
+
+#: The file is temporarily unavailable.
+STATUS_FILE_NOT_AVAILABLE = 0xC0000467
+
+#: This file is checked out or locked for editing by another user.
+STATUS_FILE_CHECKED_OUT = 0xC0000901
+
+#: The file type being saved or retrieved has been blocked.
+STATUS_BAD_FILE_TYPE = 0xC0000903
+
+#: The file size exceeds the limit allowed and cannot be saved.
+STATUS_FILE_TOO_LARGE = 0xC0000904
+
+#: The system does not recognize the file format of this virtual hard disk.
+STATUS_VHD_FORMAT_UNKNOWN = 0xC03A0004
+
+#: The size of the virtual hard disk is not valid.
+STATUS_VHD_INVALID_SIZE = 0xC03A0012
+
+#: The file size of this virtual hard disk is not valid.
+STATUS_VHD_INVALID_FILE_SIZE = 0xC03A0013
+
+#: The requested operation could not be completed due to a virtual disk system limitation. On NTFS,
+#: virtual hard disk files must be uncompressed and unencrypted. On ReFS, virtual hard disk files
+#: must not have the integrity bit set.
+STATUS_VIRTUAL_DISK_LIMITATION = 0xC03A001A
+
+#: The requested operation cannot be performed on a virtual disk of this type.
+STATUS_VHD_INVALID_TYPE = 0xC03A001B
+
+#: The requested operation cannot be performed on the virtual disk in its current state.
+STATUS_VHD_INVALID_STATE = 0xC03A001C
+
+#: The requsted operation was successful.
+STATUS_SUCCESS = 0x00000000
+
+#: The requested operation was unsuccessful.
+STATUS_UNSUCCESSFUL = 0xC0000001
+
+#: The requested operation is not implemented.
+STATUS_NOT_IMPLEMENTED = 0xC0000002
+
+#: The object already exists.
+ERROR_ALREADY_EXISTS = 0x000000B7
+
+#: The file already exists.
+ERROR_FILE_EXISTS = 0x00000050
+
+#: The file was not found.
+ERROR_FILE_NOT_FOUND = 0x00000002
 
 
 # used in the DOKAN_OPERATIONS.ZwCreateFile callback.
@@ -178,6 +383,8 @@ FILE_OVERWRITE = 0x00000004
 FILE_OVERWRITE_IF = 0x00000005
 
 
+
+FILE_SUPPORTS_REMOTE_STORAGE = 0x00000100
 # used in the DOKAN_OPERATIONS.ZwCreateFile callback.
 # these flags are what get set to the CreateOptions parameter
 
@@ -394,20 +601,6 @@ FILE_FLAG_OPEN_NO_RECALL = 0x00100000
 FILE_FLAG_FIRST_PIPE_INSTANCE = 0x00080000
 
 
-class _SECURITY_IMPERSONATION_LEVEL(ENUM):
-    SecurityAnonymous = 0
-    SecurityIdentification = 1
-    SecurityImpersonation = 2
-    SecurityDelegation = 3
-
-
-SECURITY_IMPERSONATION_LEVEL = _SECURITY_IMPERSONATION_LEVEL
-
-SecurityAnonymous = _SECURITY_IMPERSONATION_LEVEL.SecurityAnonymous
-SecurityIdentification = _SECURITY_IMPERSONATION_LEVEL.SecurityIdentification
-SecurityImpersonation = _SECURITY_IMPERSONATION_LEVEL.SecurityImpersonation
-SecurityDelegation = _SECURITY_IMPERSONATION_LEVEL.SecurityDelegation
-
 SECURITY_ANONYMOUS = SecurityAnonymous << 16
 SECURITY_IDENTIFICATION = SecurityIdentification << 16
 SECURITY_IMPERSONATION = SecurityImpersonation << 16
@@ -440,3 +633,10 @@ FILE_UNICODE_ON_DISK = 0x00000004
 FILE_VOLUME_IS_COMPRESSED = 0x00008000
 FILE_VOLUME_QUOTAS = 0x00000020
 FILE_SUPPORTS_BLOCK_REFCOUNTING = 0x08000000
+
+
+def TEXT(quote):
+    return quote
+
+
+SE_SECURITY_NAME = TEXT("SeSecurityPrivilege")

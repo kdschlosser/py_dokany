@@ -6,166 +6,6 @@ from . import dokan_h as _dokan_h
 from . import constants as _constants
 
 
-#: A process has requested access to an object but has not been granted those access rights.
-STATUS_ACCESS_DENIED = 0xC0000022
-
-#: The file was locked and at least one user of the file can write.
-STATUS_FILE_LOCKED_WITH_WRITERS = 0x12B
-
-#: No more files were found which match the file specification.
-STATUS_NO_MORE_FILES = 0x80000006
-
-#: No more extended attributes (EAs) were found for the file.
-STATUS_NO_MORE_EAS = 0x80000012
-
-#: An invalid extended attribute (EA) flag was set.
-STATUS_INVALID_EA_FLAG = 0x80000015
-
-#: The file does not exist.
-STATUS_NO_SUCH_FILE = 0xC000000F
-
-#: The end-of-file marker has been reached. There is no valid data in the file beyond this marker.
-STATUS_END_OF_FILE = 0xC0000011
-
-#: The file system structure on the disk is corrupt and unusable.
-#: Please run the Chkdsk utility on the volume.
-STATUS_DISK_CORRUPT_ERROR = 0xC0000032
-
-#: Object Name invalid.
-STATUS_OBJECT_NAME_INVALID = 0xC0000033
-
-#: Object Name not found.
-STATUS_OBJECT_NAME_NOT_FOUND = 0xC0000034
-
-#: Object Name already exists.
-STATUS_OBJECT_NAME_COLLISION = 0xC0000035
-
-#: Object Path Component was not a directory object.
-STATUS_OBJECT_PATH_INVALID = 0xC0000039
-
-#: The path does not exist.
-STATUS_OBJECT_PATH_NOT_FOUND = 0xC000003A
-
-#: Object Path Component was not a directory object.
-STATUS_OBJECT_PATH_SYNTAX_BAD = 0xC000003B
-
-#: An error in reading or writing data occurred.
-STATUS_DATA_ERROR = 0xC000003E
-
-#: A file cannot be opened because the share access flags are incompatible.
-STATUS_SHARING_VIOLATION = 0xC0000043
-
-#: An operation involving EAs failed because the file system does not support EAs.
-STATUS_EAS_NOT_SUPPORTED = 0xC000004F
-
-#: The file for which EAs were requested has no EAs.
-STATUS_NO_EAS_ON_FILE = 0xC0000052
-
-#: The EA is corrupt and non - readable.
-STATUS_EA_CORRUPT_ERROR = 0xC0000053
-
-#: A requested read/write cannot be granted due to a conflicting file lock.
-STATUS_FILE_LOCK_CONFLICT = 0xC0000054
-
-#: A requested file lock cannot be granted due to other existing locks.
-STATUS_LOCK_NOT_GRANTED = 0xC0000055
-
-#: A non close operation has been requested of a file object with a delete pending.
-STATUS_DELETE_PENDING = 0xC0000056
-
-#: An operation failed because the disk was full.
-STATUS_DISK_FULL = 0xC000007F
-
-#: The volume for a file has been externally altered such that the opened file is no longer valid.
-STATUS_FILE_INVALID = 0xC0000098
-
-#: The disk cannot be written to because it is write protected.
-#: Please remove the write protection from the volume in the drive .
-STATUS_MEDIA_WRITE_PROTECTED = 0xC00000A2
-
-#: The drive is not ready for use; its door may be open.
-#: Please check drive and make sure that a disk is inserted and that the drive door is closed.
-STATUS_DEVICE_NOT_READY = 0xC00000A3
-
-#: The file that was specified as a target is a directory and the caller
-#: specified that it could be anything but a directory.
-STATUS_FILE_IS_A_DIRECTORY = 0xC00000BA
-
-#: The request is not supported.
-STATUS_NOT_SUPPORTED = 0xC00000BB
-
-#: The file specified has been renamed and thus cannot be modified.
-STATUS_FILE_RENAMED = 0xC00000D5
-
-#: The file or directory is corrupt and unreadable. Please run the Chkdsk utility.
-STATUS_FILE_CORRUPT_ERROR = 0xC0000102
-
-#: Indicates that the directory trying to be deleted is not empty.
-STATUS_DIRECTORY_NOT_EMPTY = 0xC0000101
-
-#: A requested opened file is not a directory.
-STATUS_NOT_A_DIRECTORY = 0xC0000103
-
-#: An attempt has been made to remove a file or directory that cannot be deleted.
-STATUS_CANNOT_DELETE = 0xC0000121
-
-#: The directory or file cannot be created.
-STATUS_CANNOT_MAKE = 0xC00002EA
-
-#: The requested operation could not be completed due to a file system limitation
-STATUS_FILE_SYSTEM_LIMITATION = 0xC0000427
-
-#: The file is temporarily unavailable.
-STATUS_FILE_NOT_AVAILABLE = 0xC0000467
-
-#: This file is checked out or locked for editing by another user.
-STATUS_FILE_CHECKED_OUT = 0xC0000901
-
-#: The file type being saved or retrieved has been blocked.
-STATUS_BAD_FILE_TYPE = 0xC0000903
-
-#: The file size exceeds the limit allowed and cannot be saved.
-STATUS_FILE_TOO_LARGE = 0xC0000904
-
-#: The system does not recognize the file format of this virtual hard disk.
-STATUS_VHD_FORMAT_UNKNOWN = 0xC03A0004
-
-#: The size of the virtual hard disk is not valid.
-STATUS_VHD_INVALID_SIZE = 0xC03A0012
-
-#: The file size of this virtual hard disk is not valid.
-STATUS_VHD_INVALID_FILE_SIZE = 0xC03A0013
-
-#: The requested operation could not be completed due to a virtual disk system limitation. On NTFS,
-#: virtual hard disk files must be uncompressed and unencrypted. On ReFS, virtual hard disk files
-#: must not have the integrity bit set.
-STATUS_VIRTUAL_DISK_LIMITATION = 0xC03A001A
-
-#: The requested operation cannot be performed on a virtual disk of this type.
-STATUS_VHD_INVALID_TYPE = 0xC03A001B
-
-#: The requested operation cannot be performed on the virtual disk in its current state.
-STATUS_VHD_INVALID_STATE = 0xC03A001C
-
-#: The requsted operation was successful.
-STATUS_SUCCESS = 0x00000000
-
-#: The requested operation was unsuccessful.
-STATUS_UNSUCCESSFUL = 0xC0000001
-
-#: The requested operation is not implemented.
-STATUS_NOT_IMPLEMENTED = 0xC0000002
-
-#: The object already exists.
-ERROR_ALREADY_EXISTS = 0x000000B7
-
-#: The file already exists.
-ERROR_FILE_EXISTS = 0x00000050
-
-#: The file was not found.
-ERROR_FILE_NOT_FOUND = 0x00000002
-
-
 class Options(_dokan_h.DOKAN_OPTIONS):
     _global_context_index = 1
 
@@ -1737,11 +1577,6 @@ class ReadFileRequest(RequestBase):
     def stop_byte(self) -> int:
         return self._stop_byte
 
-    @property
-    def data(self) -> bytearray:
-        return self._data
-
-    @data.setter
     def data(self, value: Union[bytearray, bytes]):
         if isinstance(value, (list, tuple)):
             try:
@@ -1764,6 +1599,8 @@ class ReadFileRequest(RequestBase):
 
         self._data = value
 
+    data = property(fset=data)
+
 
 class WriteFileRequest(RequestBase):
     def __init__(self, filename, data, offset, num_bytes, dokan_file_info):
@@ -1781,16 +1618,13 @@ class WriteFileRequest(RequestBase):
     def num_bytes(self) -> int:
         return self._num_bytes
 
-    @property
-    def num_bytes_written(self) -> int:
-        return self._num_bytes_written
-
-    @num_bytes_written.setter
     def num_bytes_written(self, value: int):
         if value > self.num_bytes:
             raise ValueError('to many bytes written')
 
         self._num_bytes_written = value
+
+    num_bytes_written = property(fset=num_bytes_written)
 
     @property
     def data(self) -> bytearray:
@@ -1802,101 +1636,50 @@ class FileInformationRequest(RequestBase):
     def __init__(self, file_name, file_info, dokan_file_info):
 
         RequestBase.__init__(self, file_name, dokan_file_info)
-        self._file_info = file_info
+        self._last_access_time = 0
+        self._creation_time = 0
+        self._last_write_time = 0
+        self._number_of_links = 0
+        self._file_index = 0
+        self._file_size = 0
+        self._attributes = Attributes(0)
 
     @property
     def attributes(self) -> Attributes:
-        return Attributes(self._file_info.contents.dwFileAttributes.value)
+        return self._attributes
 
-    @attributes.setter
-    def attributes(self, value: Union[Attributes, int]):
-        self._file_info.contents.dwFileAttributes = value
-
-    @property
-    def creation_time(self) -> int:
-        ct = self._file_info.contents.ftCreationTime
-        dt_high = ct.dwHighDateTime.value
-        dt_low = ct.dwLowDateTime.value
-        return dt_high << 32 | dt_low
-
-    @creation_time.setter
     def creation_time(self, value: int):
-        dt_high = value >> 32
-        dt_low = value & 0xFFFFFFFF
-        ct = self._file_info.contents.ftCreationTime
+        self._creation_time = int(value)
 
-        ct.dwHighDateTime = dt_high
-        ct.dwLowDateTime = dt_low
+    creation_time = property(fset=creation_time)
 
-    @property
-    def last_access_time(self) -> int:
-        lat = self._file_info.contents.ftLastAccessTime
-        dt_high = lat.dwHighDateTime.value
-        dt_low = lat.dwLowDateTime.value
-        return dt_high << 32 | dt_low
-
-    @last_access_time.setter
     def last_access_time(self, value: int):
-        dt_high = value >> 32
-        dt_low = value & 0xFFFFFFFF
-        lat = self._file_info.contents.ftLastAccessTime
+        self._last_access_time = int(value)
 
-        lat.dwHighDateTime = dt_high
-        lat.dwLowDateTime = dt_low
+    last_access_time = property(fset=last_access_time)
 
-    @property
-    def last_write_time(self) -> int:
-        lwt = self._file_info.contents.ftLastWriteTime
-        dt_high = lwt.dwHighDateTime.value
-        dt_low = lwt.dwLowDateTime.value
-        return dt_high << 32 | dt_low
-
-    @last_write_time.setter
     def last_write_time(self, value: int):
-        dt_high = value >> 32
-        dt_low = value & 0xFFFFFFFF
-        lwt = self._file_info.contents.ftLastWriteTime
+        self._last_write_time = int(value)
 
-        lwt.dwHighDateTime = dt_high
-        lwt.dwLowDateTime = dt_low
+    last_write_time = property(fset=last_write_time)
 
-    @property
-    def file_size(self) -> int:
-        fs_high = self._file_info.contents.nFileSizeHigh.value
-        fs_low = self._file_info.contents.nFileSizeLow.value
-        return fs_high << 32 | fs_low
-
-    @file_size.setter
     def file_size(self, value: int):
-        fs_high = value >> 32
-        fs_low = value & 0xFFFFFFFF
+        self._file_size = int(value)
 
-        self._file_info.contents.nFileSizeHigh = fs_high
-        self._file_info.contents.nFileSizeLow = fs_low
 
-    @property
-    def number_of_links(self) -> int:
-        return self._file_info.contents.nNumberOfLinks.value
+    file_size = property(fset=file_size)
 
-    @number_of_links.setter
     def number_of_links(self, value: int):
-        self._file_info.contents.nNumberOfLinks = value
+        self._number_of_links == value
 
-    @property
-    def file_index(self) -> int:
-        fi_high = self._file_info.contents.nFileIndexHigh.value
-        fi_low = self._file_info.contents.nFileIndexLow.value
-        return fi_high << 32 | fi_low
+    number_of_links = property(fset=number_of_links)
 
-    @file_index.setter
     def file_index(self, value: int):
-        fi_high = value >> 32
-        fi_low = value & 0xFFFFFFFF
+        self._file_index = value
 
-        self._file_info.contents.nFileIndexHigh = fi_high
-        self._file_info.contents.nFileIndexLow = fi_low
-
-
+    file_index = property(fset=file_index)
+287.28
+27,590,320
 class FileAttributesRequest(RequestBase):
     def __init__(self, file_name, file_attributes, dokan_file_info):
         RequestBase.__init__(self, file_name, dokan_file_info)
@@ -1978,7 +1761,7 @@ class LockFileRequest(RequestBase):
 
     def __init__(self, file_name, offset, length, dokan_file_info):
         RequestBase.__init__(self, file_name, dokan_file_info)
-        self._offset= offset
+        self._offset = offset
         self._length = length
 
     @property
@@ -1994,7 +1777,7 @@ class UnlockFileRequest(RequestBase):
 
     def __init__(self, file_name, offset, length, dokan_file_info):
         RequestBase.__init__(self, file_name, dokan_file_info)
-        self._offset= offset
+        self._offset = offset
         self._length = length
 
     @property
@@ -2006,7 +1789,7 @@ class UnlockFileRequest(RequestBase):
         return self._length
 
 
-class GetDiskFreeSpaceRequest(DokanFileInfoBase):
+class DiskFreeSpaceRequest(DokanFileInfoBase):
 
     def __init__(
         self,
@@ -2020,32 +1803,23 @@ class GetDiskFreeSpaceRequest(DokanFileInfoBase):
         self._total_number_of_bytes = total_number_of_bytes
         self._total_number_of_free_bytes = total_number_of_free_bytes
 
-    @property
-    def free_bytes_available(self) -> int:
-        return self._free_bytes_available.contents.value
-
-    @free_bytes_available.setter
     def free_bytes_available(self, value: int):
-        self._free_bytes_available.contents = value
+        self._free_bytes_available.contents.value = value
 
-    @property
-    def total_number_of_bytes(self) -> int:
-        return self._total_number_of_bytes.contents.value
+    free_bytes_available = property(fset=free_bytes_available)
 
-    @total_number_of_bytes.setter
     def total_number_of_bytes(self, value: int):
-        self._total_number_of_bytes.contents = value
+        self._total_number_of_bytes.contents.value = value
 
-    @property
-    def total_number_of_free_bytes(self) -> int:
-        return self._total_number_of_free_bytes.contents.value
+    total_number_of_bytes = property(fset=total_number_of_bytes)
 
-    @total_number_of_free_bytes.setter
     def total_number_of_free_bytes(self, value: int):
-        self._total_number_of_free_bytes.contents = value
+        self._total_number_of_free_bytes.contents.value = value
+
+    total_number_of_free_bytes = property(fset=total_number_of_free_bytes)
 
 
-class GetVolumeInformationRequest(DokanFileInfoBase):
+class VolumeInformationRequest(DokanFileInfoBase):
 
     def __init__(
             self,
@@ -2092,21 +1866,15 @@ class GetVolumeInformationRequest(DokanFileInfoBase):
     def volume_name_size(self) -> int:
         return self._volume_name_size
 
-    @property
-    def volume_serial_number(self) -> int:
-        return self._volume_serial_number.contents.value
-
-    @volume_serial_number.setter
     def volume_serial_number(self, value: int):
-        self._volume_serial_number.contents = value
+        self._volume_serial_number.contents.value = value
 
-    @property
-    def maximum_component_length(self) -> int:
-        return self._maximum_component_length.contents.value
+    volume_serial_number = property(fset=volume_serial_number)
 
-    @maximum_component_length.setter
     def maximum_component_length(self, value: int):
-        self._maximum_component_length.contents = value
+        self._maximum_component_length.contents.value = value
+
+    maximum_component_length = property(fset=maximum_component_length)
 
     @property
     def file_system_name_size(self) -> int:
@@ -2427,9 +2195,10 @@ class Drive(object):
 
     def create_file(self, path):
         """
-        Registers a callback for read, write, open and create operations on a file or directory.
+        Registers a callback for open and create operations on a file or directory.
 
-        :param path: path to a file or folder or a function.
+        The callback is passed a :py:class:`CreateFileRequest` instance
+        see :py:class:Drive for further details on how to use this method.
         """
         if callable(path):
             self.__default_create_file_callback = path
@@ -2443,6 +2212,12 @@ class Drive(object):
         return res
 
     def read_file(self, path):
+        """
+        Registers a callback for read operations on a file or directory.
+
+        The callback is passed a :py:class:`ReadFileRequest` instance
+        see :py:class:Drive for further details on how to use this method.
+        """
         if callable(path):
             self.__default_read_file_callback = path
             return path
@@ -2455,6 +2230,14 @@ class Drive(object):
         return res
 
     def cleanup(self, path):
+        """
+        Registers a callback for cleanup operations on a file or directory.
+
+        This is so an application can close any open handles.
+
+        The callback is passed a :py:class:`CleanupRequest` instance
+        see :py:class:Drive for further details on how to use this method.
+        """
         if callable(path):
             self.__default_cleanup_callback = path
             return path
@@ -2467,6 +2250,13 @@ class Drive(object):
         return res
 
     def close_file(self, path):
+        """
+        Registers a callback for closing operations on a file.
+
+        This is so an application knowns when to close an open file.
+        The callback is passed a :py:class:`CloseFileRequest` instance
+        see :py:class:Drive for further details on how to use this method.
+        """
         if callable(path):
             self.__default_close_file_callback = path
             return path
@@ -2479,6 +2269,12 @@ class Drive(object):
         return res
 
     def write_file(self, path):
+        """
+        Registers a callback for write operations on a file.
+
+        The callback is passed a :py:class:`WriteFileRequest` instance
+        see :py:class:Drive for further details on how to use this method.
+        """
         if callable(path):
             self.__default_write_file_callback = path
             return path
@@ -2491,6 +2287,15 @@ class Drive(object):
         return res
 
     def flush_file_buffers(self, path):
+        """
+        Registers a callback for flushing file buffers.
+
+        When writing to a file if the OS wants to ensire the file has
+        actually been written to.
+
+        The callback is passed a :py:class:`FlushFileBuffersRequest` instance
+        see :py:class:Drive for further details on how to use this method.
+        """
         if callable(path):
             self.__default_flush_file_buffers_callback = path
             return path
@@ -2503,6 +2308,13 @@ class Drive(object):
         return res
 
     def file_information(self, path):
+        """
+        Registers a callback for the OS requesting information about a file or directory.
+
+        The callback is passed a :py:class:`FileInformationRequest` instance
+        see :py:class:Drive for further details on how to use this method.
+
+        """
         if callable(path):
             self.__default_file_information_callback = path
             return path
@@ -2515,6 +2327,7 @@ class Drive(object):
         return res
 
     def file_attributes(self, path):
+        """FileAttributesRequest"""
         if callable(path):
             self.__default_file_attributes_callback = path
             return path
@@ -2527,6 +2340,9 @@ class Drive(object):
         return res
 
     def file_time(self, path):
+        """        FileTimeRequest
+
+        """
         if callable(path):
             self.__default_file_time_callback = path
             return path
@@ -2539,6 +2355,7 @@ class Drive(object):
         return res
 
     def delete_file(self, path):
+        """DeleteFileRequest"""
         if callable(path):
             self.__default_delete_file_callback = path
             return path
@@ -2551,6 +2368,7 @@ class Drive(object):
         return res
 
     def delete_directory(self, path):
+        """DeleteDirectoryRequest"""
         if callable(path):
             self.__default_delete_directory_callback = path
             return path
@@ -2563,6 +2381,7 @@ class Drive(object):
         return res
 
     def move_file(self, path):
+        """MoveFileRequest"""
         if callable(path):
             self.__default_move_file_callback = path
             return path
@@ -2575,6 +2394,7 @@ class Drive(object):
         return res
 
     def end_of_file(self, path):
+        """EndOfFileRequest"""
         if callable(path):
             self.__default_end_of_file_callback = path
             return path
@@ -2587,6 +2407,7 @@ class Drive(object):
         return res
 
     def allocation_size(self, path):
+        """AllocationSizeRequest"""
         if callable(path):
             self.__default_allocation_size_callback = path
             return path
@@ -2599,6 +2420,7 @@ class Drive(object):
         return res
 
     def lock_file(self, path):
+        """LockFileRequest"""
         if callable(path):
             self.__default_lock_file_callback = path
             return path
@@ -2611,6 +2433,7 @@ class Drive(object):
         return res
 
     def unlock_file(self, path):
+        """UnlockFileRequest"""
         if callable(path):
             self.__default_unlock_file_callback = path
             return path
@@ -2623,6 +2446,7 @@ class Drive(object):
         return res
 
     def get_file_security(self, path):
+        """GetFileSecurityRequest"""
         if callable(path):
             self.__default_get_file_security_callback = path
             return path
@@ -2635,6 +2459,7 @@ class Drive(object):
         return res
 
     def set_file_security(self, path):
+        """SetFileSecurityRequest"""
         if callable(path):
             self.__default_set_file_security_callback = path
             return path
@@ -2684,18 +2509,22 @@ class Drive(object):
         return res
 
     def free_disk_space(self, func):
+        """GetDiskFreeSpaceRequest"""
         self.__free_disk_space_callback = func
         return func
 
     def volume_information(self, func):
+        """GetVolumeInformationRequest"""
         self.__volume_information_callback = func
         return func
 
     def mounted(self, func):
+        """MountedRequest"""
         self.__mounted_callback = func
         return func
 
     def unmounted(self, func):
+        """UnmountedRequest"""
         self.__unmounted_callback = func
         return func
 
@@ -2935,8 +2764,8 @@ class Drive(object):
     ):
         request = ReadFileRequest(
             FileName,
-            Offset.value,
-            Offset.value + BufferLength.value,
+            Offset,
+            Offset + BufferLength,
             DokanFileInfo
         )
 
@@ -2950,14 +2779,14 @@ class Drive(object):
             res = callback(request)
 
             if res == STATUS_SUCCESS:
-                data = request.data
+                data = request._data
                 data_len = len(data)
-                ReadLength.contents.value = data_len
-                data_buf = (ctypes.c_byte * data_len)(*list(data))
+                ReadLength.contents = _dokan_h.DWORD(data_len)
+                data_buf = (ctypes.c_byte * data_len)(*data)
                 ctypes.memmove(
                     ctypes.addressof(Buffer),
                     data_buf,
-                    data_len
+                    ctypes.sizeof(data_buf)
                 )
 
             return res
@@ -3002,9 +2831,7 @@ class Drive(object):
             res = callback(request)
 
             if res == STATUS_SUCCESS:
-                NumberOfBytesWritten.contents = (
-                    _dokan_h.DWORD(request.num_bytes_written)
-                )
+                NumberOfBytesWritten.contents.value = request._num_bytes_written
 
             return res
 
@@ -3050,7 +2877,48 @@ class Drive(object):
             )
 
         if callback is not None:
-            return callback(request)
+            res = callback(request)
+
+            file_info = _dokan_h.BY_HANDLE_FILE_INFORMATION()
+            dt_high = request._last_access_time >> 32
+            dt_low = request._last_access_time & 0xFFFFFFFF
+            lat = file_info.ftLastAccessTime
+
+            lat.dwHighDateTime = dt_high
+            lat.dwLowDateTime = dt_low
+
+            dt_high = request._last_write_time >> 32
+            dt_low = request._last_write_time & 0xFFFFFFFF
+            lwt = file_info.ftLastWriteTime
+
+            lwt.dwHighDateTime = dt_high
+            lwt.dwLowDateTime = dt_low
+
+            dt_high = request._creation_time >> 32
+            dt_low = request._creation_time & 0xFFFFFFFF
+            ct = file_info.ftCreationTime
+
+            ct.dwHighDateTime = dt_high
+            ct.dwLowDateTime = dt_low
+
+            file_info.dwFileAttributes = request.attributes
+
+            fs_high = request._file_size >> 32
+            fs_low = request._file_size & 0xFFFFFFFF
+
+            file_info.nFileSizeHigh = fs_high
+            file_info.nFileSizeLow = fs_low
+
+            file_info.nNumberOfLinks = request._number_of_links
+
+            fi_high = request._file_index >> 32
+            fi_low = request._file_index & 0xFFFFFFFF
+
+            file_info.nFileIndexHigh = fi_high
+            file_info.nFileIndexLow = fi_low
+            FileInformation.contents = file_info
+
+            return res
 
         return STATUS_NOT_IMPLEMENTED
 
@@ -3236,7 +3104,7 @@ class Drive(object):
         with self.__lock_file_lock:
             callback = self.__lock_file_callbacks.get(
                 FileName,
-                self.__lock_file_callbacks
+                self.__default_lock_file_callback
             )
 
         if callback is not None:
@@ -3276,7 +3144,8 @@ class Drive(object):
         TotalNumberOfFreeBytes,
         DokanFileInfo
     ):
-        request = GetDiskFreeSpaceRequest(
+
+        request = DiskFreeSpaceRequest(
             FreeBytesAvailable,
             TotalNumberOfBytes,
             TotalNumberOfFreeBytes,
@@ -3284,7 +3153,9 @@ class Drive(object):
         )
 
         if self.__free_disk_space_callback is not None:
-            return self.__free_disk_space_callback(request)
+            res = self.__free_disk_space_callback(request)
+
+            return res
 
         return STATUS_NOT_IMPLEMENTED
 
@@ -3299,12 +3170,12 @@ class Drive(object):
         FileSystemNameSize,
         DokanFileInfo
     ):
-        request = GetVolumeInformationRequest(
-            VolumeNameSize.value,
+        request = VolumeInformationRequest(
+            VolumeNameSize,
             VolumeSerialNumber,
             MaximumComponentLength,
             FileSystemFlags_,
-            FileSystemNameSize.value,
+            FileSystemNameSize,
             DokanFileInfo
         )
 
@@ -3316,19 +3187,28 @@ class Drive(object):
                 vn_len = len(volume_name) + 1
                 fsn_len = len(file_system_name) + 1
 
-                volume_name = (_dokan_h.WCHAR * vn_len)(volume_name)
+                volume_name = bytearray(volume_name, encoding='utf-8')
+                volume_name += bytearray([0x0] * (33 - vn_len))
+
+                volume_name = (_dokan_h.CHAR * 33)(*volume_name)
                 ctypes.memmove(
                     ctypes.addressof(VolumeNameBuffer),
                     volume_name,
-                    vn_len
+                    ctypes.sizeof(volume_name)
                 )
 
-                file_system_name = (_dokan_h.WCHAR * fsn_len)(file_system_name)
+                file_system_name = bytearray(file_system_name, encoding='utf-8')
+                file_system_name += bytearray([0x0] * (11 - fsn_len))
+
+                file_system_name = (_dokan_h.CHAR * 11)(*file_system_name)
                 ctypes.memmove(
                     ctypes.addressof(FileSystemNameBuffer),
                     file_system_name,
-                    fsn_len
+                    ctypes.sizeof(file_system_name)
                 )
+
+                print(VolumeNameBuffer)
+                print(FileSystemNameBuffer)
 
             return res
         return STATUS_NOT_IMPLEMENTED
@@ -3368,7 +3248,7 @@ class Drive(object):
         DokanFileInfo
     ):
 
-        num_descriptors = ctypes.sizeof(_dokan_h.SECURITY_DESCRIPTOR) // BufferLength.value
+        num_descriptors = BufferLength // ctypes.sizeof(_dokan_h.SECURITY_DESCRIPTOR)
 
         request = GetFileSecurityRequest(
             FileName,
@@ -3462,31 +3342,31 @@ class Drive(object):
             raise AlreadyMountedError
 
         operations = _dokan_h.DOKAN_OPERATIONS()
-        operations.ZwCreateFile = self.__ZwCreateFile
-        operations.Cleanup = self.__Cleanup
-        operations.CloseFile = self.__CloseFile
-        operations.ReadFile = self.__ReadFile
-        operations.WriteFile = self.__WriteFile
-        operations.FlushFileBuffers = self.__FlushFileBuffers
-        operations.GetFileInformation = self.__GetFileInformation
-        operations.FindFiles = self.__FindFiles
-        operations.FindFilesWithPattern = self.__FindFilesWithPattern
-        operations.SetFileAttributes = self.__SetFileAttributes
-        operations.SetFileTime = self.__SetFileTime
-        operations.DeleteFile = self.__DeleteFile
-        operations.DeleteDirectory = self.__DeleteDirectory
-        operations.MoveFile = self.__MoveFile
-        operations.SetEndOfFile = self.__SetEndOfFile
-        operations.SetAllocationSize = self.__SetAllocationSize
-        operations.LockFile = self.__LockFile
-        operations.UnlockFile = self.__UnlockFile
-        operations.GetDiskFreeSpace = self.__GetDiskFreeSpace
-        operations.GetVolumeInformation = self.__GetVolumeInformation
-        operations.Mounted = self.__Mounted
-        operations.Unmounted = self.__Unmounted
-        operations.GetFileSecurity = self.__GetFileSecurity
-        operations.SetFileSecurity = self.__SetFileSecurity
-        operations.FindStreams = self.__FindStreams
+        operations.ZwCreateFile = _dokan_h.ZW_CREATE_FILE(self.__ZwCreateFile)
+        operations.Cleanup = _dokan_h.CLEANUP(self.__Cleanup)
+        operations.CloseFile = _dokan_h.CLOSE_FILE(self.__CloseFile)
+        operations.ReadFile = _dokan_h.READ_FILE(self.__ReadFile)
+        operations.WriteFile = _dokan_h.WRITE_FILE(self.__WriteFile)
+        operations.FlushFileBuffers = _dokan_h.FLUSH_FILE_BUFFERS(self.__FlushFileBuffers)
+        operations.GetFileInformation = _dokan_h.GET_FILE_INFORMATION(self.__GetFileInformation)
+        operations.FindFiles = _dokan_h.FIND_FILES(self.__FindFiles)
+        operations.FindFilesWithPattern = _dokan_h.FIND_FILES_WITH_PATTERN(self.__FindFilesWithPattern)
+        operations.SetFileAttributes = _dokan_h.SET_FILE_ATTRIBUTES(self.__SetFileAttributes)
+        operations.SetFileTime = _dokan_h.SET_FILE_TIME(self.__SetFileTime)
+        operations.DeleteFile = _dokan_h.DELETE_FILE(self.__DeleteFile)
+        operations.DeleteDirectory = _dokan_h.DELETE_DIRECTORY(self.__DeleteDirectory)
+        operations.MoveFile = _dokan_h.MOVE_FILE(self.__MoveFile)
+        operations.SetEndOfFile = _dokan_h.SET_END_OF_FILE(self.__SetEndOfFile)
+        operations.SetAllocationSize = _dokan_h.SET_ALLOCATION_SIZE(self.__SetAllocationSize)
+        operations.LockFile = _dokan_h.LOCK_FILE(self.__LockFile)
+        operations.UnlockFile = _dokan_h.UNLOCK_FILE(self.__UnlockFile)
+        operations.GetDiskFreeSpace = _dokan_h.GET_DISK_FREE_SPACE(self.__GetDiskFreeSpace)
+        operations.GetVolumeInformation = _dokan_h.GET_VOLUME_INFORMATION(self.__GetVolumeInformation)
+        operations.Mounted = _dokan_h.MOUNTED(self.__Mounted)
+        operations.Unmounted = _dokan_h.UNMOUNTED(self.__Unmounted)
+        operations.GetFileSecurity = _dokan_h.GET_FILE_SECURITY(self.__GetFileSecurity)
+        operations.SetFileSecurity = _dokan_h.SET_FILE_SECURITY(self.__SetFileSecurity)
+        operations.FindStreams = _dokan_h.FIND_STREAMS(self.__FindStreams)
 
         res = [None]
         wait_event = threading.Event()

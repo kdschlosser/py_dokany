@@ -1,63 +1,22 @@
 import ctypes
 import sys
-from ctypes.wintypes import (
+from .windows_api import (
     USHORT,
     WCHAR,
     ULONG,
     BOOLEAN,
-    DWORD,
+    POINTER,
     LARGE_INTEGER,
     HANDLE,
-    LONG
+    ACCESS_MASK,
+    SECURITY_INFORMATION,
+    PSECURITY_DESCRIPTOR,
+    UCHAR,
+    ULONG64,
+    NTSTATUS,
+    MAX_PATH,
+    PVOID64
 )
-
-MAX_PATH = 255
-VOID = ctypes.c_void_p
-PVOID = ctypes.POINTER(VOID)
-POINTER = ctypes.POINTER
-ACCESS_MASK = DWORD
-SECURITY_DESCRIPTOR_CONTROL = USHORT
-UCHAR = ctypes.c_ubyte
-PSID = PVOID
-SECURITY_INFORMATION = DWORD
-ULONG64 = ctypes.c_uint64
-NTSTATUS = LONG
-PVOID64 = VOID
-
-
-class _SECURITY_DESCRIPTOR(ctypes.Structure):
-    pass
-
-
-SECURITY_DESCRIPTOR = _SECURITY_DESCRIPTOR
-PSECURITY_DESCRIPTOR = ctypes.POINTER(_SECURITY_DESCRIPTOR)
-
-
-class _ACL(ctypes.Structure):
-    pass
-
-
-ACL = _ACL
-PACL = ctypes.POINTER(_ACL)
-
-
-_SECURITY_DESCRIPTOR._fields_ = [
-    ('Revision', UCHAR),
-    ('Sbz1', UCHAR),
-    ('Control', SECURITY_DESCRIPTOR_CONTROL),
-    ('Owner', PSID),
-    ('Group', PSID),
-    ('Sacl', PACL),
-    ('Dacl', PACL),
-]
-
-_ACL._fields_ = [
-    ('AclRevision', UCHAR),
-    ('Sbz1', UCHAR),
-    ('AclSize', USHORT),
-    ('AceCount', USHORT),
-    ('Sbz2', USHORT),
-]
 
 
 class _DOKAN_UNICODE_STRING_INTERMEDIATE(ctypes.Structure):
