@@ -1,0 +1,1244 @@
+EPT_NT_CANT_CREATE -- 0xC002004C -- The endpoint mapper database entry could not be*&^NL^&*  created.
+EPT_NT_CANT_PERFORM_OP -- 0xC0020035 -- The operation cannot be performed.
+EPT_NT_INVALID_ENTRY -- 0xC0020034 -- The entry is invalid.
+EPT_NT_NOT_REGISTERED -- 0xC0020036 -- No more endpoints are available from the endpoint*&^NL^&*  mapper.
+RPC_NT_ADDRESS_ERROR -- 0xC0020045 -- An addressing error occurred in the RPC server.
+RPC_NT_ALREADY_LISTENING -- 0xC002000E -- The RPC server is already listening.
+RPC_NT_ALREADY_REGISTERED -- 0xC002000C -- The object UUID has already been registered.
+RPC_NT_BAD_STUB_DATA -- 0xC003000C -- The stub received bad data.
+RPC_NT_BINDING_HAS_NO_AUTH -- 0xC002002F -- The binding does not contain any authentication*&^NL^&*  information.
+RPC_NT_BINDING_INCOMPLETE -- 0xC0020051 -- The binding handle does not contain all the required*&^NL^&*  information.
+RPC_NT_BYTE_COUNT_TOO_SMALL -- 0xC003000B -- The byte count is too small.
+RPC_NT_CALL_CANCELLED -- 0xC0020050 -- The RPC was canceled.
+RPC_NT_CALL_FAILED -- 0xC002001B -- The RPC failed.
+RPC_NT_CALL_FAILED_DNE -- 0xC002001C -- The RPC failed and did not execute.
+RPC_NT_CALL_IN_PROGRESS -- 0xC0020049 -- An RPC is already in progress for this thread.
+RPC_NT_CANNOT_SUPPORT -- 0xC0020041 -- The requested operation is not supported.
+RPC_NT_CANT_CREATE_ENDPOINT -- 0xC0020015 -- The endpoint cannot be created.
+RPC_NT_COMM_FAILURE -- 0xC0020052 -- A communications failure occurred during an RPC.
+RPC_NT_DUPLICATE_ENDPOINT -- 0xC0020029 -- The endpoint is a duplicate.
+RPC_NT_ENTRY_ALREADY_EXISTS -- 0xC002003D -- The entry already exists.
+RPC_NT_ENTRY_NOT_FOUND -- 0xC002003E -- The entry was not found.
+RPC_NT_ENUM_VALUE_OUT_OF_RANGE -- 0xC003000A -- The enumeration value is out of range.
+RPC_NT_FP_DIV_ZERO -- 0xC0020046 -- A floating point operation at the RPC server caused a*&^NL^&*  divide by zero.
+RPC_NT_FP_OVERFLOW -- 0xC0020048 -- A floating point overflow occurred at the RPC server.
+RPC_NT_FP_UNDERFLOW -- 0xC0020047 -- A floating point underflow occurred at the RPC server.
+RPC_NT_GROUP_MEMBER_NOT_FOUND -- 0xC002004B -- The group member was not found.
+RPC_NT_INCOMPLETE_NAME -- 0xC0020038 -- The entry name is incomplete.
+RPC_NT_INTERFACE_NOT_FOUND -- 0xC002003C -- The interface was not found.
+RPC_NT_INTERNAL_ERROR -- 0xC0020043 -- An internal error occurred in the RPC.
+RPC_NT_INVALID_ASYNC_CALL -- 0xC0020063 -- Invalid asynchronous RPC call handle for this*&^NL^&*  operation.
+RPC_NT_INVALID_ASYNC_HANDLE -- 0xC0020062 -- Invalid asynchronous RPC handle.
+RPC_NT_INVALID_AUTH_IDENTITY -- 0xC0020032 -- The security context is invalid.
+RPC_NT_INVALID_BOUND -- 0xC0020023 -- The array bounds are invalid.
+RPC_NT_INVALID_ENDPOINT_FORMAT -- 0xC0020007 -- The endpoint format is invalid.
+RPC_NT_INVALID_ES_ACTION -- 0xC0030059 -- Invalid operation on the encoding/decoding handle.
+RPC_NT_INVALID_NAF_ID -- 0xC0020040 -- The network address family is invalid.
+RPC_NT_INVALID_NAME_SYNTAX -- 0xC0020025 -- The name syntax is invalid.
+RPC_NT_INVALID_NETWORK_OPTIONS -- 0xC0020019 -- The network options are invalid.
+RPC_NT_INVALID_NET_ADDR -- 0xC0020008 -- The network address is invalid.
+RPC_NT_INVALID_OBJECT -- 0xC002004D -- The object UUID is the nil UUID.
+RPC_NT_INVALID_PIPE_OBJECT -- 0xC003005C -- The RPC pipe object is invalid or corrupt.
+RPC_NT_INVALID_PIPE_OPERATION -- 0xC003005D -- An invalid operation was attempted on an RPC pipe*&^NL^&*  object.
+RPC_NT_INVALID_RPC_PROTSEQ -- 0xC0020005 -- The RPC protocol sequence is invalid.
+RPC_NT_INVALID_STRING_BINDING -- 0xC0020001 -- The string binding is invalid.
+RPC_NT_INVALID_STRING_UUID -- 0xC0020006 -- The string UUID is invalid.
+RPC_NT_INVALID_TAG -- 0xC0020022 -- The tag is invalid.
+RPC_NT_INVALID_TIMEOUT -- 0xC002000A -- The time-out value is invalid.
+RPC_NT_INVALID_VERS_OPTION -- 0xC0020039 -- The version option is invalid.
+RPC_NT_MAX_CALLS_TOO_SMALL -- 0xC002002B -- The maximum number of calls is too small.
+RPC_NT_NAME_SERVICE_UNAVAILABLE -- 0xC002003F -- The name service is unavailable.
+RPC_NT_NOTHING_TO_EXPORT -- 0xC0020037 -- No interfaces have been exported.
+RPC_NT_NOT_ALL_OBJS_UNEXPORTED -- 0xC002003B -- There is nothing to unexport.
+RPC_NT_NOT_CANCELLED -- 0xC0020058 -- The thread was not canceled.
+RPC_NT_NOT_LISTENING -- 0xC0020010 -- The RPC server is not listening.
+RPC_NT_NOT_RPC_ERROR -- 0xC0020055 -- The error specified is not a valid Windows RPC error*&^NL^&*  code.
+RPC_NT_NO_BINDINGS -- 0xC0020013 -- There are no bindings.
+RPC_NT_NO_CALL_ACTIVE -- 0xC002001A -- No RPCs are active on this thread.
+RPC_NT_NO_CONTEXT_AVAILABLE -- 0xC0020042 -- No security context is available to allow*&^NL^&*  impersonation.
+RPC_NT_NO_ENDPOINT_FOUND -- 0xC0020009 -- No endpoint was found.
+RPC_NT_NO_ENTRY_NAME -- 0xC0020024 -- The binding does not contain an entry name.
+RPC_NT_NO_INTERFACES -- 0xC002004F -- No interfaces have been registered.
+RPC_NT_NO_MORE_BINDINGS -- 0xC002004A -- There are no more bindings.
+RPC_NT_NO_MORE_ENTRIES -- 0xC0030001 -- The list of RPC servers available for auto-handle*&^NL^&*  binding has been exhausted.
+RPC_NT_NO_MORE_MEMBERS -- 0xC002003A -- There are no more members.
+RPC_NT_NO_PRINC_NAME -- 0xC0020054 -- No principal name was registered.
+RPC_NT_NO_PROTSEQS -- 0xC0020014 -- There are no protocol sequences.
+RPC_NT_NO_PROTSEQS_REGISTERED -- 0xC002000F -- No protocol sequences have been registered.
+RPC_NT_NULL_REF_POINTER -- 0xC0030009 -- A null reference pointer was passed to the stub.
+RPC_NT_OBJECT_NOT_FOUND -- 0xC002000B -- The object UUID was not found.
+RPC_NT_OUT_OF_RESOURCES -- 0xC0020016 -- Insufficient resources are available to complete this*&^NL^&*  operation.
+RPC_NT_PIPE_CLOSED -- 0xC003005F -- The RPC pipe object has already been closed.
+RPC_NT_PIPE_DISCIPLINE_ERROR -- 0xC0030060 -- The RPC call completed before all pipes were*&^NL^&*  processed.
+RPC_NT_PIPE_EMPTY -- 0xC0030061 -- No more data is available from the RPC pipe.
+RPC_NT_PROCNUM_OUT_OF_RANGE -- 0xC002002E -- The procedure number is out of range.
+RPC_NT_PROTOCOL_ERROR -- 0xC002001D -- An RPC protocol error occurred.
+RPC_NT_PROTSEQ_NOT_FOUND -- 0xC002002D -- The RPC protocol sequence was not found.
+RPC_NT_PROTSEQ_NOT_SUPPORTED -- 0xC0020004 -- The RPC protocol sequence is not supported.
+RPC_NT_SEC_PKG_ERROR -- 0xC0020057 -- A security package-specific error occurred.
+RPC_NT_SEND_INCOMPLETE -- 0x400200AF -- Some data remains to be sent in the request buffer.
+RPC_NT_SERVER_TOO_BUSY -- 0xC0020018 -- The RPC server is too busy to complete this operation.
+RPC_NT_SERVER_UNAVAILABLE -- 0xC0020017 -- The RPC server is unavailable.
+RPC_NT_SS_CANNOT_GET_CALL_HANDLE -- 0xC0030008 -- The stub is unable to get the call handle.
+RPC_NT_SS_CHAR_TRANS_OPEN_FAIL -- 0xC0030002 -- The file designated by DCERPCCHARTRANS cannot be*&^NL^&*  opened.
+RPC_NT_SS_CHAR_TRANS_SHORT_FILE -- 0xC0030003 -- The file containing the character translation table*&^NL^&*  has fewer than 512 bytes.
+RPC_NT_SS_CONTEXT_DAMAGED -- 0xC0030006 -- The context handle changed during a call.
+RPC_NT_SS_HANDLES_MISMATCH -- 0xC0030007 -- The binding handles passed to an RPC do not match.
+RPC_NT_STRING_TOO_LONG -- 0xC002002C -- The string is too long.
+RPC_NT_TYPE_ALREADY_REGISTERED -- 0xC002000D -- The type UUID has already been registered.
+RPC_NT_UNKNOWN_AUTHN_LEVEL -- 0xC0020031 -- The authentication level is unknown.
+RPC_NT_UNKNOWN_AUTHN_SERVICE -- 0xC0020030 -- The authentication service is unknown.
+RPC_NT_UNKNOWN_AUTHN_TYPE -- 0xC002002A -- The authentication type is unknown.
+RPC_NT_UNKNOWN_AUTHZ_SERVICE -- 0xC0020033 -- The authorization service is unknown.
+RPC_NT_UNKNOWN_IF -- 0xC0020012 -- The interface is unknown.
+RPC_NT_UNKNOWN_MGR_TYPE -- 0xC0020011 -- The manager type is unknown.
+RPC_NT_UNSUPPORTED_AUTHN_LEVEL -- 0xC0020053 -- The requested authentication level is not supported.
+RPC_NT_UNSUPPORTED_NAME_SYNTAX -- 0xC0020026 -- The name syntax is not supported.
+RPC_NT_UNSUPPORTED_TRANS_SYN -- 0xC002001F -- The RPC server does not support the transfer syntax.
+RPC_NT_UNSUPPORTED_TYPE -- 0xC0020021 -- The type UUID is not supported.
+RPC_NT_UUID_LOCAL_ONLY -- 0x40020056 -- A <span><a href="6b46e050-0761-44b1-858b-9b37a74ca32e#gt_c4813fc3-b2e5-4aa3-bde7-421d950d68d3" data-linktype="relative-path">UUID</a></span> that is valid*&^NL^&*  only on this computer has been allocated.
+RPC_NT_UUID_NO_ADDRESS -- 0xC0020028 -- No network address is available to construct a UUID.
+RPC_NT_WRONG_ES_VERSION -- 0xC003005A -- Incompatible version of the serializing package.
+RPC_NT_WRONG_KIND_OF_BINDING -- 0xC0020002 -- The binding handle is not the correct type.
+RPC_NT_WRONG_PIPE_VERSION -- 0xC003005E -- Unsupported RPC pipe version.
+RPC_NT_WRONG_STUB_VERSION -- 0xC003005B -- Incompatible version of the RPC stub.
+RPC_NT_ZERO_DIVIDE -- 0xC0020044 -- The RPC server attempted to divide an integer by zero.
+SEC_E_CONTEXT_EXPIRED -- 0x80090317 -- The context has expired and can no longer be used.
+SEC_E_DECRYPT_FAILURE -- 0x80090330 -- The specified data could not be decrypted.&#xA;//
+SEC_E_ENCRYPT_FAILURE -- 0x80090329 -- The specified data could not be encrypted.
+SEC_E_WRONG_PRINCIPAL -- 0x80090322 -- The target principal name is incorrect.
+STATUS_ACCESS_DENIED -- 0xC0000022 -- {Access Denied} A process has requested access to an*&^NL^&*  object but has not been granted those access rights.
+STATUS_ACCESS_DISABLED_BY_POLICY_OTHER -- 0xC0000364 -- Access to %1 has been restricted by your Administrator*&^NL^&*  by policy rule %2.
+STATUS_ACCESS_VIOLATION -- 0xC0000005 -- The instruction at 0x%08lx referenced memory at*&^NL^&*  0x%08lx. The memory could not be %s.
+STATUS_ACCOUNT_DISABLED -- 0xC0000072 -- The referenced account is currently disabled and*&^NL^&*  cannot be logged on to.
+STATUS_ACCOUNT_EXPIRED -- 0xC0000193 -- The user account has expired.
+STATUS_ACCOUNT_LOCKED_OUT -- 0xC0000234 -- The user account has been automatically locked because*&^NL^&*  too many invalid logon attempts or password change attempts have been*&^NL^&*  requested.
+STATUS_ACCOUNT_RESTRICTION -- 0xC000006E -- Indicates a referenced user name and authentication*&^NL^&*  information are valid, but some user account restriction has prevented*&^NL^&*  successful authentication (such as time-of-day restrictions).
+STATUS_ADAPTER_HARDWARE_ERROR -- 0xC00000C2 -- An I/O adapter hardware error has occurred.
+STATUS_ADDRESS_ALREADY_ASSOCIATED -- 0xC0000238 -- The transport endpoint already has an address*&^NL^&*  associated with it.
+STATUS_ADDRESS_NOT_ASSOCIATED -- 0xC0000239 -- An address has not yet been associated with the*&^NL^&*  transport endpoint.
+STATUS_ALIAS_EXISTS -- 0xC0000154 -- The specified local group already exists.
+STATUS_ALLOTTED_SPACE_EXCEEDED -- 0xC0000099 -- When a block of memory is allotted for future updates,*&^NL^&*  such as the memory allocated to hold discretionary access control and primary*&^NL^&*  group information, successive updates might exceed the amount of memory*&^NL^&*  originally allotted. Because a quota might already have been charged to*&^NL^&*  several processes that have handles to the object, it is not reasonable to*&^NL^&*  alter the size of the allocated memory. Instead, a request that requires more*&^NL^&*  memory than has been allotted must fail and the*&^NL^&*  STATUS_ALLOTTED_SPACE_EXCEEDED error returned.
+STATUS_ALREADY_DISCONNECTED -- 0x80000025 -- The specified connection has already been*&^NL^&*  disconnected.
+STATUS_AUDITING_DISABLED -- 0xC0000356 -- The specified event is currently not being audited.
+STATUS_BAD_BINDINGS -- 0xC000035B -- The client's supplied SSPI channel bindings were*&^NL^&*  incorrect.
+STATUS_BAD_DESCRIPTOR_FORMAT -- 0xC00000E7 -- Indicates a security descriptor is not in the*&^NL^&*  necessary format (absolute or self-relative).
+STATUS_BAD_DEVICE_TYPE -- 0xC00000CB -- {Incorrect Network Resource Type} The specified device*&^NL^&*  type (LPT, for example) conflicts with the actual device type on the remote*&^NL^&*  resource.
+STATUS_BAD_IMPERSONATION_LEVEL -- 0xC00000A5 -- A specified impersonation level is invalid. Also used*&^NL^&*  to indicate that a required impersonation level was not provided.
+STATUS_BAD_INHERITANCE_ACL -- 0xC000007D -- Indicates that an attempt to build either an inherited*&^NL^&*  ACL or ACE was not successful. This can be caused by a number of things. One*&^NL^&*  of the more probable causes is the replacement of a CreatorId with a SID that*&^NL^&*  did not fit into the ACE or ACL.
+STATUS_BAD_LOGON_SESSION_STATE -- 0xC0000104 -- The logon session is not in a state that is consistent*&^NL^&*  with the requested operation.
+STATUS_BAD_NETWORK_NAME -- 0xC00000CC -- {Network Name Not Found} The specified share name*&^NL^&*  cannot be found on the remote server.
+STATUS_BAD_NETWORK_PATH -- 0xC00000BE -- The network path cannot be located.
+STATUS_BAD_REMOTE_ADAPTER -- 0xC00000C5 -- The remote adapter is not compatible.
+STATUS_BAD_TOKEN_TYPE -- 0xC00000A8 -- The type of a token object is inappropriate for its*&^NL^&*  attempted use.
+STATUS_BAD_VALIDATION_CLASS -- 0xC00000A7 -- The validation information class requested was*&^NL^&*  invalid.
+STATUS_BEGINNING_OF_MEDIA -- 0x8000001F -- The beginning of a tape or partition has been*&^NL^&*  detected.
+STATUS_BUFFER_OVERFLOW -- 0x80000005 -- {Buffer Overflow} The data was too large to fit into*&^NL^&*  the specified buffer.
+STATUS_BUFFER_TOO_SMALL -- 0xC0000023 -- {Buffer Too Small} The buffer is too small to contain*&^NL^&*  the entry. No information has been written to the buffer.
+STATUS_BUS_RESET -- 0x8000001D -- {I/O Bus Reset} An I/O bus reset was detected.
+STATUS_CANCELLED -- 0xC0000120 -- The I/O request was canceled.
+STATUS_CANNOT_IMPERSONATE -- 0xC000010D -- Indicates that an attempt has been made to impersonate*&^NL^&*  via a named pipe that has not yet been read from.
+STATUS_CANNOT_MAKE -- 0xC00002EA -- The directory or file cannot be created.
+STATUS_CANT_ACCESS_DOMAIN_INFO -- 0xC00000DA -- Configuration information could not be read from the*&^NL^&*  domain controller, either because the machine is unavailable or access has*&^NL^&*  been denied.
+STATUS_CANT_DISABLE_MANDATORY -- 0xC000005D -- A mandatory group cannot be disabled.
+STATUS_CANT_OPEN_ANONYMOUS -- 0xC00000A6 -- An attempt was made to open an anonymous-level token.*&^NL^&*  Anonymous tokens cannot be opened.
+STATUS_CHILD_MUST_BE_VOLATILE -- 0xC0000181 -- An attempt was made to create a stable subkey under a*&^NL^&*  volatile parent key.
+STATUS_CLEANER_CARTRIDGE_INSTALLED -- 0x80000027 -- A cleaner cartridge is present in the tape library.
+STATUS_CLUSTER_INVALID_NETWORK -- 0xC0130010 -- The cluster network is not valid.
+STATUS_CLUSTER_INVALID_NETWORK_PROVIDER -- 0xC013000B -- The cluster network provider is not valid.
+STATUS_CLUSTER_INVALID_NODE -- 0xC0130001 -- The cluster node is not valid.
+STATUS_CLUSTER_INVALID_REQUEST -- 0xC013000A -- The cluster request is not valid for this object.
+STATUS_CLUSTER_JOIN_IN_PROGRESS -- 0xC0130003 -- A node is in the process of joining the cluster.
+STATUS_CLUSTER_JOIN_NOT_IN_PROGRESS -- 0xC013000F -- A cluster join operation is not in progress.
+STATUS_CLUSTER_LOCAL_NODE_NOT_FOUND -- 0xC0130005 -- The cluster local node information was not found.
+STATUS_CLUSTER_NETINTERFACE_EXISTS -- 0xC0130008 -- The cluster network interface already exists.
+STATUS_CLUSTER_NETINTERFACE_NOT_FOUND -- 0xC0130009 -- The cluster network interface was not found.
+STATUS_CLUSTER_NETWORK_ALREADY_OFFLINE -- 0x80130004 -- The cluster network is already offline.
+STATUS_CLUSTER_NETWORK_ALREADY_ONLINE -- 0x80130003 -- The cluster network is already online.
+STATUS_CLUSTER_NETWORK_EXISTS -- 0xC0130006 -- The cluster network already exists.
+STATUS_CLUSTER_NETWORK_NOT_FOUND -- 0xC0130007 -- The cluster network was not found.
+STATUS_CLUSTER_NETWORK_NOT_INTERNAL -- 0xC0130016 -- The cluster network is not configured for internal*&^NL^&*  cluster communication.
+STATUS_CLUSTER_NODE_ALREADY_DOWN -- 0x80130002 -- The cluster node is already down.
+STATUS_CLUSTER_NODE_ALREADY_MEMBER -- 0x80130005 -- The cluster node is already a member of the cluster.
+STATUS_CLUSTER_NODE_ALREADY_UP -- 0x80130001 -- The cluster node is already up.
+STATUS_CLUSTER_NODE_DOWN -- 0xC013000C -- The cluster node is down.
+STATUS_CLUSTER_NODE_EXISTS -- 0xC0130002 -- The cluster node already exists.
+STATUS_CLUSTER_NODE_NOT_FOUND -- 0xC0130004 -- The cluster node was not found.
+STATUS_CLUSTER_NODE_NOT_MEMBER -- 0xC013000E -- The cluster node is not a member of the cluster.
+STATUS_CLUSTER_NODE_NOT_PAUSED -- 0xC0130014 -- The cluster node is not paused.
+STATUS_CLUSTER_NODE_PAUSED -- 0xC0130013 -- The cluster node is paused.
+STATUS_CLUSTER_NODE_UNREACHABLE -- 0xC013000D -- The cluster node is not reachable.
+STATUS_CLUSTER_NODE_UP -- 0xC0130012 -- The cluster node is up.
+STATUS_CLUSTER_NO_SECURITY_CONTEXT -- 0xC0130015 -- No cluster security context is available.
+STATUS_COMMITMENT_LIMIT -- 0xC000012D -- {Out of Virtual Memory} Your system is low on virtual*&^NL^&*  memory. To ensure that Windows runs correctly, increase the size of your*&^NL^&*  virtual memory paging file. For more information, see Help.
+STATUS_CONNECTION_ABORTED -- 0xC0000241 -- The transport connection was aborted by the local*&^NL^&*  system.
+STATUS_CONNECTION_ACTIVE -- 0xC000023B -- An invalid operation was attempted on an active*&^NL^&*  transport connection.
+STATUS_CONNECTION_COUNT_LIMIT -- 0xC0000246 -- A connection to the server could not be made because*&^NL^&*  the limit on the number of concurrent connections for this account has been*&^NL^&*  reached.
+STATUS_CONNECTION_INVALID -- 0xC000023A -- An operation was attempted on a nonexistent transport*&^NL^&*  connection.
+STATUS_CONNECTION_IN_USE -- 0xC0000108 -- The user attempted to force close the files on a*&^NL^&*  redirected drive, but there were opened directories on the drive, and the*&^NL^&*  user did not specify a sufficient level of force.
+STATUS_CONNECTION_REFUSED -- 0xC0000236 -- The transport-connection attempt was refused by the*&^NL^&*  remote system.
+STATUS_COPY_PROTECTION_FAILURE -- 0xC0000305 -- Copy protection failure.
+STATUS_CRC_ERROR -- 0xC000003F -- {Bad CRC} A cyclic redundancy check (CRC) checksum*&^NL^&*  error occurred.
+STATUS_CRYPTO_SYSTEM_INVALID -- 0xC00002F3 -- The crypto system or checksum function is invalid*&^NL^&*  because a required function is unavailable.
+STATUS_CSS_AUTHENTICATION_FAILURE -- 0xC0000306 -- Copy protection error—DVD CSS Authentication failed.
+STATUS_CSS_KEY_NOT_ESTABLISHED -- 0xC0000308 -- Copy protection error—DVD session key not established.
+STATUS_CSS_KEY_NOT_PRESENT -- 0xC0000307 -- Copy protection error—The specified sector does not*&^NL^&*  contain a valid key.
+STATUS_CSS_REGION_MISMATCH -- 0xC000030A -- Copy protection error—The region of the specified DVD*&^NL^&*  does not correspond to the region setting of the drive.
+STATUS_CSS_RESETS_EXHAUSTED -- 0xC000030B -- Copy protection error—The region setting of the drive*&^NL^&*  might be permanent.
+STATUS_CSS_SCRAMBLED_SECTOR -- 0xC0000309 -- Copy protection error—The read failed because the*&^NL^&*  sector is encrypted.
+STATUS_CTX_BAD_VIDEO_MODE -- 0xC00A0018 -- An attempt has been made to connect to a session whose*&^NL^&*  video mode is not supported by the current client.
+STATUS_CTX_CLIENT_LICENSE_IN_USE -- 0xC00A0034 -- Your request to connect to this terminal server has*&^NL^&*  been rejected. Your terminal server client license number is currently being*&^NL^&*  used by another user. Contact your system administrator to obtain a new copy*&^NL^&*  of the terminal server client with a valid, unique license number. Click OK*&^NL^&*  to continue.
+STATUS_CTX_CLIENT_LICENSE_NOT_SET -- 0xC00A0033 -- Your request to connect to this <span><a href="6b46e050-0761-44b1-858b-9b37a74ca32e#gt_b416f72e-cf04-4d80-bf93-f5753f3b0998" data-linktype="relative-path">terminal*&^NL^&*  server</a></span> has been rejected. Your terminal server client license*&^NL^&*  number has not been entered for this copy of the terminal client. Contact*&^NL^&*  your system administrator for help in entering a valid, unique license number*&^NL^&*  for this terminal server client. Click OK to continue.
+STATUS_CTX_CLIENT_QUERY_TIMEOUT -- 0xC00A0026 -- The client failed to respond to the server connect*&^NL^&*  message.
+STATUS_CTX_CLOSE_PENDING -- 0xC00A0006 -- A close operation is pending on the terminal*&^NL^&*  connection.
+STATUS_CTX_CONSOLE_CONNECT -- 0xC00A0028 -- Reconnecting a disconnected session to the console is*&^NL^&*  not supported.
+STATUS_CTX_CONSOLE_DISCONNECT -- 0xC00A0027 -- Disconnecting the console session is not supported.
+STATUS_CTX_GRAPHICS_INVALID -- 0xC00A0022 -- The application attempted to enable DOS graphics mode.*&^NL^&*  DOS graphics mode is not supported.
+STATUS_CTX_INVALID_MODEMNAME -- 0xC00A0009 -- The modem (%1) was not found in the MODEM.INF file.
+STATUS_CTX_INVALID_PD -- 0xC00A0002 -- The protocol driver %1 is invalid.
+STATUS_CTX_INVALID_WD -- 0xC00A002E -- The terminal connection driver %1 is invalid.
+STATUS_CTX_LICENSE_CLIENT_INVALID -- 0xC00A0012 -- The client you are using is not licensed to use this*&^NL^&*  system. Your logon request is denied.
+STATUS_CTX_LICENSE_EXPIRED -- 0xC00A0014 -- The system license has expired. Your logon request is*&^NL^&*  denied.
+STATUS_CTX_LICENSE_NOT_AVAILABLE -- 0xC00A0013 -- The system has reached its licensed logon limit. Try*&^NL^&*  again later.
+STATUS_CTX_MODEM_INF_NOT_FOUND -- 0xC00A0008 -- The MODEM.INF file was not found.
+STATUS_CTX_MODEM_RESPONSE_BUSY -- 0xC00A000E -- A busy signal was detected at a remote site on*&^NL^&*  callback.
+STATUS_CTX_MODEM_RESPONSE_NO_CARRIER -- 0xC00A000C -- Carrier detection has failed or the carrier has been*&^NL^&*  dropped due to disconnection.
+STATUS_CTX_MODEM_RESPONSE_NO_DIALTONE -- 0xC00A000D -- A dial tone was not detected within the required time.*&^NL^&*  Verify that the phone cable is properly attached and functional.
+STATUS_CTX_MODEM_RESPONSE_TIMEOUT -- 0xC00A000B -- The modem did not respond to the command sent to it.*&^NL^&*  Verify that the modem cable is properly attached and the modem is turned on.
+STATUS_CTX_MODEM_RESPONSE_VOICE -- 0xC00A000F -- A voice was detected at a remote site on callback.
+STATUS_CTX_NOT_CONSOLE -- 0xC00A0024 -- The requested operation can be performed only on the*&^NL^&*  system console. This is most often the result of a driver or system DLL*&^NL^&*  requiring direct console access.
+STATUS_CTX_NO_OUTBUF -- 0xC00A0007 -- No free output buffers are available.
+STATUS_CTX_PD_NOT_FOUND -- 0xC00A0003 -- The protocol driver %1 was not found in the system*&^NL^&*  path.
+STATUS_CTX_RESPONSE_ERROR -- 0xC00A000A -- The modem did not accept the command sent to it.*&^NL^&*  Verify that the configured modem name matches the attached modem.
+STATUS_CTX_SHADOW_DENIED -- 0xC00A002A -- The request to control another session remotely was denied.
+STATUS_CTX_SHADOW_DISABLED -- 0xC00A0031 -- The requested session is not configured to allow*&^NL^&*  remote control.
+STATUS_CTX_SHADOW_ENDED_BY_MODE_CHANGE -- 0xC00A0035 -- The remote control of the console was terminated*&^NL^&*  because the display mode was changed. Changing the display mode in a remote*&^NL^&*  control session is not supported.
+STATUS_CTX_SHADOW_INVALID -- 0xC00A0030 -- The requested session cannot be controlled remotely.*&^NL^&*  You cannot control your own session, a session that is trying to control your*&^NL^&*  session, a session that has no user logged on, or other sessions from the*&^NL^&*  console.
+STATUS_CTX_SHADOW_NOT_RUNNING -- 0xC00A0036 -- Remote control could not be terminated because the*&^NL^&*  specified session is not currently being remotely controlled.
+STATUS_CTX_TD_ERROR -- 0xC00A0010 -- Transport driver error.
+STATUS_CTX_WD_NOT_FOUND -- 0xC00A002F -- The terminal connection driver %1 was not found in the*&^NL^&*  system path.
+STATUS_CTX_WINSTATION_ACCESS_DENIED -- 0xC00A002B -- A process has requested access to a session, but has*&^NL^&*  not been granted those access rights.
+STATUS_CTX_WINSTATION_BUSY -- 0xC00A0017 -- The requested operation cannot be completed because*&^NL^&*  the terminal connection is currently processing a connect, disconnect, reset,*&^NL^&*  or delete operation.
+STATUS_CTX_WINSTATION_NAME_COLLISION -- 0xC00A0016 -- The specified session name is already in use.
+STATUS_CTX_WINSTATION_NAME_INVALID -- 0xC00A0001 -- Session name %1 is invalid.
+STATUS_CTX_WINSTATION_NOT_FOUND -- 0xC00A0015 -- The specified session cannot be found.
+STATUS_CURRENT_DOMAIN_NOT_ALLOWED -- 0xC00002E9 -- This operation cannot be performed on the current*&^NL^&*  domain.
+STATUS_DESTINATION_ELEMENT_FULL -- 0xC0000284 -- The specified medium changer destination element*&^NL^&*  already contains media.
+STATUS_DEVICE_BUSY -- 0x80000011 -- {Device Busy} The device is currently busy.
+STATUS_DEVICE_DOES_NOT_EXIST -- 0xC00000C0 -- This device does not exist.
+STATUS_DEVICE_DOOR_OPEN -- 0x80000289 -- The device has indicated that its door is open.*&^NL^&*  Further operations require it closed and secured.
+STATUS_DEVICE_NOT_CONNECTED -- 0xC000009D -- There is bad cabling, non-termination, or the*&^NL^&*  controller is not able to obtain access to the hard disk.
+STATUS_DEVICE_NOT_PARTITIONED -- 0xC0000174 -- The tape partition information could not be found when*&^NL^&*  loading a tape.
+STATUS_DEVICE_NOT_READY -- 0xC00000A3 -- {Drive Not Ready} The drive is not ready for use; its*&^NL^&*  door might be open. Check drive %hs and make sure that a disk is inserted and*&^NL^&*  that the drive door is closed.
+STATUS_DEVICE_PAPER_EMPTY -- 0x8000000E -- {Out of Paper} The printer is out of paper.
+STATUS_DEVICE_REMOVED -- 0xC00002B6 -- The device has been removed.
+STATUS_DEVICE_REQUIRES_CLEANING -- 0x80000288 -- The device has indicated that cleaning is necessary.
+STATUS_DFS_UNAVAILABLE -- 0xC000026D -- DFS is unavailable on the contacted server.
+STATUS_DIRECTORY_NOT_EMPTY -- 0xC0000101 -- Indicates that the directory trying to be deleted is*&^NL^&*  not empty.
+STATUS_DIRECTORY_SERVICE_REQUIRED -- 0xC00002B1 -- The requested operation requires a directory service,*&^NL^&*  and none was available.
+STATUS_DISK_CORRUPT_ERROR -- 0xC0000032 -- {Corrupt Disk} The file system structure on the disk*&^NL^&*  is corrupt and unusable. Run the Chkdsk utility on the volume %hs.
+STATUS_DISK_FULL -- 0xC000007F -- An operation failed because the disk was full.
+STATUS_DISK_OPERATION_FAILED -- 0xC000016A -- {Hard Disk Error} While accessing the hard disk, a*&^NL^&*  disk operation failed even after retries.
+STATUS_DISK_RECALIBRATE_FAILED -- 0xC0000169 -- {Hard Disk Error} While accessing the hard disk, a*&^NL^&*  recalibrate operation failed, even after retries.
+STATUS_DISK_RESET_FAILED -- 0xC000016B -- {Hard Disk Error} While accessing the hard disk, a*&^NL^&*  disk controller reset was needed, but even that failed.
+STATUS_DLL_INIT_FAILED -- 0xC0000142 -- {DLL Initialization Failed} Initialization of the*&^NL^&*  dynamic link library %hs failed. The process is terminating abnormally.
+STATUS_DLL_NOT_FOUND -- 0xC0000135 -- {Unable To Locate Component} This application has*&^NL^&*  failed to start because %hs was not found. Reinstalling the application might*&^NL^&*  fix this problem.
+STATUS_DOMAIN_CONTROLLER_NOT_FOUND -- 0xC0000233 -- A domain controller for this domain was not found.
+STATUS_DOMAIN_EXISTS -- 0xC00000E0 -- The specified domain already exists.
+STATUS_DOMAIN_LIMIT_EXCEEDED -- 0xC00000E1 -- An attempt was made to exceed the limit on the number*&^NL^&*  of domains per server for this release.
+STATUS_DOMAIN_TRUST_INCONSISTENT -- 0xC000019B -- The name or SID of the specified domain is*&^NL^&*  inconsistent with the trust information for that domain.
+STATUS_DOWNGRADE_DETECTED -- 0xC0000388 -- The system detected a possible attempt to compromise*&^NL^&*  security. Ensure that you can contact the server that authenticated you.
+STATUS_DRIVER_BLOCKED -- 0xC000036C -- Driver %2 has been blocked from loading.
+STATUS_DRIVER_UNABLE_TO_LOAD -- 0xC000026C -- {Unable to Load Device Driver} %hs device driver could*&^NL^&*  not be loaded. Error Status was 0x%x.
+STATUS_DS_ADMIN_LIMIT_EXCEEDED -- 0xC00002C1 -- A directory service resource limit has been exceeded.
+STATUS_DS_AG_CANT_HAVE_UNIVERSAL_MEMBER -- 0xC0000358 -- An account group cannot have a universal group as a*&^NL^&*  member.
+STATUS_DS_ATTRIBUTE_OR_VALUE_EXISTS -- 0xC00002A4 -- The specified directory service attribute or value*&^NL^&*  already exists.
+STATUS_DS_ATTRIBUTE_TYPE_UNDEFINED -- 0xC00002A3 -- The attribute type specified to the directory service*&^NL^&*  is not defined.
+STATUS_DS_BUSY -- 0xC00002A5 -- The directory service is busy.
+STATUS_DS_CANT_MOD_OBJ_CLASS -- 0xC00002AE -- The directory service detected an attempt to modify*&^NL^&*  the object class of an object.
+STATUS_DS_CANT_MOD_PRIMARYGROUPID -- 0xC00002D0 -- Cannot change the primary group ID of a domain*&^NL^&*  controller account.
+STATUS_DS_CANT_ON_NON_LEAF -- 0xC00002AC -- The directory service can perform the requested*&^NL^&*  operation only on a leaf object.
+STATUS_DS_CANT_ON_RDN -- 0xC00002AD -- The directory service cannot perform the requested*&^NL^&*  operation on the Relatively Defined Name (RDN) attribute of an object.
+STATUS_DS_CANT_START -- 0xC00002E1 -- The directory service cannot start.
+STATUS_DS_CROSS_DOM_MOVE_FAILED -- 0xC00002AF -- An error occurred while performing a cross domain move*&^NL^&*  operation.
+STATUS_DS_GC_NOT_AVAILABLE -- 0xC00002B0 -- Unable to contact the global catalog server.
+STATUS_DS_GC_REQUIRED -- 0xC00002E4 -- The requested operation can be performed only on a*&^NL^&*  global catalog server.
+STATUS_DS_GLOBAL_CANT_HAVE_CROSSDOMAIN_MEMBER -- 0xC00002DA -- A global group cannot have a cross-domain member.
+STATUS_DS_GLOBAL_CANT_HAVE_LOCAL_MEMBER -- 0xC00002D7 -- A global group cannot have a local group as a member.
+STATUS_DS_GLOBAL_CANT_HAVE_UNIVERSAL_MEMBER -- 0xC00002D8 -- A global group cannot have a universal group as a*&^NL^&*  member.
+STATUS_DS_HAVE_PRIMARY_MEMBERS -- 0xC00002DC -- Cannot change to a security-disabled group because*&^NL^&*  primary members are in this group.
+STATUS_DS_INCORRECT_ROLE_OWNER -- 0xC00002A9 -- The requested operation could not be performed because*&^NL^&*  the directory service is not the master for that type of operation.
+STATUS_DS_INIT_FAILURE -- 0xC00002E2 -- The directory service could not start because of the following*&^NL^&*  error: %hs Error Status: 0x%x. Click OK to shut down this system and restart*&^NL^&*  in Directory Services Restore Mode. Check the event log for more detailed*&^NL^&*  information.
+STATUS_DS_INIT_FAILURE_CONSOLE -- 0xC00002EC -- Directory Services could not start because of the*&^NL^&*  following error: %hs Error Status: 0x%x. Click OK to shut down the system.*&^NL^&*  You can use the recovery console to diagnose the system further.
+STATUS_DS_INVALID_ATTRIBUTE_SYNTAX -- 0xC00002A2 -- The attribute syntax specified to the directory*&^NL^&*  service is invalid.
+STATUS_DS_INVALID_GROUP_TYPE -- 0xC00002D4 -- The specified group type is invalid.
+STATUS_DS_LOCAL_CANT_HAVE_CROSSDOMAIN_LOCAL_MEMBER -- 0xC00002DB -- A local group cannot have another cross-domain local*&^NL^&*  group as a member.
+STATUS_DS_LOCAL_MEMBER_OF_LOCAL_ONLY -- 0xC00002E5 -- A local group can only be a member of other local*&^NL^&*  groups in the same domain.
+STATUS_DS_MACHINE_ACCOUNT_QUOTA_EXCEEDED -- 0xC00002E7 -- Your computer could not be joined to the domain. You*&^NL^&*  have exceeded the maximum number of computer accounts you are allowed to*&^NL^&*  create in this domain. Contact your system administrator to have this limit*&^NL^&*  reset or increased.
+STATUS_DS_MEMBERSHIP_EVALUATED_LOCALLY -- 0x00000121 -- The directory service evaluated group memberships*&^NL^&*  locally, because it was unable to contact a global catalog server.
+STATUS_DS_NO_ATTRIBUTE_OR_VALUE -- 0xC00002A1 -- The specified directory service attribute or value*&^NL^&*  does not exist.
+STATUS_DS_NO_FPO_IN_UNIVERSAL_GROUPS -- 0xC00002E6 -- Foreign security principals cannot be members of*&^NL^&*  universal groups.
+STATUS_DS_NO_MORE_RIDS -- 0xC00002A8 -- The directory service has exhausted the pool of*&^NL^&*  relative identifiers.
+STATUS_DS_NO_NEST_GLOBALGROUP_IN_MIXEDDOMAIN -- 0xC00002D5 -- In a mixed domain, no nesting of a global group if the*&^NL^&*  group is security enabled.
+STATUS_DS_NO_NEST_LOCALGROUP_IN_MIXEDDOMAIN -- 0xC00002D6 -- In a mixed domain, cannot nest local groups with other*&^NL^&*  local groups, if the group is security enabled.
+STATUS_DS_NO_RIDS_ALLOCATED -- 0xC00002A7 -- The directory service was unable to allocate a*&^NL^&*  relative identifier.
+STATUS_DS_OBJ_CLASS_VIOLATION -- 0xC00002AB -- The requested operation did not satisfy one or more*&^NL^&*  constraints that are associated with the class of the object.
+STATUS_DS_RIDMGR_INIT_ERROR -- 0xC00002AA -- The directory service was unable to initialize the*&^NL^&*  subsystem that allocates relative identifiers.
+STATUS_DS_SAM_INIT_FAILURE -- 0xC00002CB -- Security Accounts Manager initialization failed because*&^NL^&*  of the following error: %hs Error Status: 0x%x. Click OK to shut down this*&^NL^&*  system and restart in Directory Services Restore Mode. Check the event log*&^NL^&*  for more detailed information.
+STATUS_DS_SAM_INIT_FAILURE_CONSOLE -- 0xC00002ED -- Security Accounts Manager initialization failed*&^NL^&*  because of the following error: %hs Error Status: 0x%x. Click OK to shut down*&^NL^&*  the system. You can use the recovery console to diagnose the system further.
+STATUS_DS_SENSITIVE_GROUP_VIOLATION -- 0xC00002CD -- Only an administrator can modify the membership list*&^NL^&*  of an administrative group.
+STATUS_DS_SHUTTING_DOWN -- 0x40000370 -- The directory service is shutting down.
+STATUS_DS_UNAVAILABLE -- 0xC00002A6 -- The directory service is unavailable.
+STATUS_DS_UNIVERSAL_CANT_HAVE_LOCAL_MEMBER -- 0xC00002D9 -- A universal group cannot have a local group as a*&^NL^&*  member.
+STATUS_DUPLICATE_NAME -- 0xC00000BD -- A duplicate name exists on the network.
+STATUS_EAS_NOT_SUPPORTED -- 0xC000004F -- An operation involving EAs failed because the file*&^NL^&*  system does not support EAs.
+STATUS_EA_LIST_INCONSISTENT -- 0x80000014 -- {Inconsistent EA List} The extended attribute (EA)*&^NL^&*  list is inconsistent.
+STATUS_EFS_ALG_BLOB_TOO_BIG -- 0xC0000352 -- The encryption algorithm that is used on the source*&^NL^&*  file needs a bigger key buffer than the one that is used on the destination*&^NL^&*  file.
+STATUS_END_OF_FILE -- 0xC0000011 -- The end-of-file marker has been reached. There is no*&^NL^&*  valid data in the file beyond this marker.
+STATUS_END_OF_MEDIA -- 0x8000001E -- {End of Media} The end of the media was encountered.
+STATUS_EOM_OVERFLOW -- 0xC0000177 -- The physical end of tape was detected.
+STATUS_EVENTLOG_CANT_START -- 0xC000018F -- No Eventlog log file could be opened. The Eventlog*&^NL^&*  service did not start.
+STATUS_EVENTLOG_FILE_CHANGED -- 0xC0000197 -- The log file has changed between reads.
+STATUS_EVENTLOG_FILE_CORRUPT -- 0xC000018E -- The Eventlog log file is corrupt.
+STATUS_FILEMARK_DETECTED -- 0x8000001B -- {Filemark Found} A filemark was detected.
+STATUS_FILES_OPEN -- 0xC0000107 -- The user attempted to force close the files on a*&^NL^&*  redirected drive, but there were opened files on the drive, and the user did*&^NL^&*  not specify a sufficient level of force.
+STATUS_FILE_CORRUPT_ERROR -- 0xC0000102 -- {Corrupt File} The file or directory %hs is corrupt*&^NL^&*  and unreadable. Run the Chkdsk utility.
+STATUS_FILE_ENCRYPTED -- 0xC0000293 -- The specified file is encrypted and the user does not*&^NL^&*  have the ability to decrypt it.
+STATUS_FILE_INVALID -- 0xC0000098 -- The volume for a file has been externally altered such*&^NL^&*  that the opened file is no longer valid.
+STATUS_FILE_IS_OFFLINE -- 0xC0000267 -- The specified file has been relocated to offline*&^NL^&*  storage.
+STATUS_FILE_NOT_ENCRYPTED -- 0xC0000291 -- The specified file is not encrypted.
+STATUS_FLOPPY_BAD_REGISTERS -- 0xC0000168 -- {Floppy Disk Error} While accessing a floppy-disk, the*&^NL^&*  controller returned inconsistent results via its registers.
+STATUS_FLOPPY_ID_MARK_NOT_FOUND -- 0xC0000165 -- {Floppy Disk Error} While accessing a floppy disk, an*&^NL^&*  ID address mark was not found.
+STATUS_FLOPPY_UNKNOWN_ERROR -- 0xC0000167 -- {Floppy Disk Error} The floppy disk controller*&^NL^&*  reported an error that is not recognized by the floppy disk driver.
+STATUS_FLOPPY_WRONG_CYLINDER -- 0xC0000166 -- {Floppy Disk Error} While accessing a floppy disk, the*&^NL^&*  track address from the sector ID field was found to be different from the*&^NL^&*  track address that is maintained by the controller.
+STATUS_FULLSCREEN_MODE -- 0xC0000159 -- The requested operation cannot be performed in*&^NL^&*  full-screen mode.
+STATUS_GENERIC_NOT_MAPPED -- 0xC00000E6 -- Indicates generic access types were contained in an*&^NL^&*  access mask which should already be mapped to non-generic access types.
+STATUS_GRACEFUL_DISCONNECT -- 0xC0000237 -- The transport connection was gracefully closed.
+STATUS_GROUP_EXISTS -- 0xC0000065 -- The specified group already exists.
+STATUS_HOST_DOWN -- 0xC0000350 -- The transport determined that the remote system is*&^NL^&*  down.
+STATUS_HOST_UNREACHABLE -- 0xC000023D -- The remote system is not reachable by the transport.
+STATUS_ILLEGAL_ELEMENT_ADDRESS -- 0xC0000285 -- The specified medium changer element does not exist.
+STATUS_ILL_FORMED_PASSWORD -- 0xC000006B -- When trying to update a password, this return status*&^NL^&*  indicates that the value provided for the new password contains values that*&^NL^&*  are not allowed in passwords.
+STATUS_IMAGE_ALREADY_LOADED -- 0xC000010E -- Indicates that the specified image is already loaded.
+STATUS_INFO_LENGTH_MISMATCH -- 0xC0000004 -- The specified information record length does not match*&^NL^&*  the length that is required for the specified information class.
+STATUS_INSUFFICIENT_RESOURCES -- 0xC000009A -- Insufficient system resources exist to complete the*&^NL^&*  API.
+STATUS_INSUFF_SERVER_RESOURCES -- 0xC0000205 -- Insufficient server resources exist to complete the*&^NL^&*  request.
+STATUS_INTEGER_OVERFLOW -- 0xC0000095 -- {EXCEPTION} Integer overflow.
+STATUS_INTERNAL_DB_CORRUPTION -- 0xC00000E4 -- This error indicates that the requested operation*&^NL^&*  cannot be completed due to a catastrophic media failure or an on-disk data*&^NL^&*  structure corruption.
+STATUS_INTERNAL_DB_ERROR -- 0xC0000158 -- The local security authority (LSA) database contains*&^NL^&*  an internal inconsistency.
+STATUS_INTERNAL_ERROR -- 0xC00000E5 -- An internal error occurred.
+STATUS_INVALID_ACCOUNT_NAME -- 0xC0000062 -- The name provided is not a properly formed account*&^NL^&*  name.
+STATUS_INVALID_ACL -- 0xC0000077 -- Indicates the ACL structure is not valid.
+STATUS_INVALID_ADDRESS_COMPONENT -- 0xC0000207 -- The transport rejected the specified network address*&^NL^&*  as invalid.
+STATUS_INVALID_BLOCK_LENGTH -- 0xC0000173 -- When accessing a new tape of a multi-volume partition,*&^NL^&*  the current blocksize is incorrect.
+STATUS_INVALID_COMPUTER_NAME -- 0xC0000122 -- Indicates a name that was specified as a remote*&^NL^&*  computer name is syntactically invalid.
+STATUS_INVALID_DEVICE_STATE -- 0xC0000184 -- The device is not in a valid state to perform this*&^NL^&*  request.
+STATUS_INVALID_DOMAIN_ROLE -- 0xC00000DE -- This operation is only allowed for the primary domain*&^NL^&*  controller of the domain.
+STATUS_INVALID_DOMAIN_STATE -- 0xC00000DD -- Indicates the domain was in the wrong state to perform*&^NL^&*  the desired operation.
+STATUS_INVALID_EA_NAME -- 0x80000013 -- {Illegal EA} The specified extended attribute (EA)*&^NL^&*  name contains at least one illegal character.
+STATUS_INVALID_GROUP_ATTRIBUTES -- 0xC00000A4 -- The specified attributes are invalid or are*&^NL^&*  incompatible with the attributes for the group as a whole.
+STATUS_INVALID_HANDLE -- 0xC0000008 -- An invalid HANDLE was specified.
+STATUS_INVALID_ID_AUTHORITY -- 0xC0000084 -- The value provided was an invalid value for an*&^NL^&*  identifier authority.
+STATUS_INVALID_IMAGE_FORMAT -- 0xC000007B -- {Bad Image} %hs is either not designed to run on*&^NL^&*  Windows or it contains an error. Try installing the program again using the*&^NL^&*  original installation media or contact your system administrator or the*&^NL^&*  software vendor for support.
+STATUS_INVALID_IMPORT_OF_NON_DLL -- 0xC000036F -- A dynamic link library (DLL) referenced a module that*&^NL^&*  was neither a DLL nor the process's executable image.
+STATUS_INVALID_LEVEL -- 0xC0000148 -- {Incorrect System Call Level} An invalid level was*&^NL^&*  passed into the specified system call.
+STATUS_INVALID_LOGON_HOURS -- 0xC000006F -- The user account has time restrictions and cannot be*&^NL^&*  logged onto at this time.
+STATUS_INVALID_LOGON_TYPE -- 0xC000010B -- Indicates an invalid value has been provided for the LogonType*&^NL^&*  requested.
+STATUS_INVALID_MEMBER -- 0xC000017B -- A new member could not be added to a local group*&^NL^&*  because the member has the wrong account type.
+STATUS_INVALID_NETWORK_RESPONSE -- 0xC00000C3 -- The network responded incorrectly.
+STATUS_INVALID_OPLOCK_PROTOCOL -- 0xC00000E3 -- An error status returned when an invalid opportunistic*&^NL^&*  lock (oplock) acknowledgment is received by a file system.
+STATUS_INVALID_OWNER -- 0xC000005A -- Indicates a particular security ID cannot be assigned*&^NL^&*  as the owner of an object.
+STATUS_INVALID_PARAMETER -- 0xC000000D -- An invalid parameter was passed to a service or*&^NL^&*  function.
+STATUS_INVALID_PIPE_STATE -- 0xC00000AD -- The named pipe is not in the connected or closing*&^NL^&*  state.
+STATUS_INVALID_PRIMARY_GROUP -- 0xC000005B -- Indicates a particular security ID cannot be assigned*&^NL^&*  as the primary group of an object.
+STATUS_INVALID_SECURITY_DESCR -- 0xC0000079 -- Indicates the SECURITY_DESCRIPTOR structure is not*&^NL^&*  valid.
+STATUS_INVALID_SERVER_STATE -- 0xC00000DC -- Indicates the Sam Server was in the wrong state to*&^NL^&*  perform the desired operation.
+STATUS_INVALID_SID -- 0xC0000078 -- Indicates the SID structure is not valid.
+STATUS_INVALID_SUB_AUTHORITY -- 0xC0000076 -- Indicates the sub-authority value is invalid for the*&^NL^&*  particular use.
+STATUS_INVALID_USER_BUFFER -- 0xC00000E8 -- An access to a user buffer failed at an expected point*&^NL^&*  in time. This code is defined because the caller does not want to accept*&^NL^&*  STATUS_ACCESS_VIOLATION in its filter.
+STATUS_INVALID_VOLUME_LABEL -- 0xC0000086 -- An invalid volume label has been specified.
+STATUS_INVALID_WORKSTATION -- 0xC0000070 -- The user account is restricted so that it cannot be*&^NL^&*  used to log on from the source workstation.
+STATUS_IN_PAGE_ERROR -- 0xC0000006 -- The instruction at 0x%08lx referenced memory at*&^NL^&*  0x%08lx. The required data was not placed into memory because of an I/O error*&^NL^&*  status of 0x%08lx.
+STATUS_IO_DEVICE_ERROR -- 0xC0000185 -- The I/O device reported an I/O error.
+STATUS_IO_REPARSE_DATA_INVALID -- 0xC0000278 -- The user data passed for the NTFS reparse point is invalid.
+STATUS_IO_REPARSE_TAG_INVALID -- 0xC0000276 -- The Windows I/O reparse tag passed for the NTFS*&^NL^&*  reparse point is invalid.
+STATUS_IO_REPARSE_TAG_MISMATCH -- 0xC0000277 -- The Windows I/O reparse tag does not match the one*&^NL^&*  that is in the NTFS reparse point.
+STATUS_IO_REPARSE_TAG_NOT_HANDLED -- 0xC0000279 -- The layered file system driver for this I/O tag did*&^NL^&*  not handle it when needed.
+STATUS_IO_TIMEOUT -- 0xC00000B5 -- {Device Timeout} The specified I/O operation on %hs*&^NL^&*  was not completed before the time-out period expired.
+STATUS_ISSUING_CA_UNTRUSTED -- 0xC000038A -- An untrusted certificate authority was detected while*&^NL^&*  processing the smart card certificate that is used for authentication.*&^NL^&*  Contact your system administrator.
+STATUS_JOURNAL_DELETE_IN_PROGRESS -- 0xC00002B7 -- The volume change journal is being deleted.
+STATUS_JOURNAL_ENTRY_DELETED -- 0xC00002CF -- The journal entry has been deleted from the journal.
+STATUS_JOURNAL_NOT_ACTIVE -- 0xC00002B8 -- The volume change journal is not active.
+STATUS_KDC_INVALID_REQUEST -- 0xC00002FB -- An invalid request was sent to the KDC.
+STATUS_KDC_UNABLE_TO_REFER -- 0xC00002FC -- The KDC was unable to generate a referral for the*&^NL^&*  service requested.
+STATUS_KDC_UNKNOWN_ETYPE -- 0xC00002FD -- The encryption type requested is not supported by the*&^NL^&*  KDC.
+STATUS_KEY_DELETED -- 0xC000017C -- An illegal operation was attempted on a registry key*&^NL^&*  that has been marked for deletion.
+STATUS_KEY_HAS_CHILDREN -- 0xC0000180 -- An attempt was made to create a symbolic link in a*&^NL^&*  registry key that already has subkeys or values.
+STATUS_LAST_ADMIN -- 0xC0000069 -- Indicates the requested operation would disable or*&^NL^&*  delete the last remaining administration account. This is not allowed to*&^NL^&*  prevent creating a situation in which the system cannot be administrated.
+STATUS_LICENSE_QUOTA_EXCEEDED -- 0xC0000259 -- The service being accessed is licensed for a particular*&^NL^&*  number of connections. No more connections can be made to the service at this*&^NL^&*  time because the service has already accepted the maximum number of*&^NL^&*  connections.
+STATUS_LM_CROSS_ENCRYPTION_REQUIRED -- 0xC000017F -- An attempt was made to change a user password in the*&^NL^&*  security account manager without providing the necessary LM cross-encrypted*&^NL^&*  password.
+STATUS_LOCAL_USER_SESSION_KEY -- 0x40000006 -- {Local Session Key} A user session key was requested*&^NL^&*  for a local remote procedure call (RPC) connection. The session key that is*&^NL^&*  returned is a constant value and not unique to this connection.
+STATUS_LOCK_NOT_GRANTED -- 0xC0000055 -- A requested file lock cannot be granted due to other*&^NL^&*  existing locks.
+STATUS_LOGIN_TIME_RESTRICTION -- 0xC0000247 -- Attempting to log on during an unauthorized time of*&^NL^&*  day for this account.
+STATUS_LOGIN_WKSTA_RESTRICTION -- 0xC0000248 -- The account is not authorized to log on from this*&^NL^&*  station.
+STATUS_LOGON_FAILURE -- 0xC000006D -- The attempted logon is invalid. This is either due to*&^NL^&*  a bad username or authentication information.
+STATUS_LOGON_NOT_GRANTED -- 0xC0000155 -- A requested type of logon (for example, interactive,*&^NL^&*  network, and service) is not granted by the local security policy of the*&^NL^&*  target system. Ask the system administrator to grant the necessary form of*&^NL^&*  logon.
+STATUS_LOGON_SESSION_COLLISION -- 0xC0000105 -- An internal LSA error has occurred. An authentication*&^NL^&*  package has requested the creation of a logon session but the ID of an*&^NL^&*  already existing logon session has been specified.
+STATUS_LOGON_SESSION_EXISTS -- 0xC00000EE -- An attempt has been made to start a new session*&^NL^&*  manager or LSA logon session by using an ID that is already in use.
+STATUS_LOGON_TYPE_NOT_GRANTED -- 0xC000015B -- A user has requested a type of logon (for example,*&^NL^&*  interactive or network) that has not been granted. An administrator has*&^NL^&*  control over who can logon interactively and through the network.
+STATUS_LOG_FILE_FULL -- 0xC0000188 -- The log file space is insufficient to support this*&^NL^&*  operation.
+STATUS_LUIDS_EXHAUSTED -- 0xC0000075 -- Indicates there are no more LUIDs to allocate.
+STATUS_MAGAZINE_NOT_PRESENT -- 0xC0000286 -- The specified element is contained in a magazine that*&^NL^&*  is no longer present.
+STATUS_MAPPED_ALIGNMENT -- 0xC0000220 -- {Mapped View Alignment Incorrect} An attempt was made*&^NL^&*  to map a view of a file, but either the specified base address or the offset*&^NL^&*  into the file were not aligned on the proper allocation granularity.
+STATUS_MAX_REFERRALS_EXCEEDED -- 0xC00002F4 -- The number of maximum ticket referrals has been*&^NL^&*  exceeded.
+STATUS_MEDIA_CHANGED -- 0x8000001C -- {Media Changed} The media has changed.
+STATUS_MEDIA_WRITE_PROTECTED -- 0xC00000A2 -- {Write Protect Error} The disk cannot be written to*&^NL^&*  because it is write-protected. Remove the write protection from the volume*&^NL^&*  %hs in drive %hs.
+STATUS_MEMBERS_PRIMARY_GROUP -- 0xC0000127 -- Indicates a member cannot be removed from a group*&^NL^&*  because the group is currently the member's primary group.
+STATUS_MEMBER_IN_ALIAS -- 0xC0000153 -- The specified account name is already a member of the*&^NL^&*  group.
+STATUS_MEMBER_IN_GROUP -- 0xC0000067 -- The specified user account is already in the specified*&^NL^&*  group account. Also used to indicate a group cannot be deleted because it*&^NL^&*  contains a member.
+STATUS_MEMBER_NOT_IN_ALIAS -- 0xC0000152 -- The specified account name is not a member of the*&^NL^&*  group.
+STATUS_MEMBER_NOT_IN_GROUP -- 0xC0000068 -- The specified user account is not a member of the*&^NL^&*  specified group account.
+STATUS_MEMORY_NOT_ALLOCATED -- 0xC00000A0 -- An attempt was made to free virtual memory that is not*&^NL^&*  allocated.
+STATUS_MESSAGE_NOT_FOUND -- 0xC0000109 -- RtlFindMessage could not locate the requested message*&^NL^&*  ID in the message table resource.
+STATUS_MFT_TOO_FRAGMENTED -- 0xC0000304 -- The master file table on the volume is too fragmented*&^NL^&*  to complete this operation.
+STATUS_MUST_BE_KDC -- 0xC00002F5 -- The local machine must be a Kerberos KDC (domain*&^NL^&*  controller) and it is not.
+STATUS_MUTUAL_AUTHENTICATION_FAILED -- 0xC00002C3 -- Mutual Authentication failed. The server password is*&^NL^&*  out of date at the domain controller.
+STATUS_NAME_TOO_LONG -- 0xC0000106 -- A specified name string is too long for its intended*&^NL^&*  use.
+STATUS_NETLOGON_NOT_STARTED -- 0xC0000192 -- An attempt was made to logon, but the NetLogon service*&^NL^&*  was not started.
+STATUS_NETWORK_ACCESS_DENIED -- 0xC00000CA -- Network access is denied.
+STATUS_NETWORK_BUSY -- 0xC00000BF -- The network is busy.
+STATUS_NETWORK_CREDENTIAL_CONFLICT -- 0xC0000195 -- Multiple connections to a server or shared resource by*&^NL^&*  the same user, using more than one user name, are not allowed. Disconnect all*&^NL^&*  previous connections to the server or shared resource and try again.
+STATUS_NETWORK_NAME_DELETED -- 0xC00000C9 -- The network name was deleted.
+STATUS_NETWORK_UNREACHABLE -- 0xC000023C -- The remote network is not reachable by the transport.
+STATUS_NET_WRITE_FAULT -- 0xC00000D2 -- A network data fault occurred.
+STATUS_NOLOGON_INTERDOMAIN_TRUST_ACCOUNT -- 0xC0000198 -- The account used is an interdomain trust account. Use*&^NL^&*  your global user account or local user account to access this server.
+STATUS_NOLOGON_SERVER_TRUST_ACCOUNT -- 0xC000019A -- The account used is a server trust account. Use your*&^NL^&*  global user account or local user account to access this server.
+STATUS_NOLOGON_WORKSTATION_TRUST_ACCOUNT -- 0xC0000199 -- The account used is a computer account. Use your*&^NL^&*  global user account or local user account to access this server.
+STATUS_NONEXISTENT_SECTOR -- 0xC0000015 -- {Sector Not Found} The specified sector does not*&^NL^&*  exist.
+STATUS_NONE_MAPPED -- 0xC0000073 -- None of the information to be translated has been*&^NL^&*  translated.
+STATUS_NOTIFY_ENUM_DIR -- 0x0000010C -- Indicates that a notify change request is being*&^NL^&*  completed and that the information is not being returned in the caller's*&^NL^&*  buffer. The caller now needs to enumerate the files to find the changes.
+STATUS_NOT_ALL_ASSIGNED -- 0x00000106 -- Indicates not all privileges or groups that are*&^NL^&*  referenced are assigned to the caller. This allows, for example, all*&^NL^&*  privileges to be disabled without having to know exactly which privileges are*&^NL^&*  assigned.
+STATUS_NOT_A_DIRECTORY -- 0xC0000103 -- A requested opened file is not a directory.
+STATUS_NOT_A_REPARSE_POINT -- 0xC0000275 -- The NTFS file or directory is not a reparse point.
+STATUS_NOT_EXPORT_FORMAT -- 0xC0000292 -- The specified file is not in the defined EFS export*&^NL^&*  format.
+STATUS_NOT_FOUND -- 0xC0000225 -- The object was not found.
+STATUS_NOT_IMPLEMENTED -- 0xC0000002 -- {Not Implemented} The requested operation is not*&^NL^&*  implemented.
+STATUS_NOT_LOCKED -- 0xC000002A -- An attempt was made to unlock a page of memory that*&^NL^&*  was not locked.
+STATUS_NOT_LOGON_PROCESS -- 0xC00000ED -- The requested action is restricted for use by logon*&^NL^&*  processes only. The calling process has not registered as a logon process.
+STATUS_NOT_REGISTRY_FILE -- 0xC000015C -- The system has attempted to load or restore a file*&^NL^&*  into the registry, and the specified file is not in the format of a registry*&^NL^&*  file.
+STATUS_NOT_SAME_DEVICE -- 0xC00000D4 -- {Incorrect Volume} The destination file of a rename*&^NL^&*  request is located on a different device than the source of the rename*&^NL^&*  request.
+STATUS_NOT_SUPPORTED -- 0xC00000BB -- The request is not supported.
+STATUS_NOT_SUPPORTED_ON_SBS -- 0xC0000300 -- This operation is not supported on a computer running*&^NL^&*  Windows Server 2003 operating system for Small Business Server.
+STATUS_NO_BROWSER_SERVERS_FOUND -- 0xC000021C -- {Unable to Retrieve Browser Server List} The list of*&^NL^&*  servers for this workgroup is not currently available.
+STATUS_NO_DATA_DETECTED -- 0x80000022 -- During a tape access, the end of the data written is*&^NL^&*  reached.
+STATUS_NO_IMPERSONATION_TOKEN -- 0xC000005C -- An attempt has been made to operate on an*&^NL^&*  impersonation token by a thread that is not currently impersonating a client.
+STATUS_NO_INHERITANCE -- 0x8000000B -- {Non-Inheritable ACL} An access control list (ACL)*&^NL^&*  contains no components that can be inherited.
+STATUS_NO_IP_ADDRESSES -- 0xC00002F1 -- Unable to accomplish the requested task because the*&^NL^&*  local machine does not have any IP addresses.
+STATUS_NO_KERB_KEY -- 0xC0000322 -- The target server does not have acceptable Kerberos*&^NL^&*  credentials.
+STATUS_NO_LDT -- 0xC0000117 -- Indicates that an attempt was made to change the size*&^NL^&*  of the LDT for a process that has no LDT.
+STATUS_NO_LOGON_SERVERS -- 0xC000005E -- No logon servers are currently available to service*&^NL^&*  the logon request.
+STATUS_NO_LOG_SPACE -- 0xC000017D -- The system could not allocate the required space in a*&^NL^&*  registry log.
+STATUS_NO_MATCH -- 0xC0000272 -- There was no match for the specified key in the index.
+STATUS_NO_MEDIA -- 0xC0000178 -- {No Media} There is no media in the drive. Insert*&^NL^&*  media into drive %hs.
+STATUS_NO_MEMORY -- 0xC0000017 -- {Not Enough Quota} Not enough virtual memory or paging*&^NL^&*  file quota is available to complete the specified operation.
+STATUS_NO_MORE_ENTRIES -- 0x8000001A -- {No More Entries} No more entries are available from*&^NL^&*  an enumeration operation.
+STATUS_NO_MORE_FILES -- 0x80000006 -- {No More Files} No more files were found which match*&^NL^&*  the file specification.
+STATUS_NO_PA_DATA -- 0xC00002F8 -- Expected to find PA data for a hint of what etype to*&^NL^&*  use, but it was not found.
+STATUS_NO_QUOTAS_FOR_ACCOUNT -- 0x0000010D -- {No Quotas} No system quota limits are specifically*&^NL^&*  set for this account.
+STATUS_NO_SECURITY_ON_OBJECT -- 0xC00000D7 -- Indicates an attempt was made to operate on the*&^NL^&*  security of an object that does not have security associated with it.
+STATUS_NO_SPOOL_SPACE -- 0xC00000C7 -- Space to store the file that is waiting to be printed*&^NL^&*  is not available on the server.
+STATUS_NO_SUCH_ALIAS -- 0xC0000151 -- The specified local group does not exist.
+STATUS_NO_SUCH_DOMAIN -- 0xC00000DF -- The specified domain did not exist.
+STATUS_NO_SUCH_GROUP -- 0xC0000066 -- The specified group does not exist.
+STATUS_NO_SUCH_LOGON_SESSION -- 0xC000005F -- A specified logon session does not exist. It might*&^NL^&*  already have been terminated.
+STATUS_NO_SUCH_MEMBER -- 0xC000017A -- A member could not be added to or removed from the*&^NL^&*  local group because the member does not exist.
+STATUS_NO_SUCH_PACKAGE -- 0xC00000FE -- A specified authentication package is unknown.
+STATUS_NO_SUCH_PRIVILEGE -- 0xC0000060 -- A specified privilege does not exist.
+STATUS_NO_SUCH_USER -- 0xC0000064 -- The specified account does not exist.
+STATUS_NO_TGT_REPLY -- 0xC00002EF -- The client is trying to negotiate a context and the*&^NL^&*  server requires user-to-user but did not send a TGT reply.
+STATUS_NO_TOKEN -- 0xC000007C -- An attempt was made to reference a token that does not*&^NL^&*  exist. This is typically done by referencing the token that is associated*&^NL^&*  with a thread when the thread is not impersonating a client.
+STATUS_NO_TRACKING_SERVICE -- 0xC000029F -- The tracking (workstation) service is not running.
+STATUS_NO_TRUST_LSA_SECRET -- 0xC000018A -- The workstation does not have a trust secret for the*&^NL^&*  primary domain in the local LSA database.
+STATUS_NO_TRUST_SAM_ACCOUNT -- 0xC000018B -- On applicable Windows Server releases, the SAM*&^NL^&*  database does not have a computer account for this workstation trust*&^NL^&*  relationship.
+STATUS_NO_USER_SESSION_KEY -- 0xC0000202 -- There is no user session key for the specified logon*&^NL^&*  session.
+STATUS_NT_CROSS_ENCRYPTION_REQUIRED -- 0xC000015D -- An attempt was made to change a user password in the*&^NL^&*  security account manager without providing the necessary Windows*&^NL^&*  cross-encrypted password.
+STATUS_NULL_LM_PASSWORD -- 0x4000000D -- {Password Too Complex} The Windows password is too*&^NL^&*  complex to be converted to a LAN Manager password. The LAN Manager password*&^NL^&*  that returned is a NULL string.
+STATUS_OBJECT_NAME_COLLISION -- 0xC0000035 -- The object name already exists.
+STATUS_OBJECT_NAME_INVALID -- 0xC0000033 -- The object name is invalid.
+STATUS_OBJECT_NAME_NOT_FOUND -- 0xC0000034 -- The object name is not found.
+STATUS_OBJECT_PATH_INVALID -- 0xC0000039 -- The object path component was not a directory object.
+STATUS_OBJECT_PATH_NOT_FOUND -- 0xC000003A -- {Path Not Found} The path %hs does not exist.
+STATUS_ONLY_IF_CONNECTED -- 0xC00002CC -- This operation is supported only when you are*&^NL^&*  connected to the server.
+STATUS_OPLOCK_NOT_GRANTED -- 0xC00000E2 -- An error status returned when the opportunistic lock*&^NL^&*  (oplock) request is denied.
+STATUS_ORDINAL_NOT_FOUND -- 0xC0000138 -- {Ordinal Not Found} The ordinal %ld could not be*&^NL^&*  located in the dynamic link library %hs.
+STATUS_PAGEFILE_QUOTA -- 0xC0000007 -- The page file quota for the process has been*&^NL^&*  exhausted.
+STATUS_PARTIAL_COPY -- 0x8000000D -- Because of protection conflicts, not all the requested*&^NL^&*  bytes could be copied.
+STATUS_PARTITION_FAILURE -- 0xC0000172 -- The tape could not be partitioned.
+STATUS_PASSWORD_EXPIRED -- 0xC0000071 -- The user account password has expired.
+STATUS_PASSWORD_MUST_CHANGE -- 0xC0000224 -- The user password must be changed before logging on*&^NL^&*  the first time.
+STATUS_PASSWORD_RESTRICTION -- 0xC000006C -- When trying to update a password, this status*&^NL^&*  indicates that some password update rule has been violated. For example, the*&^NL^&*  password might not meet length criteria.
+STATUS_PENDING -- 0x00000103 -- The operation that was requested is pending*&^NL^&*  completion.
+STATUS_PIPE_BROKEN -- 0xC000014B -- The pipe operation has failed because the other end of*&^NL^&*  the pipe has been closed.
+STATUS_PIPE_BUSY -- 0xC00000AE -- The specified pipe is set to complete operations and*&^NL^&*  there are current I/O operations queued so that it cannot be changed to queue*&^NL^&*  operations.
+STATUS_PIPE_CONNECTED -- 0xC00000B2 -- The specified named pipe is in the connected state.
+STATUS_PIPE_DISCONNECTED -- 0xC00000B0 -- The specified named pipe is in the disconnected state.
+STATUS_PIPE_EMPTY -- 0xC00000D9 -- Used to indicate that a read operation was done on an*&^NL^&*  empty pipe.
+STATUS_PIPE_LISTENING -- 0xC00000B3 -- The specified named pipe is in the listening state.
+STATUS_PKINIT_CLIENT_FAILURE -- 0xC000038C -- The smart card certificate used for authentication was*&^NL^&*  not trusted. Contact your system administrator.
+STATUS_PKINIT_FAILURE -- 0xC0000320 -- The Kerberos protocol encountered an error while*&^NL^&*  validating the KDC certificate during smart card logon. There is more*&^NL^&*  information in the system event log.
+STATUS_PKINIT_NAME_MISMATCH -- 0xC00002F9 -- The client certificate does not contain a valid UPN,*&^NL^&*  or does not match the client name in the logon request. Contact your administrator.
+STATUS_PLUGPLAY_NO_DEVICE -- 0xC000025E -- You have attempted to load a legacy device driver*&^NL^&*  while its device instance had been disabled.
+STATUS_POLICY_OBJECT_NOT_FOUND -- 0xC000029A -- The policy object does not exist when it should.
+STATUS_POLICY_ONLY_IN_DS -- 0xC000029B -- The requested policy information only lives in the Ds.
+STATUS_PORT_UNREACHABLE -- 0xC000023F -- No service is operating at the destination port of the*&^NL^&*  transport on the remote system.
+STATUS_POSSIBLE_DEADLOCK -- 0xC0000194 -- {EXCEPTION} Possible deadlock condition.
+STATUS_PRENT4_MACHINE_ACCOUNT -- 0xC0000357 -- The machine account was created prior to Windows NT*&^NL^&*  4.0 operating system. The account needs to be recreated.
+STATUS_PRINT_CANCELLED -- 0xC00000C8 -- The requested print file has been canceled.
+STATUS_PRINT_QUEUE_FULL -- 0xC00000C6 -- The print queue is full.
+STATUS_PRIVILEGE_NOT_HELD -- 0xC0000061 -- A required privilege is not held by the client.
+STATUS_PROCEDURE_NOT_FOUND -- 0xC000007A -- Indicates the specified procedure address cannot be*&^NL^&*  found in the DLL.
+STATUS_PROPSET_NOT_FOUND -- 0xC0000230 -- The specified property set does not exist on the*&^NL^&*  object.
+STATUS_PROTOCOL_UNREACHABLE -- 0xC000023E -- The remote system does not support the transport*&^NL^&*  protocol.
+STATUS_QUOTA_EXCEEDED -- 0xC0000044 -- Insufficient quota exists to complete the operation.
+STATUS_REDIRECTOR_PAUSED -- 0xC00000D1 -- Print or disk redirection is temporarily paused.
+STATUS_REGISTRY_CORRUPT -- 0xC000014C -- {The Registry Is Corrupt} The structure of one of the*&^NL^&*  files that contains registry data is corrupt; the image of the file in memory*&^NL^&*  is corrupt; or the file could not be recovered because the alternate copy or*&^NL^&*  log was absent or corrupt.
+STATUS_REGISTRY_IO_FAILED -- 0xC000014D -- An I/O operation initiated by the Registry failed and*&^NL^&*  cannot be recovered. The registry could not read in, write out, or flush one*&^NL^&*  of the files that contain the system's image of the registry.
+STATUS_REGISTRY_RECOVERED -- 0x40000009 -- {Registry Recovery} One of the files that contains the*&^NL^&*  system registry data had to be recovered by using a log or alternate copy.*&^NL^&*  The recovery was successful.
+STATUS_REG_NAT_CONSUMPTION -- 0xC00002C9 -- {EXCEPTION} Register NaT consumption faults. A NaT*&^NL^&*  value is consumed on a non-speculative instruction.
+STATUS_REINITIALIZATION_NEEDED -- 0xC0000287 -- The device requires re-initialization due to hardware*&^NL^&*  errors.
+STATUS_REMOTE_NOT_LISTENING -- 0xC00000BC -- This remote computer is not listening.
+STATUS_REMOTE_SESSION_LIMIT -- 0xC0000196 -- An attempt was made to establish a session to a*&^NL^&*  network server, but there are already too many sessions established to that*&^NL^&*  server.
+STATUS_REMOTE_STORAGE_MEDIA_ERROR -- 0xC000029E -- The remote storage service encountered a media error.
+STATUS_REMOTE_STORAGE_NOT_ACTIVE -- 0xC000029D -- The remote storage service is not operational at this*&^NL^&*  time.
+STATUS_REPARSE_ATTRIBUTE_CONFLICT -- 0xC00002B2 -- The reparse attribute cannot be set because it is*&^NL^&*  incompatible with an existing attribute.
+STATUS_REPARSE_POINT_NOT_RESOLVED -- 0xC0000280 -- The NTFS symbolic link could not be resolved even*&^NL^&*  though the initial file name is valid.
+STATUS_REQUEST_ABORTED -- 0xC0000240 -- The request was aborted.
+STATUS_REQUEST_NOT_ACCEPTED -- 0xC00000D0 -- No more connections can be made to this remote*&^NL^&*  computer at this time because the computer has already accepted the maximum*&^NL^&*  number of connections.
+STATUS_RESOURCE_DATA_NOT_FOUND -- 0xC0000089 -- Indicates the specified image file did not contain a*&^NL^&*  resource section.
+STATUS_RESOURCE_LANG_NOT_FOUND -- 0xC0000204 -- Indicates the specified resource language ID cannot be*&^NL^&*  found in the image file.
+STATUS_RESOURCE_NAME_NOT_FOUND -- 0xC000008B -- Indicates the specified resource name cannot be found*&^NL^&*  in the image file.
+STATUS_RESOURCE_NOT_OWNED -- 0xC0000264 -- {Application Error} The application attempted to*&^NL^&*  release a resource it did not own. Click OK to terminate the application.
+STATUS_RESOURCE_TYPE_NOT_FOUND -- 0xC000008A -- Indicates the specified resource type cannot be found*&^NL^&*  in the image file.
+STATUS_RETRY -- 0xC000022D -- The request needs to be retried.
+STATUS_REVISION_MISMATCH -- 0xC0000059 -- Indicates that two revision levels are incompatible.
+STATUS_REVOCATION_OFFLINE_C -- 0xC000038B -- The revocation status of the smart card certificate*&^NL^&*  that is used for authentication could not be determined. Contact your system administrator.
+STATUS_RXACT_COMMIT_FAILURE -- 0xC000011D -- Indicates an error has occurred during a registry*&^NL^&*  transaction commit. The database has been left in an unknown, but probably*&^NL^&*  inconsistent, state. The state of the registry transaction is left as*&^NL^&*  COMMITTING.
+STATUS_RXACT_INVALID_STATE -- 0xC000011C -- Indicates that the transaction state of a registry*&^NL^&*  subtree is incompatible with the requested operation. For example, a request*&^NL^&*  has been made to start a new transaction with one already in progress, or a*&^NL^&*  request has been made to apply a transaction when one is not currently in*&^NL^&*  progress.
+STATUS_SAM_INIT_FAILURE -- 0xC00002E3 -- The Security Accounts Manager initialization failed*&^NL^&*  because of the following error: %hs Error Status: 0x%x. Click OK to shut down*&^NL^&*  this system and restart in Safe Mode. Check the event log for more detailed*&^NL^&*  information.
+STATUS_SAM_NEED_BOOTKEY_FLOPPY -- 0xC00002E0 -- The Security Accounts Manager needs to get the boot*&^NL^&*  key from the floppy disk.
+STATUS_SAM_NEED_BOOTKEY_PASSWORD -- 0xC00002DF -- The Security Accounts Manager needs to get the boot*&^NL^&*  password.
+STATUS_SECRET_TOO_LONG -- 0xC0000157 -- The length of a secret exceeds the maximum allowable*&^NL^&*  length. The length and number of secrets is limited to satisfy U.S. State*&^NL^&*  Department export restrictions.
+STATUS_SECTION_NOT_EXTENDED -- 0xC0000087 -- A mapped section could not be extended.
+STATUS_SEMAPHORE_LIMIT_EXCEEDED -- 0xC0000047 -- An attempt was made to release a semaphore such that*&^NL^&*  its maximum count would have been exceeded.
+STATUS_SERIAL_COUNTER_TIMEOUT -- 0x4000000C -- {Serial IOCTL Timeout} A serial I/O operation*&^NL^&*  completed because the time-out period expired. (The IOCTL_SERIAL_XOFF_COUNTER*&^NL^&*  had not reached zero.)
+STATUS_SERIAL_MORE_WRITES -- 0x40000008 -- {Serial IOCTL Complete} A serial I/O operation was*&^NL^&*  completed by another write to a serial port. (The IOCTL_SERIAL_XOFF_COUNTER*&^NL^&*  reached zero.)
+STATUS_SERIAL_NO_DEVICE_INITED -- 0xC0000150 -- No serial device was successfully initialized. The*&^NL^&*  serial driver will unload.
+STATUS_SERVER_DISABLED -- 0xC0000080 -- The GUID allocation server is disabled at the moment.
+STATUS_SERVER_NOT_DISABLED -- 0xC0000081 -- The GUID allocation server is enabled at the moment.
+STATUS_SERVER_SHUTDOWN_IN_PROGRESS -- 0xC00002FF -- The server machine is shutting down.
+STATUS_SETMARK_DETECTED -- 0x80000021 -- A tape access reached a set mark.
+STATUS_SHARED_IRQ_BUSY -- 0xC000016C -- An attempt was made to open a device that was sharing*&^NL^&*  an interrupt request (IRQ) with other devices. At least one other device that*&^NL^&*  uses that IRQ was already opened. Two concurrent opens of devices that share*&^NL^&*  an IRQ and only work via interrupts is not supported for the particular bus*&^NL^&*  type that the devices use.
+STATUS_SHARED_POLICY -- 0xC0000299 -- The policy object is shared and can only be modified*&^NL^&*  at the root.
+STATUS_SHARING_PAUSED -- 0xC00000CF -- File sharing has been temporarily paused.
+STATUS_SHARING_VIOLATION -- 0xC0000043 -- A file cannot be opened because the share access flags*&^NL^&*  are incompatible.
+STATUS_SHUTDOWN_IN_PROGRESS -- 0xC00002FE -- A system shutdown is in progress.
+STATUS_SMARTCARD_CARD_BLOCKED -- 0xC0000381 -- The smart card is blocked.
+STATUS_SMARTCARD_CARD_NOT_AUTHENTICATED -- 0xC0000382 -- No PIN was presented to the smart card.
+STATUS_SMARTCARD_CERT_EXPIRED -- 0xC000038D -- The smart card certificate used for authentication has*&^NL^&*  expired. Contact your system administrator.
+STATUS_SMARTCARD_CERT_REVOKED -- 0xC0000389 -- The smart card certificate used for authentication has*&^NL^&*  been revoked. Contact your system administrator. There might be additional*&^NL^&*  information in the event log.
+STATUS_SMARTCARD_IO_ERROR -- 0xC0000387 -- A communication error with the smart card has been*&^NL^&*  detected.
+STATUS_SMARTCARD_LOGON_REQUIRED -- 0xC00002FA -- Smart card logon is required and was not used.
+STATUS_SMARTCARD_NO_CARD -- 0xC0000383 -- No smart card is available.
+STATUS_SMARTCARD_NO_CERTIFICATE -- 0xC0000385 -- The requested certificate does not exist on the smart*&^NL^&*  card.
+STATUS_SMARTCARD_NO_KEYSET -- 0xC0000386 -- The requested keyset does not exist.
+STATUS_SMARTCARD_NO_KEY_CONTAINER -- 0xC0000384 -- The requested key container does not exist on the*&^NL^&*  smart card.
+STATUS_SMARTCARD_SUBSYSTEM_FAILURE -- 0xC0000321 -- The Kerberos protocol encountered an error while*&^NL^&*  attempting to use the smart card subsystem.
+STATUS_SMARTCARD_WRONG_PIN -- 0xC0000380 -- An incorrect PIN was presented to the smart card.
+STATUS_SOME_NOT_MAPPED -- 0x00000107 -- Some of the information to be translated has not been*&^NL^&*  translated.
+STATUS_SOURCE_ELEMENT_EMPTY -- 0xC0000283 -- The specified medium changer source element contains*&^NL^&*  no media.
+STATUS_SPECIAL_ACCOUNT -- 0xC0000124 -- Indicates an operation that is incompatible with*&^NL^&*  built-in accounts has been attempted on a built-in (special) SAM account. For*&^NL^&*  example, built-in accounts cannot be deleted.
+STATUS_SPECIAL_GROUP -- 0xC0000125 -- The operation requested cannot be performed on the*&^NL^&*  specified group because it is a built-in special group.
+STATUS_SPECIAL_USER -- 0xC0000126 -- The operation requested cannot be performed on the*&^NL^&*  specified user because it is a built-in special user.
+STATUS_STACK_OVERFLOW -- 0xC00000FD -- A new guard page for the stack cannot be created.
+STATUS_STRONG_CRYPTO_NOT_SUPPORTED -- 0xC00002F6 -- The other end of the security negotiation requires*&^NL^&*  strong crypto but it is not supported on the local machine.
+STATUS_SUCCESS -- 0x00EF00C8 -- OK
+STATUS_SUSPEND_COUNT_EXCEEDED -- 0xC000004A -- An attempt was made to suspend a thread whose suspend*&^NL^&*  count was at its maximum.
+STATUS_SXS_ACTIVATION_CONTEXT_DISABLED -- 0xC0150007 -- The application attempted to activate a disabled*&^NL^&*  activation context.
+STATUS_SXS_ASSEMBLY_NOT_FOUND -- 0xC0150004 -- The referenced assembly is not installed on the*&^NL^&*  system.
+STATUS_SXS_CANT_GEN_ACTCTX -- 0xC0150002 -- Windows was unble to process the application binding*&^NL^&*  information. Refer to the system event log for further information.
+STATUS_SXS_INVALID_ACTCTXDATA_FORMAT -- 0xC0150003 -- The application binding data format is invalid.
+STATUS_SXS_KEY_NOT_FOUND -- 0xC0150008 -- The requested lookup key was not found in any active*&^NL^&*  activation context.
+STATUS_SXS_MANIFEST_FORMAT_ERROR -- 0xC0150005 -- The manifest file does not begin with the required tag*&^NL^&*  and format information.
+STATUS_SXS_MANIFEST_PARSE_ERROR -- 0xC0150006 -- The manifest file contains one or more syntax errors.
+STATUS_SXS_PROCESS_DEFAULT_ALREADY_SET -- 0xC015000E -- An attempt to set the process default activation*&^NL^&*  context failed because the process default activation context was already*&^NL^&*  set.
+STATUS_SXS_SECTION_NOT_FOUND -- 0xC0150001 -- The requested section is not present in the activation*&^NL^&*  context.
+STATUS_SXS_THREAD_QUERIES_DISABLED -- 0xC015000B -- Lack of system resources has required isolated*&^NL^&*  activation to be disabled for the current thread of execution.
+STATUS_SXS_WRONG_SECTION_TYPE -- 0xC015000A -- The type requested activation context section does not*&^NL^&*  match the query API used.
+STATUS_TIME_DIFFERENCE_AT_DC -- 0xC0000133 -- The time at the primary domain controller is different*&^NL^&*  from the time at the backup domain controller or member server by too large*&^NL^&*  an amount.
+STATUS_TOKEN_ALREADY_IN_USE -- 0xC000012B -- An attempt was made to establish a token for use as a*&^NL^&*  primary token but the token is already in use. A token can only be the*&^NL^&*  primary token of one process at a time.
+STATUS_TOO_MANY_COMMANDS -- 0xC00000C1 -- The network BIOS command limit has been reached.
+STATUS_TOO_MANY_CONTEXT_IDS -- 0xC000015A -- During a logon attempt, the user's security context*&^NL^&*  accumulated too many security IDs. This is a very unusual situation. Remove*&^NL^&*  the user from some global or local groups to reduce the number of security*&^NL^&*  IDs to incorporate into the security context.
+STATUS_TOO_MANY_LINKS -- 0xC0000265 -- An attempt was made to create more links on a file*&^NL^&*  than the file system supports.
+STATUS_TOO_MANY_LUIDS_REQUESTED -- 0xC0000074 -- The number of LUIDs requested cannot be allocated with*&^NL^&*  a single allocation.
+STATUS_TOO_MANY_NAMES -- 0xC00000CD -- The name limit for the network adapter card of the*&^NL^&*  local computer was exceeded.
+STATUS_TOO_MANY_OPENED_FILES -- 0xC000011F -- Too many files are opened on a remote server. This*&^NL^&*  error should only be returned by the Windows redirector on a remote drive.
+STATUS_TOO_MANY_PRINCIPALS -- 0xC00002F7 -- The KDC reply contained more than one principal name.
+STATUS_TOO_MANY_SECRETS -- 0xC0000156 -- The maximum number of secrets that can be stored in a*&^NL^&*  single system was exceeded. The length and number of secrets is limited to*&^NL^&*  satisfy U.S. State Department export restrictions.
+STATUS_TOO_MANY_SESSIONS -- 0xC00000CE -- The network BIOS session limit was exceeded.
+STATUS_TOO_MANY_SIDS -- 0xC000017E -- Too many SIDs have been specified.
+STATUS_TRANSPORT_FULL -- 0xC00002CA -- The transport element of the medium changer contains*&^NL^&*  media, which is causing the operation to fail.
+STATUS_TRUSTED_DOMAIN_FAILURE -- 0xC000018C -- The logon request failed because the trust*&^NL^&*  relationship between the primary domain and the trusted domain failed.
+STATUS_TRUSTED_RELATIONSHIP_FAILURE -- 0xC000018D -- The logon request failed because the trust*&^NL^&*  relationship between this workstation and the primary domain failed.
+STATUS_TRUST_FAILURE -- 0xC0000190 -- The network logon failed. This might be because the*&^NL^&*  validation authority cannot be reached.
+STATUS_UNABLE_TO_LOCK_MEDIA -- 0xC0000175 -- An attempt to lock the eject media mechanism failed.
+STATUS_UNABLE_TO_UNLOAD_MEDIA -- 0xC0000176 -- An attempt to unload media failed.
+STATUS_UNEXPECTED_NETWORK_ERROR -- 0xC00000C4 -- An unexpected network error occurred.
+STATUS_UNFINISHED_CONTEXT_DELETED -- 0xC00002EE -- A security context was deleted before the context was*&^NL^&*  completed. This is considered a logon failure.
+STATUS_UNKNOWN_REVISION -- 0xC0000058 -- Indicates a revision number that was encountered or*&^NL^&*  specified is not one that is known by the service. It might be a more recent*&^NL^&*  revision than the service is aware of.
+STATUS_UNMAPPABLE_CHARACTER -- 0xC0000162 -- No mapping for the Unicode character exists in the*&^NL^&*  target multibyte code page.
+STATUS_UNRECOGNIZED_MEDIA -- 0xC0000014 -- {Unknown Disk Format} The disk in drive %hs is not*&^NL^&*  formatted properly. Check the disk, and reformat it, if needed.
+STATUS_UNRECOGNIZED_VOLUME -- 0xC000014F -- The volume does not contain a recognized file system.*&^NL^&*  Be sure that all required file system drivers are loaded and that the volume*&^NL^&*  is not corrupt.
+STATUS_UNSUCCESSFUL -- 0xC0000001 -- {Operation Failed} The requested operation was*&^NL^&*  unsuccessful.
+STATUS_UNSUPPORTED_PREAUTH -- 0xC0000351 -- An unsupported pre-authentication mechanism was*&^NL^&*  presented to the Kerberos package.
+STATUS_USER_EXISTS -- 0xC0000063 -- The specified account already exists.
+STATUS_USER_MAPPED_FILE -- 0xC0000243 -- The requested operation cannot be performed on a file*&^NL^&*  with a user mapped section open.
+STATUS_VARIABLE_NOT_FOUND -- 0xC0000100 -- Indicates the specified environment variable name was*&^NL^&*  not found in the specified environment block.
+STATUS_VIRTUAL_CIRCUIT_CLOSED -- 0xC00000D6 -- {Network Request Timeout} The session with a remote*&^NL^&*  server has been disconnected because the time-out interval for a request has*&^NL^&*  expired.
+STATUS_WMI_ALREADY_DISABLED -- 0xC0000302 -- Collection or events for the WMI GUID is already*&^NL^&*  disabled.
+STATUS_WMI_ALREADY_ENABLED -- 0xC0000303 -- Collection or events for the WMI GUID is already*&^NL^&*  enabled.
+STATUS_WMI_GUID_DISCONNECTED -- 0xC0000301 -- The WMI GUID is no longer available.
+STATUS_WMI_GUID_NOT_FOUND -- 0xC0000295 -- The GUID passed was not recognized as valid by a WMI*&^NL^&*  data provider.
+STATUS_WMI_INSTANCE_NOT_FOUND -- 0xC0000296 -- The instance name passed was not recognized as valid*&^NL^&*  by a WMI data provider.
+STATUS_WMI_ITEMID_NOT_FOUND -- 0xC0000297 -- The data item ID passed was not recognized as valid by*&^NL^&*  a WMI data provider.
+STATUS_WMI_READ_ONLY -- 0xC00002C6 -- The WMI data item or data block is read-only.
+STATUS_WMI_SET_FAILURE -- 0xC00002C7 -- The WMI data item or data block could not be changed.
+STATUS_WMI_TRY_AGAIN -- 0xC0000298 -- The WMI request could not be completed and should be*&^NL^&*  retried.
+STATUS_WORKING_SET_QUOTA -- 0xC00000A1 -- The working set is not big enough to allow the*&^NL^&*  requested pages to be locked.
+STATUS_WRONG_CREDENTIAL_HANDLE -- 0xC00002F2 -- The supplied credential handle does not match the*&^NL^&*  credential that is associated with the security context.
+STATUS_WRONG_PASSWORD -- 0xC000006A -- When trying to update a password, this return status*&^NL^&*  indicates that the value provided as the current password is not correct.
+STATUS_WRONG_VOLUME -- 0xC0000012 -- {Wrong Volume} The wrong volume is in the drive.*&^NL^&*  Insert volume %hs into drive %hs.
+EPT_S_CANT_CREATE -- 0x8007076B -- The endpoint mapper database entry could not be created.
+EPT_S_CANT_PERFORM_OP -- 0x800706D8 -- The server endpoint cannot perform the operation.
+EPT_S_INVALID_ENTRY -- 0x800706D7 -- The entry is invalid.
+EPT_S_NOT_REGISTERED -- 0x800706D9 -- There are no more endpoints available from the endpoint mapper.
+ERROR_ACCESS_DENIED -- 0x80070005 -- Access is denied.
+ERROR_ACCESS_DISABLED_BY_POLICY -- 0x800704EC -- This program is blocked by group policy. For more information, contact your system administrator.
+ERROR_ACCOUNT_DISABLED -- 0x80070533 -- This user can't sign in because this account is currently disabled.
+ERROR_ACCOUNT_EXPIRED -- 0x80070701 -- The user's account has expired.
+ERROR_ACCOUNT_LOCKED_OUT -- 0x80070775 -- The referenced account is currently locked out and may not be logged on to.
+ERROR_ACCOUNT_RESTRICTION -- 0x8007052F -- Account restrictions are preventing this user from signing in. For example: blank passwords aren't allowed, sign-in times are limited, or a policy restriction has been enforced.
+ERROR_ACTIVE_CONNECTIONS -- 0x80070962 -- Active connections still exist.
+ERROR_ADAP_HDW_ERR -- 0x80070039 -- A network adapter hardware error occurred.
+ERROR_ADDRESS_ALREADY_ASSOCIATED -- 0x800704CB -- The network transport endpoint already has an address associated with it.
+ERROR_ADDRESS_NOT_ASSOCIATED -- 0x800704CC -- An address has not yet been associated with the network endpoint.
+ERROR_ALIAS_EXISTS -- 0x80070563 -- The specified local group already exists.
+ERROR_ALLOTTED_SPACE_EXCEEDED -- 0x80070540 -- No more memory is available for security information updates.
+ERROR_ALREADY_EXISTS -- 0x800700B7 -- Cannot create a file when that file already exists.
+ERROR_ARITHMETIC_OVERFLOW -- 0x80070216 -- Arithmetic result exceeded 32 bits.
+ERROR_AUDITING_DISABLED -- 0xC0090001 -- The specified event is currently not being audited.
+ERROR_BADDB -- 0x800703F1 -- The configuration registry database is corrupt.
+ERROR_BAD_COMMAND -- 0x80070016 -- The device does not recognize the command.
+ERROR_BAD_DESCRIPTOR_FORMAT -- 0x80070551 -- A security descriptor is not in the right format (absolute or self-relative).
+ERROR_BAD_DEV_TYPE -- 0x80070042 -- The network resource type is not correct.
+ERROR_BAD_DRIVER -- 0x80070077 -- The system does not support the command requested.
+ERROR_BAD_EXE_FORMAT -- 0x800700C1 -- %1 is not a valid Win32 application.
+ERROR_BAD_IMPERSONATION_LEVEL -- 0x80070542 -- Either a required impersonation level was not provided, or the provided impersonation level is invalid.
+ERROR_BAD_INHERITANCE_ACL -- 0x8007053C -- The inherited access control list (ACL) or access control entry (ACE) could not be built.
+ERROR_BAD_LENGTH -- 0x80070018 -- The program issued a command but the command length is incorrect.
+ERROR_BAD_LOGON_SESSION_STATE -- 0x80070555 -- The logon session is not in a state that is consistent with the requested operation.
+ERROR_BAD_NETPATH -- 0x80070035 -- The network path was not found.
+ERROR_BAD_NET_NAME -- 0x80070043 -- The network name cannot be found.
+ERROR_BAD_NET_RESP -- 0x8007003A -- The specified server cannot perform the requested operation.
+ERROR_BAD_PATHNAME -- 0x800700A1 -- The specified path is invalid.
+ERROR_BAD_PIPE -- 0x800700E6 -- The pipe state is invalid.
+ERROR_BAD_REM_ADAP -- 0x8007003C -- The remote adapter is not compatible.
+ERROR_BAD_TOKEN_TYPE -- 0x80070545 -- The type of the token is inappropriate for its attempted use.
+ERROR_BAD_VALIDATION_CLASS -- 0x80070544 -- The validation information class requested was invalid.
+ERROR_BEGINNING_OF_MEDIA -- 0x8007044E -- The beginning of the tape or a partition was encountered.
+ERROR_BROKEN_PIPE -- 0x8007006D -- The pipe has been ended.
+ERROR_BUSY -- 0x8007008E -- The system cannot perform a JOIN or SUBST at this time.
+ERROR_BUS_RESET -- 0x80070457 -- The I/O bus was reset.
+ERROR_CANNOT_IMPERSONATE -- 0x80070558 -- Unable to impersonate using a named pipe until data has been read from that pipe.
+ERROR_CANNOT_MAKE -- 0x80070052 -- The directory or file cannot be created.
+ERROR_CANT_ACCESS_DOMAIN_INFO -- 0x80070547 -- Configuration information could not be read from the domain controller, either because the machine is unavailable, or access has been denied.
+ERROR_CANT_ACCESS_FILE -- 0x80070780 -- The file cannot be accessed by the system.
+ERROR_CANT_DISABLE_MANDATORY -- 0x8007051E -- The group may not be disabled.
+ERROR_CANT_OPEN_ANONYMOUS -- 0x80070543 -- Cannot open an anonymous level security token.
+ERROR_CANT_RESOLVE_FILENAME -- 0x80070781 -- The name of the file cannot be resolved by the system.
+ERROR_CHILD_MUST_BE_VOLATILE -- 0x800703FD -- Cannot create a stable subkey under a volatile parent key.
+ERROR_CLEANER_CARTRIDGE_INSTALLED -- 0x800710F4 -- A cleaner cartridge is present in the tape library.
+ERROR_CLUSTER_INVALID_NETWORK -- 0x800713B9 -- The cluster network provider is not valid.
+ERROR_CLUSTER_INVALID_NETWORK_PROVIDER -- 0x800713B9 -- The cluster network provider is not valid.
+ERROR_CLUSTER_INVALID_NODE -- 0x800713AF -- The cluster node is not valid.
+ERROR_CLUSTER_INVALID_REQUEST -- 0x800713B8 -- The cluster request is not valid for this object.
+ERROR_CLUSTER_JOIN_IN_PROGRESS -- 0x800713B1 -- A node is in the process of joining the cluster.
+ERROR_CLUSTER_JOIN_NOT_IN_PROGRESS -- 0x800713BD -- A cluster join operation is not in progress.
+ERROR_CLUSTER_LOCAL_NODE_NOT_FOUND -- 0x800713B3 -- The cluster local node information was not found.
+ERROR_CLUSTER_NETINTERFACE_EXISTS -- 0x800713B6 -- The cluster network interface already exists.
+ERROR_CLUSTER_NETINTERFACE_NOT_FOUND -- 0x800713B7 -- The cluster network interface was not found.
+ERROR_CLUSTER_NETWORK_ALREADY_OFFLINE -- 0x800713C8 -- The cluster network is already offline.
+ERROR_CLUSTER_NETWORK_ALREADY_ONLINE -- 0x800713C7 -- The cluster network is already online.
+ERROR_CLUSTER_NETWORK_EXISTS -- 0x800713B4 -- The cluster network already exists.
+ERROR_CLUSTER_NETWORK_NOT_FOUND -- 0x800713B5 -- The cluster network was not found.
+ERROR_CLUSTER_NETWORK_NOT_INTERNAL -- 0x800713C4 -- The cluster network is not configured for internal cluster communication.
+ERROR_CLUSTER_NODE_ALREADY_DOWN -- 0x800713C6 -- The cluster node is already down.
+ERROR_CLUSTER_NODE_ALREADY_MEMBER -- 0x800713C9 -- The cluster node is already a member of the cluster.
+ERROR_CLUSTER_NODE_ALREADY_UP -- 0x800713C5 -- The cluster node is already up.
+ERROR_CLUSTER_NODE_DOWN -- 0x800713BA -- The cluster node is down.
+ERROR_CLUSTER_NODE_EXISTS -- 0x800713B0 -- The cluster node already exists.
+ERROR_CLUSTER_NODE_NOT_FOUND -- 0x800713B2 -- The cluster node was not found.
+ERROR_CLUSTER_NODE_NOT_MEMBER -- 0x800713BC -- The cluster node is not a member of the cluster.
+ERROR_CLUSTER_NODE_NOT_PAUSED -- 0x800713C2 -- The cluster node is not paused.
+ERROR_CLUSTER_NODE_PAUSED -- 0x800713CE -- The cluster node is paused.
+ERROR_CLUSTER_NODE_UNREACHABLE -- 0x800713BB -- The cluster node is not reachable.
+ERROR_CLUSTER_NODE_UP -- 0x800713C0 -- The cluster node is up.
+ERROR_CLUSTER_NO_SECURITY_CONTEXT -- 0x800713C3 -- No cluster security context is available.
+ERROR_COMMITMENT_LIMIT -- 0x800705AF -- The paging file is too small for this operation to complete.
+ERROR_CONNECTION_ABORTED -- 0x800704D4 -- The network connection was aborted by the local system.
+ERROR_CONNECTION_ACTIVE -- 0x800704CE -- An invalid operation was attempted on an active network connection.
+ERROR_CONNECTION_COUNT_LIMIT -- 0x800704D6 -- A connection to the server could not be made because the limit on the number of concurrent connections for this account has been reached.
+ERROR_CONNECTION_INVALID -- 0x800704CD -- An operation was attempted on a nonexistent network connection.
+ERROR_CONNECTION_REFUSED -- 0x800704C9 -- The remote computer refused the network connection.
+ERROR_CONNECTION_UNAVAIL -- 0x800704B1 -- The device is not currently connected but it is a remembered connection.
+ERROR_CONTEXT_EXPIRED -- 0x8007078B -- The context has expired and can no longer be used.
+ERROR_COUNTER_TIMEOUT -- 0x80070461 -- A serial I/O operation completed because the timeout period expired.&#xA;// (The IOCTL_SERIAL_XOFF_COUNTER did not reach zero.)
+ERROR_CRC -- 0x80070017 -- Data error (cyclic redundancy check).
+ERROR_CTX_BAD_VIDEO_MODE -- 0x80071B71 -- An attempt has been made to connect to a session whose video mode is not supported by the current client.
+ERROR_CTX_CLIENT_LICENSE_IN_USE -- 0x80071B8C -- Your request to connect to this Terminal Server has been rejected. Your Terminal Server client license number is currently being used by another user. Please call your system administrator to obtain a unique license number.
+ERROR_CTX_CLIENT_LICENSE_NOT_SET -- 0x80071B8D -- Your request to connect to this Terminal Server has been rejected. Your Terminal Server client license number has not been entered for this copy of the Terminal Server client. Please contact your system administrator.
+ERROR_CTX_CLIENT_QUERY_TIMEOUT -- 0x80071B80 -- The client failed to respond to the server connect message.
+ERROR_CTX_CLOSE_PENDING -- 0x80071B5F -- A close operation is pending on the session.
+ERROR_CTX_CONSOLE_CONNECT -- 0x80071B82 -- Reconnecting a disconnected session to the console is not supported.
+ERROR_CTX_CONSOLE_DISCONNECT -- 0x80071B81 -- Disconnecting the console session is not supported.
+ERROR_CTX_GRAPHICS_INVALID -- 0x80071B7B -- The application attempted to enable DOS graphics mode. DOS graphics mode is not supported.
+ERROR_CTX_INVALID_MODEMNAME -- 0x80071B62 -- The modem name was not found in MODEM.INF.
+ERROR_CTX_INVALID_PD -- 0x80071B5A -- The specified protocol driver is invalid.
+ERROR_CTX_INVALID_WD -- 0x80071B89 -- The specified terminal connection driver is invalid.
+ERROR_CTX_LICENSE_CLIENT_INVALID -- 0x80071B8F -- The client you are using is not licensed to use this system. Your logon request is denied.
+ERROR_CTX_LICENSE_EXPIRED -- 0x80071B90 -- The system license has expired. Your logon request is denied.
+ERROR_CTX_LICENSE_NOT_AVAILABLE -- 0x80071B8E -- The number of connections to this computer is limited and all connections are in use right now. Try connecting later or contact your system administrator.
+ERROR_CTX_MODEM_INF_NOT_FOUND -- 0x80071B61 -- The MODEM.INF file was not found.
+ERROR_CTX_MODEM_RESPONSE_BUSY -- 0x80071B67 -- Busy signal detected at remote site on callback.
+ERROR_CTX_MODEM_RESPONSE_ERROR -- 0x80071B63 -- The modem did not accept the command sent to it. Verify that the configured modem name matches the attached modem.
+ERROR_CTX_MODEM_RESPONSE_NO_CARRIER -- 0x80071B65 -- Carrier detect has failed or carrier has been dropped due to disconnect.
+ERROR_CTX_MODEM_RESPONSE_NO_DIALTONE -- 0x80071B66 -- Dial tone not detected within the required time. Verify that the phone cable is properly attached and functional.
+ERROR_CTX_MODEM_RESPONSE_TIMEOUT -- 0x80071B64 -- The modem did not respond to the command sent to it. Verify that the modem is properly cabled and powered on.
+ERROR_CTX_MODEM_RESPONSE_VOICE -- 0x80071B68 -- Voice detected at remote site on callback.
+ERROR_CTX_NOT_CONSOLE -- 0x80071B7E -- The requested operation can be performed only on the system console. This is most often the result of a driver or system DLL requiring direct console access.
+ERROR_CTX_NO_OUTBUF -- 0x80071B60 -- There are no free output buffers available.
+ERROR_CTX_PD_NOT_FOUND -- 0x80071B5B -- The specified protocol driver was not found in the system path.
+ERROR_CTX_SHADOW_DENIED -- 0x80071B84 -- The request to control another session remotely was denied.
+ERROR_CTX_SHADOW_DISABLED -- 0x80071B8B -- The requested session is not configured to allow remote control.
+ERROR_CTX_SHADOW_ENDED_BY_MODE_CHANGE -- 0x80071B92 -- The remote control of the console was terminated because the display mode was changed. Changing the display mode in a remote control session is not supported.
+ERROR_CTX_SHADOW_INVALID -- 0x80071B8A -- The requested session cannot be controlled remotely.&#xA;// This may be because the session is disconnected or does not currently have a user logged on.
+ERROR_CTX_SHADOW_NOT_RUNNING -- 0x80071B91 -- Remote control could not be terminated because the specified session is not currently being remotely controlled.
+ERROR_CTX_TD_ERROR -- 0x80071B69 -- Transport driver error
+ERROR_CTX_WD_NOT_FOUND -- 0x80071B5C -- The specified terminal connection driver was not found in the system path.
+ERROR_CTX_WINSTATION_ACCESS_DENIED -- 0x80071B85 -- The requested session access is denied.
+ERROR_CTX_WINSTATION_ALREADY_EXISTS -- 0x80071B6F -- The specified session name is already in use.
+ERROR_CTX_WINSTATION_BUSY -- 0x80071B70 -- The task you are trying to do can't be completed because Remote Desktop Services is currently busy. Please try again in a few minutes. Other users should still be able to log on.
+ERROR_CTX_WINSTATION_NAME_INVALID -- 0x80071B59 -- The specified session name is invalid.
+ERROR_CTX_WINSTATION_NOT_FOUND -- 0x80071B6E -- The specified session cannot be found.
+ERROR_CURRENT_DOMAIN_NOT_ALLOWED -- 0x80070577 -- This operation cannot be performed on the current domain.
+ERROR_DECRYPTION_FAILED -- 0x80071771 -- The specified file could not be decrypted.
+ERROR_DESTINATION_ELEMENT_FULL -- 0x80070489 -- The indicated destination element already contains media.
+ERROR_DEVICE_DOOR_OPEN -- 0x8007048E -- The device has indicated that its door is open.
+ERROR_DEVICE_IN_USE -- 0x80070964 -- The device is in use by an active process and cannot be disconnected.
+ERROR_DEVICE_NOT_CONNECTED -- 0x8007048F -- The device is not connected.
+ERROR_DEVICE_NOT_PARTITIONED -- 0x80070453 -- Tape partition information could not be found when loading a tape.
+ERROR_DEVICE_REINITIALIZATION_NEEDED -- 0x8007048C -- The indicated device requires reinitialization due to hardware errors.
+ERROR_DEVICE_REMOVED -- 0x80070651 -- The device has been removed.
+ERROR_DEVICE_REQUIRES_CLEANING -- 0x8007048D -- The device has indicated that cleaning is required before further operations are attempted.
+ERROR_DEV_NOT_EXIST -- 0x80070037 -- The specified network resource or device is no longer available.
+ERROR_DIRECTORY -- 0x8007010B -- The directory name is invalid.
+ERROR_DIR_NOT_EMPTY -- 0x80070091 -- The directory is not empty.
+ERROR_DISK_CORRUPT -- 0x80070571 -- The disk structure is corrupted and unreadable.
+ERROR_DISK_FULL -- 0x80070070 -- There is not enough space on the disk.
+ERROR_DISK_OPERATION_FAILED -- 0x80070467 -- While accessing the hard disk, a disk operation failed even after retries.
+ERROR_DISK_RECALIBRATE_FAILED -- 0x80070466 -- While accessing the hard disk, a recalibrate operation failed, even after retries.
+ERROR_DISK_RESET_FAILED -- 0x80070468 -- While accessing the hard disk, a disk controller reset was needed, but even that failed.
+ERROR_DISK_TOO_FRAGMENTED -- 0x8007012E -- The volume is too fragmented to complete this operation.
+ERROR_DLL_INIT_FAILED -- 0x80070270 -- {DLL Initialization Failed}&#xA;// The application failed to initialize because the window station is shutting down.
+ERROR_DOMAIN_CONTROLLER_NOT_FOUND -- 0x80070774 -- Could not find the domain controller for this domain.
+ERROR_DOMAIN_EXISTS -- 0x8007054C -- The specified domain already exists.
+ERROR_DOMAIN_LIMIT_EXCEEDED -- 0x8007054D -- An attempt was made to exceed the limit on the number of domains per server.
+ERROR_DOMAIN_TRUST_INCONSISTENT -- 0x80070712 -- The name or security ID (SID) of the domain specified is inconsistent with the trust information for that domain.
+ERROR_DOWNGRADE_DETECTED -- 0x800704F1 -- The system cannot contact a domain controller to service the authentication request. Please try again later.
+ERROR_DRIVER_BLOCKED -- 0x800704FB -- This driver has been blocked from loading
+ERROR_DS_ADMIN_LIMIT_EXCEEDED -- 0x80072024 -- The administrative limit for this request was exceeded.
+ERROR_DS_AG_CANT_HAVE_UNIVERSAL_MEMBER -- 0x80072182 -- An account group cannot have a universal group as a member.
+ERROR_DS_ATTRIBUTE_OR_VALUE_EXISTS -- 0x8007200D -- The specified directory service attribute or value already exists.
+ERROR_DS_ATTRIBUTE_TYPE_UNDEFINED -- 0x8007200C -- The attribute type specified to the directory service is not defined.
+ERROR_DS_BUSY -- 0x8007200E -- The directory service is busy.
+ERROR_DS_CANT_MOD_OBJ_CLASS -- 0x80072017 -- The directory service detected an attempt to modify the object class of an object.
+ERROR_DS_CANT_MOD_PRIMARYGROUPID -- 0x8007213A -- Cannot change the primary group ID of a domain controller account.
+ERROR_DS_CANT_ON_NON_LEAF -- 0x80072015 -- The directory service can perform the requested operation only on a leaf object.
+ERROR_DS_CANT_ON_RDN -- 0x80072016 -- The directory service cannot perform the requested operation on the RDN attribute of an object.
+ERROR_DS_CANT_START -- 0x80072153 -- Directory Service cannot start.
+ERROR_DS_CROSS_DOM_MOVE_ERROR -- 0x80072018 -- The requested cross-domain move operation could not be performed.
+ERROR_DS_DS_REQUIRED -- 0x8007211E -- The requested operation requires a directory service, and none was available.
+ERROR_DS_GC_NOT_AVAILABLE -- 0x80072019 -- Unable to contact the global catalog server.
+ERROR_DS_GC_REQUIRED -- 0x80072163 -- The requested operation can be performed only on a global catalog server.
+ERROR_DS_GLOBAL_CANT_HAVE_CROSSDOMAIN_MEMBER -- 0x80072147 -- A global group cannot have a cross-domain member.
+ERROR_DS_GLOBAL_CANT_HAVE_LOCAL_MEMBER -- 0x80072144 -- A global group cannot have a local group as a member.
+ERROR_DS_GLOBAL_CANT_HAVE_UNIVERSAL_MEMBER -- 0x80072145 -- A global group cannot have a universal group as a member.
+ERROR_DS_HAVE_PRIMARY_MEMBERS -- 0x80072149 -- A group with primary members cannot change to a security-disabled group.
+ERROR_DS_INCORRECT_ROLE_OWNER -- 0x80072012 -- The requested operation could not be performed because the directory service is not the master for that type of operation.
+ERROR_DS_INIT_FAILURE -- 0x80072154 -- Directory Services could not start.
+ERROR_DS_INIT_FAILURE_CONSOLE -- 0x80072171 -- Directory Services could not start because of the following error: %1.&#xA;// Error Status: 0x%2. Please click OK to shutdown the system. You can use the recovery console to diagnose the system further.
+ERROR_DS_INVALID_ATTRIBUTE_SYNTAX -- 0x8007200B -- The attribute syntax specified to the directory service is invalid.
+ERROR_DS_INVALID_GROUP_TYPE -- 0x80072141 -- The specified group type is invalid.
+ERROR_DS_LOCAL_CANT_HAVE_CROSSDOMAIN_LOCAL_MEMBER -- 0x80072148 -- A local group cannot have another cross domain local group as a member.
+ERROR_DS_LOCAL_MEMBER_OF_LOCAL_ONLY -- 0x80072164 -- A local group can only be a member of other local groups in the same domain.
+ERROR_DS_MACHINE_ACCOUNT_CREATED_PRENT4 -- 0x8007217C -- The machine account was created pre-NT4. The account needs to be recreated.
+ERROR_DS_MACHINE_ACCOUNT_QUOTA_EXCEEDED -- 0x8007216D -- Your computer could not be joined to the domain. You have exceeded the maximum number of computer accounts you are allowed to create in this domain. Contact your system administrator to have this limit reset or increased.
+ERROR_DS_MEMBERSHIP_EVALUATED_LOCALLY -- 0x80072009 -- The directory service evaluated group memberships locally.
+ERROR_DS_NO_ATTRIBUTE_OR_VALUE -- 0x8007200A -- The specified directory service attribute or value does not exist.
+ERROR_DS_NO_FPO_IN_UNIVERSAL_GROUPS -- 0x80072165 -- Foreign security principals cannot be members of universal groups.
+ERROR_DS_NO_MORE_RIDS -- 0x80072011 -- The directory service has exhausted the pool of relative identifiers.
+ERROR_DS_NO_NEST_GLOBALGROUP_IN_MIXEDDOMAIN -- 0x80072142 -- You cannot nest global groups in a mixed domain if the group is security-enabled.
+ERROR_DS_NO_NEST_LOCALGROUP_IN_MIXEDDOMAIN -- 0x80072143 -- You cannot nest local groups in a mixed domain if the group is security-enabled.
+ERROR_DS_NO_RIDS_ALLOCATED -- 0x80072010 -- The directory service was unable to allocate a relative identifier.
+ERROR_DS_OBJ_CLASS_VIOLATION -- 0x80072014 -- The requested operation did not satisfy one or more constraints associated with the class of the object.
+ERROR_DS_RIDMGR_INIT_ERROR -- 0x80072013 -- The directory service was unable to initialize the subsystem that allocates relative identifiers.
+ERROR_DS_SAM_INIT_FAILURE -- 0x80072138 -- Security Accounts Manager initialization failed because of the following error: %1.&#xA;// Error Status: 0x%2. Please shutdown this system and reboot into Directory Services Restore Mode, check the event log for more detailed information.
+ERROR_DS_SAM_INIT_FAILURE_CONSOLE -- 0x80072172 -- Security Accounts Manager initialization failed because of the following error: %1.&#xA;// Error Status: 0x%2. Please click OK to shutdown the system. You can use the recovery console to diagnose the system further.
+ERROR_DS_SAM_NEED_BOOTKEY_FLOPPY -- 0x80072152 -- Security Account Manager needs to get the boot key from floppy disk.
+ERROR_DS_SAM_NEED_BOOTKEY_PASSWORD -- 0x80072151 -- Security Account Manager needs to get the boot password.
+ERROR_DS_SENSITIVE_GROUP_VIOLATION -- 0x80072139 -- Only an administrator can modify the membership list of an administrative group.
+ERROR_DS_SHUTTING_DOWN -- 0x800720AC -- The operation could not be performed because the directory service is shutting down.
+ERROR_DS_UNAVAILABLE -- 0x8007200F -- The directory service is unavailable.
+ERROR_DS_UNIVERSAL_CANT_HAVE_LOCAL_MEMBER -- 0x80072146 -- A universal group cannot have a local group as a member.
+ERROR_DUP_NAME -- 0x80070034 -- You were not connected because a duplicate name exists on the network. If joining a domain, go to System in Control Panel to change the computer name and try again. If joining a workgroup, choose another workgroup name.
+ERROR_EAS_NOT_SUPPORTED -- 0x8007011A -- The mounted file system does not support extended attributes.
+ERROR_EA_LIST_INCONSISTENT -- 0x800700FF -- The extended attributes are inconsistent.
+ERROR_EFS_ALG_BLOB_TOO_BIG -- 0x8007177D -- The encryption algorithm used on the source file needs a bigger key buffer than the one on the destination file.
+ERROR_ENCRYPTION_FAILED -- 0x80071770 -- The specified file could not be encrypted.
+ERROR_END_OF_MEDIA -- 0x8007044C -- The physical end of the tape has been reached.
+ERROR_ENVVAR_NOT_FOUND -- 0x800700CB -- The system could not find the environment option that was entered.
+ERROR_EOM_OVERFLOW -- 0x80070469 -- Physical end of tape encountered.
+ERROR_EVENTLOG_CANT_START -- 0x800705DD -- No event log file could be opened, so the event logging service did not start.
+ERROR_EVENTLOG_FILE_CHANGED -- 0x800705DF -- The event log file has changed between read operations.
+ERROR_EVENTLOG_FILE_CORRUPT -- 0x800705DC -- The event log file is corrupted.
+ERROR_FILEMARK_DETECTED -- 0x8007044D -- A tape access reached a filemark.
+ERROR_FILENAME_EXCED_RANGE -- 0x800700CE -- The filename or extension is too long.
+ERROR_FILE_CORRUPT -- 0x80070570 -- The file or directory is corrupted and unreadable.
+ERROR_FILE_ENCRYPTED -- 0x80071772 -- The specified file is encrypted and the user does not have the ability to decrypt it.
+ERROR_FILE_EXISTS -- 0x80070050 -- The file exists.
+ERROR_FILE_INVALID -- 0x800703EE -- The volume for a file has been externally altered so that the opened file is no longer valid.
+ERROR_FILE_NOT_ENCRYPTED -- 0x80071777 -- The specified file is not encrypted.
+ERROR_FILE_NOT_FOUND -- 0x80070002 -- The system cannot find the file specified.
+ERROR_FILE_OFFLINE -- 0x800710FE -- This file is currently not available for use on this computer.
+ERROR_FLOPPY_BAD_REGISTERS -- 0x80070465 -- The floppy disk controller returned inconsistent results in its registers.
+ERROR_FLOPPY_ID_MARK_NOT_FOUND -- 0x80070462 -- No ID address mark was found on the floppy disk.
+ERROR_FLOPPY_UNKNOWN_ERROR -- 0x80070464 -- The floppy disk controller reported an error that is not recognized by the floppy disk driver.
+ERROR_FLOPPY_WRONG_CYLINDER -- 0x80070463 -- Mismatch between the floppy disk sector ID field and the floppy disk controller track address.
+ERROR_FULLSCREEN_MODE -- 0x800703EF -- The requested operation cannot be performed in full-screen mode.
+ERROR_GENERIC_NOT_MAPPED -- 0x80070550 -- Generic access types were contained in an access mask which should already be mapped to nongeneric types.
+ERROR_GEN_FAILURE -- 0x8007001F -- A device attached to the system is not functioning.
+ERROR_GRACEFUL_DISCONNECT -- 0x800704CA -- The network connection was gracefully closed.
+ERROR_GROUP_EXISTS -- 0x80070526 -- The specified group already exists.
+ERROR_HANDLE_EOF -- 0x80070026 -- Reached the end of the file.
+ERROR_HOST_DOWN -- 0x800704E8 -- The remote system is not available. For information about network troubleshooting, see Windows Help.
+ERROR_HOST_UNREACHABLE -- 0x800704D0 -- The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+ERROR_ILLEGAL_ELEMENT_ADDRESS -- 0x8007048A -- The indicated element does not exist.
+ERROR_ILL_FORMED_PASSWORD -- 0x8007052C -- Unable to update the password. The value provided for the new password contains values that are not allowed in passwords.
+ERROR_INSUFFICIENT_BUFFER -- 0x8007007A -- The data area passed to a system call is too small.
+ERROR_INTERNAL_DB_CORRUPTION -- 0x8007054E -- Unable to complete the requested operation because of either a catastrophic media failure or a data structure corruption on the disk.
+ERROR_INTERNAL_DB_ERROR -- 0x80070567 -- The local security authority database contains an internal inconsistency.
+ERROR_INTERNAL_ERROR -- 0x8007054F -- An internal error occurred.
+ERROR_INVALID_ACCOUNT_NAME -- 0x80070523 -- The name provided is not a properly formed account name.
+ERROR_INVALID_ACL -- 0x80070538 -- The access control list (ACL) structure is invalid.
+ERROR_INVALID_ADDRESS -- 0x800701E7 -- Attempt to access invalid address.
+ERROR_INVALID_BLOCK_LENGTH -- 0x80070452 -- When accessing a new tape of a multivolume partition, the current block size is incorrect.
+ERROR_INVALID_COMPUTERNAME -- 0x800704BA -- The format of the specified computer name is invalid.
+ERROR_INVALID_DOMAIN_ROLE -- 0x8007054A -- This operation is only allowed for the Primary Domain Controller of the domain.
+ERROR_INVALID_DOMAIN_STATE -- 0x80070549 -- The domain was in the wrong state to perform the security operation.
+ERROR_INVALID_EA_NAME -- 0x800700FE -- The specified extended attribute name was invalid.
+ERROR_INVALID_FUNCTION -- 0x80070001 -- Incorrect function.
+ERROR_INVALID_GROUP_ATTRIBUTES -- 0x80070541 -- The specified attributes are invalid, or incompatible with the attributes for the group as a whole.
+ERROR_INVALID_HANDLE -- 0x80070006 -- The handle is invalid.
+ERROR_INVALID_ID_AUTHORITY -- 0x8007053F -- The value provided was an invalid value for an identifier authority.
+ERROR_INVALID_IMPORT_OF_NON_DLL -- 0x800704FC -- A dynamic link library (DLL) referenced a module that was neither a DLL nor the process's executable image.
+ERROR_INVALID_LEVEL -- 0x8007007C -- The system call level is not correct.
+ERROR_INVALID_LOGON_HOURS -- 0x80070530 -- Your account has time restrictions that keep you from signing in right now.
+ERROR_INVALID_LOGON_TYPE -- 0x80070557 -- A logon request contained an invalid logon type value.
+ERROR_INVALID_MEMBER -- 0x8007056C -- A new member could not be added to a local group because the member has the wrong account type.
+ERROR_INVALID_NAME -- 0x8007007B -- The filename, directory name, or volume label syntax is incorrect.
+ERROR_INVALID_NETNAME -- 0x800704BE -- The format of the specified network name is invalid.
+ERROR_INVALID_OPLOCK_PROTOCOL -- 0x8007012D -- An invalid oplock acknowledgment was received by the system.
+ERROR_INVALID_ORDINAL -- 0x800700B6 -- The operating system cannot run %1.
+ERROR_INVALID_OWNER -- 0x8007051B -- This security ID may not be assigned as the owner of this object.
+ERROR_INVALID_PARAMETER -- 0x80070057 -- The parameter is incorrect.
+ERROR_INVALID_PASSWORD -- 0x80070056 -- The specified network password is not correct.
+ERROR_INVALID_PRIMARY_GROUP -- 0x8007051C -- This security ID may not be assigned as the primary group of an object.
+ERROR_INVALID_REPARSE_DATA -- 0x80071128 -- The data present in the reparse point buffer is invalid.
+ERROR_INVALID_SECURITY_DESCR -- 0x8007053A -- The security descriptor structure is invalid.
+ERROR_INVALID_SERVER_STATE -- 0x80070548 -- The security account manager (SAM) or local security authority (LSA) server was in the wrong state to perform the security operation.
+ERROR_INVALID_SID -- 0x80070539 -- The security ID structure is invalid.
+ERROR_INVALID_SUB_AUTHORITY -- 0x80070537 -- The subauthority part of a security ID is invalid for this particular use.
+ERROR_INVALID_THREAD_ID -- 0x800705A4 -- Invalid thread identifier.
+ERROR_INVALID_USER_BUFFER -- 0x800706F8 -- The supplied user buffer is not valid for the requested operation.
+ERROR_INVALID_WORKSTATION -- 0x80070531 -- This user isn't allowed to sign in to this computer.
+ERROR_IO_DEVICE -- 0x8007045D -- The request could not be performed because of an I/O device error.
+ERROR_IO_PENDING -- 0x800703E5 -- Overlapped I/O operation is in progress.
+ERROR_IRQ_BUSY -- 0x8007045F -- Unable to open a device that was sharing an interrupt request (IRQ) with other devices. At least one other device that uses that IRQ was already opened.
+ERROR_JOURNAL_DELETE_IN_PROGRESS -- 0x8007049A -- The volume change journal is being deleted.
+ERROR_JOURNAL_ENTRY_DELETED -- 0x8007049D -- The journal entry has been deleted from the journal.
+ERROR_JOURNAL_NOT_ACTIVE -- 0x8007049B -- The volume change journal is not active.
+ERROR_KEY_DELETED -- 0x800703FA -- Illegal operation attempted on a registry key that has been marked for deletion.
+ERROR_KEY_HAS_CHILDREN -- 0x800703FC -- Cannot create a symbolic link in a registry key that already has subkeys or values.
+ERROR_LABEL_TOO_LONG -- 0x8007009A -- The volume label you entered exceeds the label character limit of the target file system.
+ERROR_LAST_ADMIN -- 0x8007052A -- This operation is disallowed as it could result in an administration account being disabled, deleted or unable to logon.
+ERROR_LICENSE_QUOTA_EXCEEDED -- 0x80070573 -- The service being accessed is licensed for a particular number of connections. No more connections can be made to the service at this time because there are already as many connections as the service can accept.
+ERROR_LM_CROSS_ENCRYPTION_REQUIRED -- 0x8007056E -- A cross-encrypted password is necessary to change this user password.
+ERROR_LOCAL_USER_SESSION_KEY -- 0x80070517 -- No encryption key is available. A well-known encryption key was returned.
+ERROR_LOCK_VIOLATION -- 0x80070021 -- The process cannot access the file because another process has locked a portion of the file.
+ERROR_LOGIN_TIME_RESTRICTION -- 0x800704D7 -- Attempting to log in during an unauthorized time of day for this account.
+ERROR_LOGIN_WKSTA_RESTRICTION -- 0x800704D8 -- The account is not authorized to log in from this station.
+ERROR_LOGON_FAILURE -- 0x8007052E -- The user name or password is incorrect.
+ERROR_LOGON_NOT_GRANTED -- 0x80070564 -- Logon failure: the user has not been granted the requested logon type at this computer.
+ERROR_LOGON_SESSION_COLLISION -- 0x80070556 -- The logon session ID is already in use.
+ERROR_LOGON_SESSION_EXISTS -- 0x80070553 -- Cannot start a new logon session with an ID that is already in use.
+ERROR_LOGON_TYPE_NOT_GRANTED -- 0x80070569 -- Logon failure: the user has not been granted the requested logon type at this computer.
+ERROR_LOG_FILE_FULL -- 0x800705DE -- The event log file is full.
+ERROR_LUIDS_EXHAUSTED -- 0x80070536 -- No more local user identifiers (LUIDs) are available.
+ERROR_MAGAZINE_NOT_PRESENT -- 0x8007048B -- The indicated element is part of a magazine that is not present.
+ERROR_MAPPED_ALIGNMENT -- 0x8007046C -- The base address or the file offset specified does not have the proper alignment.
+ERROR_MEDIA_CHANGED -- 0x80070456 -- The media in the drive may have changed.
+ERROR_MEMBERS_PRIMARY_GROUP -- 0x8007055E -- The user cannot be removed from a group because the group is currently the user's primary group.
+ERROR_MEMBER_IN_ALIAS -- 0x80070562 -- The specified account name is already a member of the group.
+ERROR_MEMBER_IN_GROUP -- 0x80070528 -- Either the specified user account is already a member of the specified group, or the specified group cannot be deleted because it contains a member.
+ERROR_MEMBER_NOT_IN_ALIAS -- 0x80070561 -- The specified account name is not a member of the group.
+ERROR_MEMBER_NOT_IN_GROUP -- 0x80070529 -- The specified user account is not a member of the specified group account.
+ERROR_MOD_NOT_FOUND -- 0x8007007E -- The specified module could not be found.
+ERROR_MORE_DATA -- 0x800700EA -- More data is available.
+ERROR_MORE_WRITES -- 0x80070460 -- A serial I/O operation was completed by another write to the serial port.&#xA;// (The IOCTL_SERIAL_XOFF_COUNTER reached zero.)
+ERROR_MR_MID_NOT_FOUND -- 0x8007013D -- The system cannot find message text for message number 0x%1 in the message file for %2.
+ERROR_MUTUAL_AUTH_FAILED -- 0x80070575 -- Mutual Authentication failed. The server's password is out of date at the domain controller.
+ERROR_NETLOGON_NOT_STARTED -- 0x80070700 -- An attempt was made to logon, but the network logon service was not started.
+ERROR_NETNAME_DELETED -- 0x80070040 -- The specified network name is no longer available.
+ERROR_NETWORK_ACCESS_DENIED -- 0x80070041 -- Network access is denied.
+ERROR_NETWORK_BUSY -- 0x80070036 -- The network is busy.
+ERROR_NETWORK_UNREACHABLE -- 0x800704CF -- The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+ERROR_NET_WRITE_FAULT -- 0x80070058 -- A write fault occurred on the network.
+ERROR_NOACCESS -- 0x800703E6 -- Invalid access to memory location.
+ERROR_NOLOGON_INTERDOMAIN_TRUST_ACCOUNT -- 0x8007070F -- The account used is an interdomain trust account. Use your global user account or local user account to access this server.
+ERROR_NOLOGON_SERVER_TRUST_ACCOUNT -- 0x80070711 -- The account used is a server trust account. Use your global user account or local user account to access this server.
+ERROR_NOLOGON_WORKSTATION_TRUST_ACCOUNT -- 0x80070710 -- The account used is a computer account. Use your global user account or local user account to access this server.
+ERROR_NONE_MAPPED -- 0x80070534 -- No mapping between account names and security IDs was done.
+ERROR_NOTIFY_ENUM_DIR -- 0x800703FE -- A notify change request is being completed and the information is not being returned in the caller's buffer. The caller now needs to enumerate the files to find the changes.
+ERROR_NOT_ALL_ASSIGNED -- 0x80070514 -- Not all privileges or groups referenced are assigned to the caller.
+ERROR_NOT_A_REPARSE_POINT -- 0x80071126 -- The file or directory is not a reparse point.
+ERROR_NOT_ENOUGH_MEMORY -- 0x80070008 -- Not enough storage is available to process this command.
+ERROR_NOT_ENOUGH_QUOTA -- 0x80070718 -- Not enough quota is available to process this command.
+ERROR_NOT_ENOUGH_SERVER_MEMORY -- 0x8007046A -- Not enough server storage is available to process this command.
+ERROR_NOT_EXPORT_FORMAT -- 0x80071778 -- The specified file is not in the defined EFS export format.
+ERROR_NOT_FOUND -- 0x80070490 -- Element not found.
+ERROR_NOT_LOCKED -- 0x8007009E -- The segment is already unlocked.
+ERROR_NOT_LOGON_PROCESS -- 0x80070552 -- The requested action is restricted for use by logon processes only. The calling process has not registered as a logon process.
+ERROR_NOT_OWNER -- 0x80070120 -- Attempt to release mutex not owned by caller.
+ERROR_NOT_READY -- 0x80070015 -- The device is not ready.
+ERROR_NOT_REGISTRY_FILE -- 0x800703F9 -- The system has attempted to load or restore a file into the registry, but the specified file is not in a registry file format.
+ERROR_NOT_SAME_DEVICE -- 0x80070011 -- The system cannot move the file to a different disk drive.
+ERROR_NOT_SUPPORTED -- 0x80070032 -- The request is not supported.
+ERROR_NOT_SUPPORTED_ON_SBS -- 0x800704E6 -- This operation is not supported on a computer running Windows Server 2003 for Small Business Server
+ERROR_NO_BROWSER_SERVERS_FOUND -- 0x800717E6 -- The list of servers for this workgroup is not currently available
+ERROR_NO_DATA -- 0x800700E8 -- The pipe is being closed.
+ERROR_NO_DATA_DETECTED -- 0x80070450 -- No more data is on the tape.
+ERROR_NO_IMPERSONATION_TOKEN -- 0x8007051D -- An attempt has been made to operate on an impersonation token by a thread that is not currently impersonating a client.
+ERROR_NO_INHERITANCE -- 0x8007056F -- Indicates an ACL contains no inheritable components.
+ERROR_NO_LOGON_SERVERS -- 0x8007051F -- We can't sign you in with this credential because your domain isn't available. Make sure your device is connected to your organization's network and try again. If you previously signed in on this device with another credential, you can sign in with that credential.
+ERROR_NO_LOG_SPACE -- 0x800703FB -- System could not allocate the required space in a registry log.
+ERROR_NO_MATCH -- 0x80070491 -- There was no match for the specified key in the index.
+ERROR_NO_MEDIA_IN_DRIVE -- 0x80070458 -- No media in drive.
+ERROR_NO_MORE_FILES -- 0x80070012 -- There are no more files.
+ERROR_NO_MORE_ITEMS -- 0x80070103 -- No more data is available.
+ERROR_NO_QUOTAS_FOR_ACCOUNT -- 0x80070516 -- No system quota limits are specifically set for this account.
+ERROR_NO_SECURITY_ON_OBJECT -- 0x80070546 -- Unable to perform a security operation on an object that has no associated security.
+ERROR_NO_SPOOL_SPACE -- 0x8007003E -- Space to store the file waiting to be printed is not available on the server.
+ERROR_NO_SUCH_ALIAS -- 0x80070560 -- The specified local group does not exist.
+ERROR_NO_SUCH_DOMAIN -- 0x8007054B -- The specified domain either does not exist or could not be contacted.
+ERROR_NO_SUCH_GROUP -- 0x80070527 -- The specified group does not exist.
+ERROR_NO_SUCH_LOGON_SESSION -- 0x80070520 -- A specified logon session does not exist. It may already have been terminated.
+ERROR_NO_SUCH_MEMBER -- 0x8007056B -- A member could not be added to or removed from the local group because the member does not exist.
+ERROR_NO_SUCH_PACKAGE -- 0x80070554 -- A specified authentication package is unknown.
+ERROR_NO_SUCH_PRIVILEGE -- 0x80070521 -- A specified privilege does not exist.
+ERROR_NO_SUCH_USER -- 0x80070525 -- The specified account does not exist.
+ERROR_NO_SYSTEM_RESOURCES -- 0x800705AA -- Insufficient system resources exist to complete the requested service.
+ERROR_NO_TOKEN -- 0x800703F0 -- An attempt was made to reference a token that does not exist.
+ERROR_NO_TRACKING_SERVICE -- 0x80070494 -- The tracking (workstation) service is not running.
+ERROR_NO_TRUST_LSA_SECRET -- 0x800706FA -- The workstation does not have a trust secret.
+ERROR_NO_TRUST_SAM_ACCOUNT -- 0x800706FB -- The security database on the server does not have a computer account for this workstation trust relationship.
+ERROR_NO_UNICODE_TRANSLATION -- 0x80070459 -- No mapping for the Unicode character exists in the target multi-byte code page.
+ERROR_NO_USER_SESSION_KEY -- 0x80070572 -- There is no user session key for the specified logon session.
+ERROR_NT_CROSS_ENCRYPTION_REQUIRED -- 0x8007056A -- A cross-encrypted password is necessary to change a user password.
+ERROR_NULL_LM_PASSWORD -- 0x80070518 -- The password is too complex to be converted to a LAN Manager password. The LAN Manager password returned is a NULL string.
+ERROR_ONLY_IF_CONNECTED -- 0x800704E3 -- This operation is supported only when you are connected to the server.
+ERROR_OPEN_FILES -- 0x80070961 -- This network connection has files open or requests pending.
+ERROR_OPERATION_ABORTED -- 0x800703E3 -- The I/O operation has been aborted because of either a thread exit or an application request.
+ERROR_OPLOCK_NOT_GRANTED -- 0x8007012C -- The oplock request is denied.
+ERROR_OUTOFMEMORY -- 0x8007000E -- Not enough storage is available to complete this operation.
+ERROR_OUT_OF_PAPER -- 0x8007001C -- The printer is out of paper.
+ERROR_PAGEFILE_QUOTA -- 0x80070237 -- Page file quota was exceeded.
+ERROR_PARTIAL_COPY -- 0x8007012B -- Only part of a ReadProcessMemory or WriteProcessMemory request was completed.
+ERROR_PARTITION_FAILURE -- 0x80070451 -- Tape could not be partitioned.
+ERROR_PASSWORD_EXPIRED -- 0x80070532 -- The password for this account has expired.
+ERROR_PASSWORD_MUST_CHANGE -- 0x80070773 -- The user's password must be changed before signing in.
+ERROR_PASSWORD_RESTRICTION -- 0x8007052D -- Unable to update the password. The value provided for the new password does not meet the length, complexity, or history requirements of the domain.
+ERROR_PATH_NOT_FOUND -- 0x80070003 -- The system cannot find the path specified.
+ERROR_PIPE_BUSY -- 0x800700E7 -- All pipe instances are busy.
+ERROR_PIPE_CONNECTED -- 0x80070217 -- There is a process on other end of the pipe.
+ERROR_PIPE_LISTENING -- 0x80070218 -- Waiting for a process to open the other end of the pipe.
+ERROR_PIPE_NOT_CONNECTED -- 0x800700E9 -- No process is on the other end of the pipe.
+ERROR_PKINIT_FAILURE -- 0x800704EF -- The Kerberos protocol encountered an error while validating the KDC certificate during smartcard logon. There is more information in the system event log.
+ERROR_POLICY_OBJECT_NOT_FOUND -- 0x8007201B -- The policy object does not exist.
+ERROR_POLICY_ONLY_IN_DS -- 0x8007201C -- The requested policy information is only in the directory service.
+ERROR_PORT_UNREACHABLE -- 0x800704D2 -- No service is operating at the destination network endpoint on the remote system.
+ERROR_POSSIBLE_DEADLOCK -- 0x8007046B -- A potential deadlock condition has been detected.
+ERROR_PRINTQ_FULL -- 0x8007003D -- The printer queue is full.
+ERROR_PRINT_CANCELLED -- 0x8007003F -- Your file waiting to be printed was deleted.
+ERROR_PRIVILEGE_NOT_HELD -- 0x80070522 -- A required privilege is not held by the client.
+ERROR_PROC_NOT_FOUND -- 0x8007007F -- The specified procedure could not be found.
+ERROR_PROTOCOL_UNREACHABLE -- 0x800704D1 -- The network location cannot be reached. For information about network troubleshooting, see Windows Help.
+ERROR_REDIR_PAUSED -- 0x80070048 -- The specified printer or disk device has been paused.
+ERROR_REGISTRY_IO_FAILED -- 0x800703F8 -- An I/O operation initiated by the registry failed unrecoverably. The registry could not read in, or write out, or flush, one of the files that contain the system's image of the registry.
+ERROR_REGISTRY_RECOVERED -- 0x800703F6 -- One of the files in the registry database had to be recovered by use of a log or alternate copy. The recovery was successful.
+ERROR_REG_NAT_CONSUMPTION -- 0x800704ED -- A program attempt to use an invalid register value. Normally caused by an uninitialized register. This error is Itanium specific.
+ERROR_REMOTE_SESSION_LIMIT_EXCEEDED -- 0x800704C4 -- An attempt was made to establish a session to a network server, but there are already too many sessions established to that server.
+ERROR_REMOTE_STORAGE_MEDIA_ERROR -- 0x80071100 -- The remote storage service encountered a media error.
+ERROR_REMOTE_STORAGE_NOT_ACTIVE -- 0x800710FF -- The remote storage service is not operational at this time.
+ERROR_REM_NOT_LIST -- 0x80070033 -- Windows cannot find the network path. Verify that the network path is correct and the destination computer is not busy or turned off. If Windows still cannot find the network path, contact your network administrator.
+ERROR_REPARSE_ATTRIBUTE_CONFLICT -- 0x80071127 -- The reparse point attribute cannot be set because it conflicts with an existing attribute.
+ERROR_REPARSE_TAG_INVALID -- 0x80071129 -- The tag present in the reparse point buffer is invalid.
+ERROR_REPARSE_TAG_MISMATCH -- 0x8007112A -- There is a mismatch between the tag specified in the request and the tag present in the reparse point.
+ERROR_REQUEST_ABORTED -- 0x800704D3 -- The request was aborted.
+ERROR_REQ_NOT_ACCEP -- 0x80070047 -- No more connections can be made to this remote computer at this time because there are already as many connections as the computer can accept.
+ERROR_RESOURCE_DATA_NOT_FOUND -- 0x80070714 -- The specified image file did not contain a resource section.
+ERROR_RESOURCE_LANG_NOT_FOUND -- 0x80070717 -- The specified resource language ID cannot be found in the image file.
+ERROR_RESOURCE_NAME_NOT_FOUND -- 0x80070716 -- The specified resource name cannot be found in the image file.
+ERROR_RESOURCE_TYPE_NOT_FOUND -- 0x80070715 -- The specified resource type cannot be found in the image file.
+ERROR_RETRY -- 0x800704D5 -- The operation could not be completed. A retry should be performed.
+ERROR_REVISION_MISMATCH -- 0x8007051A -- Indicates two revision levels are incompatible.
+ERROR_RXACT_COMMIT_FAILURE -- 0x8007055A -- An internal security database corruption has been encountered.
+ERROR_RXACT_INVALID_STATE -- 0x80070559 -- The transaction state of a registry subtree is incompatible with the requested operation.
+ERROR_SAM_INIT_FAILURE -- 0x8007215D -- Security Accounts Manager initialization failed because of the following error: %1.&#xA;// Error Status: 0x%2. Click OK to shut down the system and reboot into Safe Mode. Check the event log for detailed information.
+ERROR_SECRET_TOO_LONG -- 0x80070566 -- The length of a secret exceeds the maximum length allowed.
+ERROR_SECTOR_NOT_FOUND -- 0x8007001B -- The drive cannot find the sector requested.
+ERROR_SEM_TIMEOUT -- 0x80070079 -- The semaphore timeout period has expired.
+ERROR_SERIAL_NO_DEVICE -- 0x8007045E -- No serial device was successfully initialized. The serial driver will unload.
+ERROR_SERVER_DISABLED -- 0x8007053D -- The server is currently disabled.
+ERROR_SERVER_NOT_DISABLED -- 0x8007053E -- The server is currently enabled.
+ERROR_SERVER_SHUTDOWN_IN_PROGRESS -- 0x800704E7 -- The server machine is shutting down.
+ERROR_SERVICE_ALREADY_RUNNING -- 0x80070420 -- An instance of the service is already running.
+ERROR_SERVICE_DISABLED -- 0x80070422 -- The service cannot be started, either because it is disabled or because it has no enabled devices associated with it.
+ERROR_SESSION_CREDENTIAL_CONFLICT -- 0x800704C3 -- Multiple connections to a server or shared resource by the same user, using more than one user name, are not allowed. Disconnect all previous connections to the server or shared resource and try again.
+ERROR_SETMARK_DETECTED -- 0x8007044F -- A tape access reached the end of a set of files.
+ERROR_SET_NOT_FOUND -- 0x80070492 -- The property set specified does not exist on the object.
+ERROR_SHARED_POLICY -- 0x8007201A -- The policy object is shared and can only be modified at the root.
+ERROR_SHARING_PAUSED -- 0x80070046 -- The remote server has been paused or is in the process of being started.
+ERROR_SHARING_VIOLATION -- 0x80070020 -- The process cannot access the file because it is being used by another process.
+ERROR_SHUTDOWN_IN_PROGRESS -- 0x8007045B -- A system shutdown is in progress.
+ERROR_SIGNAL_REFUSED -- 0x8007009C -- The recipient process has refused the signal.
+ERROR_SMARTCARD_SUBSYSTEM_FAILURE -- 0x800704F0 -- The Kerberos protocol encountered an error while attempting to utilize the smartcard subsystem.
+ERROR_SOME_NOT_MAPPED -- 0x80070515 -- Some mapping between account names and security IDs was not done.
+ERROR_SOURCE_ELEMENT_EMPTY -- 0x80070488 -- The indicated source element has no media.
+ERROR_SPECIAL_ACCOUNT -- 0x8007055B -- Cannot perform this operation on built-in accounts.
+ERROR_SPECIAL_GROUP -- 0x8007055C -- Cannot perform this operation on this built-in special group.
+ERROR_SPECIAL_USER -- 0x8007055D -- Cannot perform this operation on this built-in special user.
+ERROR_STACK_OVERFLOW -- 0x80070257 -- The request must be handled by the stack overflow code.
+ERROR_SUCCESS -- 0x00000000 -- The operation completed successfully.
+ERROR_SWAPERROR -- 0x800703E7 -- Error performing inpage operation.
+ERROR_SXS_ACTIVATION_CONTEXT_DISABLED -- 0x800736B6 -- The application attempted to activate a disabled activation context.
+ERROR_SXS_ASSEMBLY_NOT_FOUND -- 0x800736B3 -- The referenced assembly is not installed on your system.
+ERROR_SXS_CANT_GEN_ACTCTX -- 0x800736B1 -- The application has failed to start because its side-by-side configuration is incorrect. Please see the application event log or use the command-line sxstrace.exe tool for more detail.
+ERROR_SXS_INVALID_ACTCTXDATA_FORMAT -- 0x800736B2 -- The application binding data format is invalid.
+ERROR_SXS_KEY_NOT_FOUND -- 0x800736B7 -- The requested lookup key was not found in any active activation context.
+ERROR_SXS_MANIFEST_FORMAT_ERROR -- 0x800736B4 -- The manifest file does not begin with the required tag and format information.
+ERROR_SXS_MANIFEST_PARSE_ERROR -- 0x800736B5 -- The manifest file contains one or more syntax errors.
+ERROR_SXS_PROCESS_DEFAULT_ALREADY_SET -- 0x800736BB -- An attempt to set the process default activation context failed because the process default activation context was already set.
+ERROR_SXS_SECTION_NOT_FOUND -- 0x800736B0 -- The requested section was not present in the activation context.
+ERROR_SXS_THREAD_QUERIES_DISABLED -- 0x800736BA -- Lack of system resources has required isolated activation to be disabled for the current thread of execution.
+ERROR_SXS_WRONG_SECTION_TYPE -- 0x800736B9 -- The type requested activation context section does not match the query API used.
+ERROR_TIME_SKEW -- 0x80070576 -- There is a time and/or date difference between the client and server.
+ERROR_TOKEN_ALREADY_IN_USE -- 0x8007055F -- The token is already in use as a primary token.
+ERROR_TOO_MANY_CMDS -- 0x80070038 -- The network BIOS command limit has been reached.
+ERROR_TOO_MANY_CONTEXT_IDS -- 0x80070568 -- During a logon attempt, the user's security context accumulated too many security IDs.
+ERROR_TOO_MANY_LINKS -- 0x80070476 -- An attempt was made to create more links on a file than the file system supports.
+ERROR_TOO_MANY_LUIDS_REQUESTED -- 0x80070535 -- Too many local user identifiers (LUIDs) were requested at one time.
+ERROR_TOO_MANY_NAMES -- 0x80070044 -- The name limit for the local computer network adapter card was exceeded.
+ERROR_TOO_MANY_OPEN_FILES -- 0x80070004 -- The system cannot open the file.
+ERROR_TOO_MANY_POSTS -- 0x8007012A -- Too many posts were made to a semaphore.
+ERROR_TOO_MANY_SECRETS -- 0x80070565 -- The maximum number of secrets that may be stored in a single system has been exceeded.
+ERROR_TOO_MANY_SESS -- 0x80070045 -- The network BIOS session limit was exceeded.
+ERROR_TOO_MANY_SIDS -- 0x8007056D -- Too many security IDs have been specified.
+ERROR_TRANSPORT_FULL -- 0x800710E8 -- Cannot use the transport because it is already in use.
+ERROR_TRUSTED_DOMAIN_FAILURE -- 0x800706FC -- The trust relationship between the primary domain and the trusted domain failed.
+ERROR_TRUSTED_RELATIONSHIP_FAILURE -- 0x800706FD -- The trust relationship between this workstation and the primary domain failed.
+ERROR_TRUST_FAILURE -- 0x800706FE -- The network logon failed.
+ERROR_UNABLE_TO_LOCK_MEDIA -- 0x80070454 -- Unable to lock the media eject mechanism.
+ERROR_UNABLE_TO_UNLOAD_MEDIA -- 0x80070455 -- Unable to unload the media.
+ERROR_UNEXP_NET_ERR -- 0x8007003B -- An unexpected network error occurred.
+ERROR_UNKNOWN_REVISION -- 0x80070519 -- The revision level is unknown.
+ERROR_UNRECOGNIZED_MEDIA -- 0x800706F9 -- The disk media is not recognized. It may not be formatted.
+ERROR_UNRECOGNIZED_VOLUME -- 0x800703ED -- The volume does not contain a recognized file system.&#xA;// Please make sure that all required file system drivers are loaded and that the volume is not corrupted.
+ERROR_USER_EXISTS -- 0x80070524 -- The specified account already exists.
+ERROR_USER_MAPPED_FILE -- 0x800704C8 -- The requested operation cannot be performed on a file with a user-mapped section open.
+ERROR_VC_DISCONNECTED -- 0x800700F0 -- The session was canceled.
+ERROR_WMI_ALREADY_DISABLED -- 0x80071074 -- The WMI data block or event notification has already been disabled.
+ERROR_WMI_ALREADY_ENABLED -- 0x8007106E -- The WMI data block or event notification has already been enabled.
+ERROR_WMI_GUID_DISCONNECTED -- 0x8007106F -- The WMI data block is no longer available.
+ERROR_WMI_GUID_NOT_FOUND -- 0x80071068 -- The GUID passed was not recognized as valid by a WMI data provider.
+ERROR_WMI_INSTANCE_NOT_FOUND -- 0x80071069 -- The instance name passed was not recognized as valid by a WMI data provider.
+ERROR_WMI_ITEMID_NOT_FOUND -- 0x8007106A -- The data item ID passed was not recognized as valid by a WMI data provider.
+ERROR_WMI_READ_ONLY -- 0x80071075 -- The WMI data item or data block is read only.
+ERROR_WMI_SET_FAILURE -- 0x80071076 -- The WMI data item or data block could not be changed.
+ERROR_WMI_TRY_AGAIN -- 0x8007106B -- The WMI request could not be completed and should be retried.
+ERROR_WORKING_SET_QUOTA -- 0x800705AD -- Insufficient quota to complete the requested service.
+ERROR_WRITE_PROTECT -- 0x80070013 -- The media is write protected.
+ERROR_WRONG_DISK -- 0x80070022 -- The wrong diskette is in the drive.&#xA;// Insert %2 (Volume Serial Number: %3) into drive %1.
+ERROR_WRONG_TARGET_NAME -- 0x80070574 -- The target account name is incorrect.
+NO_ERROR -- 0xC00D0FD0 -- Windows Media Player has encountered an unknown error.
+NTE_BAD_KEYSET -- 0x80090016 -- Keyset does not exist
+NTE_NO_KEY -- 0x8009000D -- Key does not exist.
+RPC_S_ADDRESS_ERROR -- 0x800706E8 -- An addressing error occurred in the RPC server.
+RPC_S_ALREADY_LISTENING -- 0x800706B1 -- The RPC server is already listening.
+RPC_S_ALREADY_REGISTERED -- 0x800706AF -- The object universal unique identifier (UUID) has already been registered.
+RPC_S_BINDING_HAS_NO_AUTH -- 0x800706D2 -- The binding does not contain any authentication information.
+RPC_S_BINDING_INCOMPLETE -- 0x8007071B -- The binding handle does not contain all required information.
+RPC_S_CALL_CANCELLED -- 0x8007071A -- The remote procedure call was cancelled.
+RPC_S_CALL_FAILED -- 0x800706BE -- The remote procedure call failed.
+RPC_S_CALL_FAILED_DNE -- 0x800706BF -- The remote procedure call failed and did not execute.
+RPC_S_CALL_IN_PROGRESS -- 0x800706FF -- A remote procedure call is already in progress for this thread.
+RPC_S_CANNOT_SUPPORT -- 0x800706E4 -- The requested operation is not supported.
+RPC_S_CANT_CREATE_ENDPOINT -- 0x800706B8 -- The endpoint cannot be created.
+RPC_S_COMM_FAILURE -- 0x8007071C -- A communications failure occurred during a remote procedure call.
+RPC_S_DUPLICATE_ENDPOINT -- 0x800706CC -- The endpoint is a duplicate.
+RPC_S_ENTRY_ALREADY_EXISTS -- 0x800706E0 -- The entry already exists.
+RPC_S_ENTRY_NOT_FOUND -- 0x800706E1 -- The entry is not found.
+RPC_S_FP_DIV_ZERO -- 0x800706E9 -- A floating-point operation at the RPC server caused a division by zero.
+RPC_S_FP_OVERFLOW -- 0x800706EB -- A floating-point overflow occurred at the RPC server.
+RPC_S_FP_UNDERFLOW -- 0x800706EA -- A floating-point underflow occurred at the RPC server.
+RPC_S_GROUP_MEMBER_NOT_FOUND -- 0x8007076A -- The group member was not found.
+RPC_S_INCOMPLETE_NAME -- 0x800706DB -- The entry name is incomplete.
+RPC_S_INTERFACE_NOT_FOUND -- 0x800706DF -- The interface was not found.
+RPC_S_INTERNAL_ERROR -- 0x800706E6 -- An internal error occurred in a remote procedure call (RPC).
+RPC_S_INVALID_ASYNC_CALL -- 0x8007077B -- Invalid asynchronous RPC call handle for this operation.
+RPC_S_INVALID_ASYNC_HANDLE -- 0x8007077A -- Invalid asynchronous remote procedure call handle.
+RPC_S_INVALID_AUTH_IDENTITY -- 0x800706D5 -- The security context is invalid.
+RPC_S_INVALID_BOUND -- 0x800706C6 -- The array bounds are invalid.
+RPC_S_INVALID_ENDPOINT_FORMAT -- 0x800706AA -- The endpoint format is invalid.
+RPC_S_INVALID_NAF_ID -- 0x800706E3 -- The network address family is invalid.
+RPC_S_INVALID_NAME_SYNTAX -- 0x800706C8 -- The name syntax is invalid.
+RPC_S_INVALID_NETWORK_OPTIONS -- 0x800706BC -- The network options are invalid.
+RPC_S_INVALID_NET_ADDR -- 0x800706AB -- The network address is invalid.
+RPC_S_INVALID_OBJECT -- 0x8007076C -- The object universal unique identifier (UUID) is the nil UUID.
+RPC_S_INVALID_RPC_PROTSEQ -- 0x800706A8 -- The RPC protocol sequence is invalid.
+RPC_S_INVALID_STRING_BINDING -- 0x800706A4 -- The string binding is invalid.
+RPC_S_INVALID_STRING_UUID -- 0x800706A9 -- The string universal unique identifier (UUID) is invalid.
+RPC_S_INVALID_TAG -- 0x800706C5 -- The tag is invalid.
+RPC_S_INVALID_TIMEOUT -- 0x800706AD -- The timeout value is invalid.
+RPC_S_INVALID_VERS_OPTION -- 0x800706DC -- The version option is invalid.
+RPC_S_MAX_CALLS_TOO_SMALL -- 0x800706CE -- The maximum number of calls is too small.
+RPC_S_NAME_SERVICE_UNAVAILABLE -- 0x800706E2 -- The name service is unavailable.
+RPC_S_NOTHING_TO_EXPORT -- 0x800706DA -- No interfaces have been exported.
+RPC_S_NOT_ALL_OBJS_UNEXPORTED -- 0x800706DE -- There is nothing to unexport.
+RPC_S_NOT_CANCELLED -- 0x80070722 -- Thread is not canceled.
+RPC_S_NOT_LISTENING -- 0x800706B3 -- The RPC server is not listening.
+RPC_S_NOT_RPC_ERROR -- 0x8007071F -- The error specified is not a valid Windows RPC error code.
+RPC_S_NO_BINDINGS -- 0x800706B6 -- There are no bindings.
+RPC_S_NO_CALL_ACTIVE -- 0x800706BD -- There are no remote procedure calls active on this thread.
+RPC_S_NO_CONTEXT_AVAILABLE -- 0x800706E5 -- No security context is available to allow impersonation.
+RPC_S_NO_ENDPOINT_FOUND -- 0x800706AC -- No endpoint was found.
+RPC_S_NO_ENTRY_NAME -- 0x800706C7 -- The binding does not contain an entry name.
+RPC_S_NO_INTERFACES -- 0x80070719 -- No interfaces have been registered.
+RPC_S_NO_MORE_BINDINGS -- 0x8007070E -- There are no more bindings.
+RPC_S_NO_MORE_MEMBERS -- 0x800706DD -- There are no more members.
+RPC_S_NO_PRINC_NAME -- 0x8007071E -- No principal name registered.
+RPC_S_NO_PROTSEQS -- 0x800706B2 -- No protocol sequences have been registered.
+RPC_S_NO_PROTSEQS_REGISTERED -- 0x800706B2 -- No protocol sequences have been registered.
+RPC_S_OBJECT_NOT_FOUND -- 0x800706AE -- The object universal unique identifier (UUID) was not found.
+RPC_S_OUT_OF_RESOURCES -- 0x800706B9 -- Not enough resources are available to complete this operation.
+RPC_S_PROCNUM_OUT_OF_RANGE -- 0x800706D1 -- The procedure number is out of range.
+RPC_S_PROTOCOL_ERROR -- 0x800706C0 -- A remote procedure call (RPC) protocol error occurred.
+RPC_S_PROTSEQ_NOT_FOUND -- 0x800706D0 -- The RPC protocol sequence was not found.
+RPC_S_PROTSEQ_NOT_SUPPORTED -- 0x800706A7 -- The RPC protocol sequence is not supported.
+RPC_S_SEC_PKG_ERROR -- 0x80070721 -- A security package specific error occurred.
+RPC_S_SEND_INCOMPLETE -- 0x80070779 -- Some data remains to be sent in the request buffer.
+RPC_S_SERVER_TOO_BUSY -- 0x800706BB -- The RPC server is too busy to complete this operation.
+RPC_S_SERVER_UNAVAILABLE -- 0x800706BA -- The RPC server is unavailable.
+RPC_S_STRING_TOO_LONG -- 0x800706CF -- The string is too long.
+RPC_S_TYPE_ALREADY_REGISTERED -- 0x800706B0 -- The type universal unique identifier (UUID) has already been registered.
+RPC_S_UNKNOWN_AUTHN_LEVEL -- 0x800706D4 -- The authentication level is unknown.
+RPC_S_UNKNOWN_AUTHN_SERVICE -- 0x800706D3 -- The authentication service is unknown.
+RPC_S_UNKNOWN_AUTHN_TYPE -- 0x800706CD -- The authentication type is unknown.
+RPC_S_UNKNOWN_AUTHZ_SERVICE -- 0x800706D6 -- The authorization service is unknown.
+RPC_S_UNKNOWN_IF -- 0x800706B5 -- The interface is unknown.
+RPC_S_UNKNOWN_MGR_TYPE -- 0x800706B4 -- The manager type is unknown.
+RPC_S_UNSUPPORTED_AUTHN_LEVEL -- 0x8007071D -- The requested authentication level is not supported.
+RPC_S_UNSUPPORTED_NAME_SYNTAX -- 0x800706C9 -- The name syntax is not supported.
+RPC_S_UNSUPPORTED_TRANS_SYN -- 0x800706C2 -- The transfer syntax is not supported by the RPC server.
+RPC_S_UNSUPPORTED_TYPE -- 0x800706C4 -- The universal unique identifier (UUID) type is not supported.
+RPC_S_UUID_LOCAL_ONLY -- 0x80070720 -- A UUID that is valid only on this computer has been allocated.
+RPC_S_UUID_NO_ADDRESS -- 0x800706CB -- No network address is available to use to construct a universal unique identifier (UUID).
+RPC_S_WRONG_KIND_OF_BINDING -- 0x800706A5 -- The binding handle is not the correct type.
+RPC_S_ZERO_DIVIDE -- 0x800706E7 -- The RPC server attempted an integer division by zero.
+RPC_X_BAD_STUB_DATA -- 0x800706F7 -- The stub received bad data.
+RPC_X_BYTE_COUNT_TOO_SMALL -- 0x800706F6 -- The byte count is too small.
+RPC_X_ENUM_VALUE_OUT_OF_RANGE -- 0x800706F5 -- The enumeration value is out of range.
+RPC_X_INVALID_ES_ACTION -- 0x80070723 -- Invalid operation on the encoding/decoding handle.
+RPC_X_INVALID_PIPE_OBJECT -- 0x80070726 -- The RPC pipe object is invalid or corrupted.
+RPC_X_NO_MORE_ENTRIES -- 0x800706EC -- The list of RPC servers available for the binding of auto handles has been exhausted.
+RPC_X_NULL_REF_POINTER -- 0x800706F4 -- A null reference pointer was passed to the stub.
+RPC_X_PIPE_CLOSED -- 0x8007077C -- The RPC pipe object has already been closed.
+RPC_X_PIPE_DISCIPLINE_ERROR -- 0x8007077D -- The RPC call completed before all pipes were processed.
+RPC_X_PIPE_EMPTY -- 0x8007077E -- No more data is available from the RPC pipe.
+RPC_X_SS_CANNOT_GET_CALL_HANDLE -- 0x800706F3 -- The stub is unable to get the remote procedure call handle.
+RPC_X_SS_CHAR_TRANS_OPEN_FAIL -- 0x800706ED -- Unable to open the character translation table file.
+RPC_X_SS_CHAR_TRANS_SHORT_FILE -- 0x800706EE -- The file containing the character translation table has fewer than 512 bytes.
+RPC_X_SS_CONTEXT_DAMAGED -- 0x800706F1 -- The context handle changed during a remote procedure call.
+RPC_X_SS_HANDLES_MISMATCH -- 0x800706F2 -- The binding handles passed to a remote procedure call do not match.
+RPC_X_WRONG_ES_VERSION -- 0x80070724 -- Incompatible version of the serializing package.
+RPC_X_WRONG_PIPE_VERSION -- 0x80070728 -- Unsupported RPC pipe version.
+RPC_X_WRONG_STUB_VERSION -- 0x80070725 -- Incompatible version of the RPC stub.
+SCARD_E_COMM_DATA_LOST -- 0x8010002F -- A communications error with the smart card has been detected. Retry the operation.
+SCARD_E_NO_SMARTCARD -- 0x8010000C -- The operation requires a smart card, but no smart card is currently in the device.
+SCARD_E_NO_SUCH_CERTIFICATE -- 0x8010002C -- The requested certificate does not exist.
+SCARD_W_CARD_NOT_AUTHENTICATED -- 0x8010006F -- No PIN was presented to the smart card.
+SCARD_W_CHV_BLOCKED -- 0x8010006C -- The card cannot be accessed because the maximum number of PIN entry attempts has been reached.
+SCARD_W_WRONG_CHV -- 0x8010006B -- The card cannot be accessed because the wrong PIN was presented.
+SEC_E_BAD_BINDINGS -- 0x80090346 -- Client's supplied SSPI channel bindings were incorrect.
+SEC_E_CRYPTO_SYSTEM_INVALID -- 0x80090337 -- The crypto system or checksum function is invalid because a required function is unavailable.
+SEC_E_ISSUING_CA_UNTRUSTED -- 0x80090352 -- An untrusted certificate authority was detected while processing the smartcard certificate used for authentication. Please contact your system administrator.
+SEC_E_KDC_INVALID_REQUEST -- 0x80090340 -- An invalid request was sent to the KDC.
+SEC_E_KDC_UNABLE_TO_REFER -- 0x80090341 -- The KDC was unable to generate a referral for the service requested.
+SEC_E_KDC_UNKNOWN_ETYPE -- 0x80090342 -- The encryption type requested is not supported by the KDC.
+SEC_E_MAX_REFERRALS_EXCEEDED -- 0x80090338 -- The number of maximum ticket referrals has been exceeded.
+SEC_E_MUST_BE_KDC -- 0x80090339 -- The local machine must be a Kerberos KDC (domain controller) and it is not.
+SEC_E_NO_IP_ADDRESSES -- 0x80090335 -- Unable to accomplish the requested task because the local machine does not have any IP addresses.
+SEC_E_NO_KERB_KEY -- 0x80090348 -- SEC_E_NO_KERB_KEY
+SEC_E_NO_PA_DATA -- 0x8009033C -- Expected to find PA data for a hint of what etype to use, but it was not found.
+SEC_E_NO_TGT_REPLY -- 0x80090334 -- The client is trying to negotiate a context and the server requires user-to-user but didn't send a TGT reply.
+SEC_E_PKINIT_CLIENT_FAILURE -- 0x80090354 -- The smartcard certificate used for authentication was not trusted. Please contact your system administrator.
+SEC_E_PKINIT_NAME_MISMATCH -- 0x8009033D -- The client certificate does not contain a valid UPN, or does not match the client name in the logon request. Please contact your administrator.
+SEC_E_REVOCATION_OFFLINE_C -- 0x80090353 -- The revocation status of the smartcard certificate used for authentication could not be determined. Please contact your system administrator.
+SEC_E_SMARTCARD_CERT_EXPIRED -- 0x80090355 -- The smartcard certificate used for authentication has expired. Please contact your system administrator.
+SEC_E_SMARTCARD_CERT_REVOKED -- 0x80090351 -- The smartcard certificate used for authentication has been revoked. Please contact your system administrator. There may be additional information in the event log.
+SEC_E_SMARTCARD_LOGON_REQUIRED -- 0x8009033E -- Smartcard logon is required and was not used.
+SEC_E_STRONG_CRYPTO_NOT_SUPPORTED -- 0x8009033A -- The other end of the security negotiation is requires strong crypto but it is not supported on the local machine.
+SEC_E_TOO_MANY_PRINCIPALS -- 0x8009033B -- The KDC reply contained more than one principal name.
+SEC_E_UNFINISHED_CONTEXT_DELETED -- 0x80090333 -- A security context was deleted before the context was completed. This is considered a logon failure.
+SEC_E_UNSUPPORTED_PREAUTH -- 0x80090343 -- An unsupported preauthentication mechanism was presented to the Kerberos package.
+SEC_E_WRONG_CREDENTIAL_HANDLE -- 0x80090336 -- The supplied credential handle does not match the credential associated with the security context.
+STATUS_DUPLICATE_OBJECTID -- 0xC000022A -- The attempt to insert the ID in the index failed*&^NL^&*  because the ID is already in the index.
+STATUS_OBJECTID_EXISTS -- 0xC000022B -- The attempt to set the object ID failed because the*&^NL^&*  object already has an ID.
+STG_E_CSS_AUTHENTICATION_FAILURE -- 0x80030306 -- Copy Protection Error - DVD CSS Authentication failed.
+STG_E_CSS_KEY_NOT_ESTABLISHED -- 0x80030308 -- Copy Protection Error - DVD session key not established.
+STG_E_CSS_KEY_NOT_PRESENT -- 0x80030307 -- Copy Protection Error - The given sector does not have a valid CSS key.
+STG_E_CSS_REGION_MISMATCH -- 0x8003030A -- Copy Protection Error - The current DVD's region does not correspond to the region setting of the drive.
+STG_E_CSS_SCRAMBLED_SECTOR -- 0x80030309 -- Copy Protection Error - The read failed because the sector is encrypted.
+STG_E_RESETS_EXHAUSTED -- 0x8003030B -- Copy Protection Error - The drive's region setting may be permanent or the number of user resets has been exhausted.
+STG_E_STATUS_COPY_PROTECTION_FAILURE -- 0x80030305 -- Generic Copy Protection Error.
+INVALID_FILE_ATTRIBUTES -- -0x00000001 -- Invalid file attributes.
+INVALID_HANDLE_VALUE -- -0x00000001 -- Invalid object handle.
+INVALID_FILE_SIZE -- -0x00000001 -- Invalid file size.
